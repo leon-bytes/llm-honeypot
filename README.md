@@ -95,6 +95,7 @@ flowchart LR
 | [`scripts/`](scripts/) | Deploying the relay, preparing model nodes, the paced measurement run and the end-to-end rehearsal. |
 | [`deploy/systemd/`](deploy/systemd/) | Service files for the relay and Cowrie. |
 | [`docs/relay-protocol.md`](docs/relay-protocol.md) | The protocol between the front end and the relay. |
+| [`docs/paper-appendix.md`](docs/paper-appendix.md) | The paper's appendix: hardware and network, grading rules and scorer levels, how answers are produced, fine-tuning settings. |
 | `eval_scorer.py`, `eval_honeypot.py` | The scorer: compares the honeypot's answers with the reference machine's. |
 | `capture_session_v3.py` | Records shell answers over SSH, one fresh login per command. |
 | `site.example.json` | Made-up stand-ins for every site-specific value (next section). |
