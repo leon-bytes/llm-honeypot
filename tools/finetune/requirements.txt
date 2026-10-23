@@ -1,0 +1,12 @@
+# For the fine-tuning PC only (docs/finetuning-on-the-5090.md). Install into a virtual
+# environment, never into the system Python.
+#
+# PyTorch is NOT listed here on purpose: an RTX 5090 needs a build for CUDA 12.8 or
+# newer, which comes from PyTorch's own package index. Install it first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+transformers>=4.57
+peft>=0.13
+safetensors>=0.4
+huggingface_hub>=0.26
+# Only for --method qlora (the base model in 4-bit); needs a CUDA card.
+bitsandbytes>=0.45

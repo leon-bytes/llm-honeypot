@@ -1,0 +1,5146 @@
+{
+ "_comment": "Commands on Ground Truth's PATH, from its package inventory and public package indexes; built by tools/build_command_list.py. Directory is the first one on root's PATH that holds it.",
+ "packages": 656,
+ "builtins": [
+  ".",
+  ":",
+  "[",
+  "alias",
+  "bg",
+  "bind",
+  "break",
+  "builtin",
+  "caller",
+  "cd",
+  "command",
+  "compgen",
+  "complete",
+  "compopt",
+  "continue",
+  "declare",
+  "dirs",
+  "disown",
+  "echo",
+  "enable",
+  "eval",
+  "exec",
+  "exit",
+  "export",
+  "false",
+  "fc",
+  "fg",
+  "getopts",
+  "hash",
+  "help",
+  "history",
+  "jobs",
+  "kill",
+  "let",
+  "local",
+  "logout",
+  "mapfile",
+  "popd",
+  "printf",
+  "pushd",
+  "pwd",
+  "read",
+  "readarray",
+  "readonly",
+  "return",
+  "set",
+  "shift",
+  "shopt",
+  "source",
+  "suspend",
+  "test",
+  "times",
+  "trap",
+  "true",
+  "type",
+  "typeset",
+  "ulimit",
+  "umask",
+  "unalias",
+  "unset",
+  "wait"
+ ],
+ "keywords": [
+  "!",
+  "[[",
+  "]]",
+  "case",
+  "coproc",
+  "do",
+  "done",
+  "elif",
+  "else",
+  "esac",
+  "fi",
+  "for",
+  "function",
+  "if",
+  "in",
+  "select",
+  "then",
+  "time",
+  "until",
+  "while",
+  "{",
+  "}"
+ ],
+ "path": {
+  "7z": "/usr/bin",
+  "7za": "/usr/bin",
+  "7zr": "/usr/bin",
+  "NetworkManager": "/usr/sbin",
+  "[": "/usr/bin",
+  "aa-enabled": "/usr/bin",
+  "aa-exec": "/usr/bin",
+  "aa-features-abi": "/usr/bin",
+  "aa-load": "/usr/sbin",
+  "aa-remove-unknown": "/usr/sbin",
+  "aa-status": "/usr/sbin",
+  "aa-teardown": "/usr/sbin",
+  "aarch64-linux-gnu-addr2line": "/usr/bin",
+  "aarch64-linux-gnu-ar": "/usr/bin",
+  "aarch64-linux-gnu-as": "/usr/bin",
+  "aarch64-linux-gnu-c++filt": "/usr/bin",
+  "aarch64-linux-gnu-cpp": "/usr/bin",
+  "aarch64-linux-gnu-cpp-14": "/usr/bin",
+  "aarch64-linux-gnu-elfedit": "/usr/bin",
+  "aarch64-linux-gnu-g++": "/usr/bin",
+  "aarch64-linux-gnu-g++-14": "/usr/bin",
+  "aarch64-linux-gnu-gcc": "/usr/bin",
+  "aarch64-linux-gnu-gcc-14": "/usr/bin",
+  "aarch64-linux-gnu-gcc-ar": "/usr/bin",
+  "aarch64-linux-gnu-gcc-ar-14": "/usr/bin",
+  "aarch64-linux-gnu-gcc-nm": "/usr/bin",
+  "aarch64-linux-gnu-gcc-nm-14": "/usr/bin",
+  "aarch64-linux-gnu-gcc-ranlib": "/usr/bin",
+  "aarch64-linux-gnu-gcc-ranlib-14": "/usr/bin",
+  "aarch64-linux-gnu-gcov": "/usr/bin",
+  "aarch64-linux-gnu-gcov-14": "/usr/bin",
+  "aarch64-linux-gnu-gcov-dump": "/usr/bin",
+  "aarch64-linux-gnu-gcov-dump-14": "/usr/bin",
+  "aarch64-linux-gnu-gcov-tool": "/usr/bin",
+  "aarch64-linux-gnu-gcov-tool-14": "/usr/bin",
+  "aarch64-linux-gnu-gprof": "/usr/bin",
+  "aarch64-linux-gnu-ld": "/usr/bin",
+  "aarch64-linux-gnu-ld.bfd": "/usr/bin",
+  "aarch64-linux-gnu-lto-dump": "/usr/bin",
+  "aarch64-linux-gnu-lto-dump-14": "/usr/bin",
+  "aarch64-linux-gnu-nm": "/usr/bin",
+  "aarch64-linux-gnu-objcopy": "/usr/bin",
+  "aarch64-linux-gnu-objdump": "/usr/bin",
+  "aarch64-linux-gnu-pkg-config": "/usr/bin",
+  "aarch64-linux-gnu-pkgconf": "/usr/bin",
+  "aarch64-linux-gnu-ranlib": "/usr/bin",
+  "aarch64-linux-gnu-readelf": "/usr/bin",
+  "aarch64-linux-gnu-run": "/usr/bin",
+  "aarch64-linux-gnu-size": "/usr/bin",
+  "aarch64-linux-gnu-strings": "/usr/bin",
+  "aarch64-linux-gnu-strip": "/usr/bin",
+  "accessdb": "/usr/sbin",
+  "aconnect": "/usr/bin",
+  "add-shell": "/usr/sbin",
+  "addgnupghome": "/usr/sbin",
+  "addgroup": "/usr/sbin",
+  "addr2line": "/usr/bin",
+  "adduser": "/usr/sbin",
+  "agetty": "/usr/sbin",
+  "alsa-info": "/usr/sbin",
+  "alsabat": "/usr/bin",
+  "alsabat-test": "/usr/sbin",
+  "alsactl": "/usr/sbin",
+  "alsaloop": "/usr/bin",
+  "alsamixer": "/usr/bin",
+  "alsatplg": "/usr/bin",
+  "alsaucm": "/usr/bin",
+  "amidi": "/usr/bin",
+  "amixer": "/usr/bin",
+  "aplay": "/usr/bin",
+  "aplaymidi": "/usr/bin",
+  "aplaymidi2": "/usr/bin",
+  "apparmor_parser": "/usr/sbin",
+  "apparmor_status": "/usr/sbin",
+  "applygnupgdefaults": "/usr/sbin",
+  "apropos": "/usr/bin",
+  "apt": "/usr/bin",
+  "apt-cache": "/usr/bin",
+  "apt-cdrom": "/usr/bin",
+  "apt-config": "/usr/bin",
+  "apt-extracttemplates": "/usr/bin",
+  "apt-ftparchive": "/usr/bin",
+  "apt-get": "/usr/bin",
+  "apt-listchanges": "/usr/bin",
+  "apt-mark": "/usr/bin",
+  "apt-sortpkgs": "/usr/bin",
+  "ar": "/usr/bin",
+  "arch": "/usr/bin",
+  "arecord": "/usr/bin",
+  "arecordmidi": "/usr/bin",
+  "arecordmidi2": "/usr/bin",
+  "arp": "/usr/sbin",
+  "arpd": "/usr/sbin",
+  "arping": "/usr/bin",
+  "arptables": "/usr/sbin",
+  "arptables-nft": "/usr/sbin",
+  "arptables-nft-restore": "/usr/sbin",
+  "arptables-nft-save": "/usr/sbin",
+  "arptables-restore": "/usr/sbin",
+  "arptables-save": "/usr/sbin",
+  "arptables-translate": "/usr/sbin",
+  "as": "/usr/bin",
+  "aseqdump": "/usr/bin",
+  "aseqnet": "/usr/bin",
+  "aseqsend": "/usr/bin",
+  "avahi-daemon": "/usr/sbin",
+  "awk": "/usr/bin",
+  "axfer": "/usr/bin",
+  "b2sum": "/usr/bin",
+  "badblocks": "/usr/sbin",
+  "base32": "/usr/bin",
+  "base64": "/usr/bin",
+  "basename": "/usr/bin",
+  "basenc": "/usr/bin",
+  "bash": "/usr/bin",
+  "bashbug": "/usr/bin",
+  "blkdeactivate": "/usr/sbin",
+  "blkdiscard": "/usr/sbin",
+  "blkid": "/usr/sbin",
+  "blkzone": "/usr/sbin",
+  "blockdev": "/usr/sbin",
+  "bluemoon": "/usr/bin",
+  "bluetoothctl": "/usr/bin",
+  "bluetoothd": "/usr/sbin",
+  "bridge": "/usr/sbin",
+  "btattach": "/usr/bin",
+  "btfdiff": "/usr/bin",
+  "btmgmt": "/usr/bin",
+  "btmon": "/usr/bin",
+  "bunzip2": "/usr/bin",
+  "busctl": "/usr/bin",
+  "busybox": "/usr/bin",
+  "bzcat": "/usr/bin",
+  "bzcmp": "/usr/bin",
+  "bzdiff": "/usr/bin",
+  "bzegrep": "/usr/bin",
+  "bzexe": "/usr/bin",
+  "bzfgrep": "/usr/bin",
+  "bzgrep": "/usr/bin",
+  "bzip2": "/usr/bin",
+  "bzip2recover": "/usr/bin",
+  "bzless": "/usr/bin",
+  "bzmore": "/usr/bin",
+  "c++": "/usr/bin",
+  "c++filt": "/usr/bin",
+  "c89": "/usr/bin",
+  "c89-gcc": "/usr/bin",
+  "c99": "/usr/bin",
+  "c99-gcc": "/usr/bin",
+  "c_rehash": "/usr/bin",
+  "camera-bug-report": "/usr/bin",
+  "cancel-rename": "/usr/bin",
+  "capsh": "/usr/sbin",
+  "captoinfo": "/usr/bin",
+  "cat": "/usr/bin",
+  "catman": "/usr/bin",
+  "cc": "/usr/bin",
+  "cec-compliance": "/usr/bin",
+  "cec-ctl": "/usr/bin",
+  "cec-follower": "/usr/bin",
+  "cfdisk": "/usr/sbin",
+  "cgdisk": "/usr/sbin",
+  "chage": "/usr/bin",
+  "chardet": "/usr/bin",
+  "chardetect": "/usr/bin",
+  "chat": "/usr/sbin",
+  "chattr": "/usr/bin",
+  "chcon": "/usr/bin",
+  "chcpu": "/usr/sbin",
+  "chfn": "/usr/bin",
+  "chgpasswd": "/usr/sbin",
+  "chgrp": "/usr/bin",
+  "chmem": "/usr/sbin",
+  "chmod": "/usr/bin",
+  "choom": "/usr/bin",
+  "chown": "/usr/bin",
+  "chpasswd": "/usr/sbin",
+  "chroot": "/usr/sbin",
+  "chrt": "/usr/bin",
+  "chsh": "/usr/bin",
+  "chvt": "/usr/bin",
+  "cifs.idmap": "/usr/sbin",
+  "cifs.upcall": "/usr/sbin",
+  "cifscreds": "/usr/bin",
+  "ciptool": "/usr/bin",
+  "ckbcomp": "/usr/bin",
+  "cksum": "/usr/bin",
+  "clear": "/usr/bin",
+  "clear_console": "/usr/bin",
+  "cloud-id": "/usr/bin",
+  "cloud-init": "/usr/bin",
+  "cloud-init-per": "/usr/bin",
+  "cmp": "/usr/bin",
+  "codepage": "/usr/bin",
+  "codiff": "/usr/bin",
+  "col": "/usr/bin",
+  "colcrt": "/usr/bin",
+  "colrm": "/usr/bin",
+  "column": "/usr/bin",
+  "comm": "/usr/bin",
+  "con2fbmap": "/usr/bin",
+  "containerd": "/usr/bin",
+  "containerd-shim-runc-v2": "/usr/bin",
+  "convert-dtsv0": "/usr/bin",
+  "corelist": "/usr/bin",
+  "cp": "/usr/bin",
+  "cpan": "/usr/bin",
+  "cpan5.40-aarch64-linux-gnu": "/usr/bin",
+  "cpio": "/usr/bin",
+  "cpp": "/usr/bin",
+  "cpp-14": "/usr/bin",
+  "cron": "/usr/sbin",
+  "crontab": "/usr/bin",
+  "csplit": "/usr/bin",
+  "ctr": "/usr/bin",
+  "ctracer": "/usr/bin",
+  "ctstat": "/usr/bin",
+  "curl": "/usr/bin",
+  "cut": "/usr/bin",
+  "cvtsudoers": "/usr/bin",
+  "cx18-ctl": "/usr/bin",
+  "dash": "/usr/bin",
+  "date": "/usr/bin",
+  "dbus-cleanup-sockets": "/usr/bin",
+  "dbus-daemon": "/usr/bin",
+  "dbus-monitor": "/usr/bin",
+  "dbus-run-session": "/usr/bin",
+  "dbus-send": "/usr/bin",
+  "dbus-update-activation-environment": "/usr/bin",
+  "dbus-uuidgen": "/usr/bin",
+  "dcb": "/usr/sbin",
+  "dconf": "/usr/bin",
+  "dd": "/usr/bin",
+  "deallocvt": "/usr/bin",
+  "deb-systemd-helper": "/usr/bin",
+  "deb-systemd-invoke": "/usr/bin",
+  "debconf": "/usr/bin",
+  "debconf-apt-progress": "/usr/bin",
+  "debconf-communicate": "/usr/bin",
+  "debconf-copydb": "/usr/bin",
+  "debconf-escape": "/usr/bin",
+  "debconf-get-selections": "/usr/bin",
+  "debconf-getlang": "/usr/bin",
+  "debconf-loadtemplate": "/usr/bin",
+  "debconf-mergetemplate": "/usr/bin",
+  "debconf-set-selections": "/usr/bin",
+  "debconf-show": "/usr/bin",
+  "debugfs": "/usr/sbin",
+  "decode_tm6000": "/usr/bin",
+  "delgroup": "/usr/sbin",
+  "deluser": "/usr/sbin",
+  "depmod": "/usr/sbin",
+  "devlink": "/usr/sbin",
+  "df": "/usr/bin",
+  "dh_bash-completion": "/usr/bin",
+  "dh_installxmlcatalogs": "/usr/bin",
+  "dhcpcd": "/usr/sbin",
+  "diff": "/usr/bin",
+  "diff3": "/usr/bin",
+  "dir": "/usr/bin",
+  "dircolors": "/usr/bin",
+  "dirmngr": "/usr/bin",
+  "dirmngr-client": "/usr/bin",
+  "dirname": "/usr/bin",
+  "dmesg": "/usr/bin",
+  "dmidecode": "/usr/sbin",
+  "dmsetup": "/usr/sbin",
+  "dmstats": "/usr/sbin",
+  "dnsdomainname": "/usr/bin",
+  "dnsmasq": "/usr/sbin",
+  "docker": "/usr/bin",
+  "docker-proxy": "/usr/bin",
+  "dockerd": "/usr/bin",
+  "dockerd-rootless-setuptool.sh": "/usr/bin",
+  "dockerd-rootless.sh": "/usr/bin",
+  "domainname": "/usr/bin",
+  "dos2unix": "/usr/bin",
+  "dosfsck": "/usr/sbin",
+  "dosfslabel": "/usr/sbin",
+  "dpkg": "/usr/bin",
+  "dpkg-architecture": "/usr/bin",
+  "dpkg-buildapi": "/usr/bin",
+  "dpkg-buildflags": "/usr/bin",
+  "dpkg-buildpackage": "/usr/bin",
+  "dpkg-buildtree": "/usr/bin",
+  "dpkg-checkbuilddeps": "/usr/bin",
+  "dpkg-deb": "/usr/bin",
+  "dpkg-distaddfile": "/usr/bin",
+  "dpkg-divert": "/usr/bin",
+  "dpkg-genbuildinfo": "/usr/bin",
+  "dpkg-genchanges": "/usr/bin",
+  "dpkg-gencontrol": "/usr/bin",
+  "dpkg-gensymbols": "/usr/bin",
+  "dpkg-maintscript-helper": "/usr/bin",
+  "dpkg-mergechangelogs": "/usr/bin",
+  "dpkg-name": "/usr/bin",
+  "dpkg-parsechangelog": "/usr/bin",
+  "dpkg-preconfigure": "/usr/sbin",
+  "dpkg-query": "/usr/bin",
+  "dpkg-realpath": "/usr/bin",
+  "dpkg-reconfigure": "/usr/sbin",
+  "dpkg-scanpackages": "/usr/bin",
+  "dpkg-scansources": "/usr/bin",
+  "dpkg-shlibdeps": "/usr/bin",
+  "dpkg-source": "/usr/bin",
+  "dpkg-split": "/usr/bin",
+  "dpkg-statoverride": "/usr/bin",
+  "dpkg-trigger": "/usr/bin",
+  "dpkg-vendor": "/usr/bin",
+  "dtagnames": "/usr/bin",
+  "dtc": "/usr/bin",
+  "dtdiff": "/usr/bin",
+  "dtmerge": "/usr/bin",
+  "dtoverlay": "/usr/bin",
+  "dtparam": "/usr/bin",
+  "du": "/usr/bin",
+  "dump.exfat": "/usr/sbin",
+  "dumpe2fs": "/usr/sbin",
+  "dumpkeys": "/usr/bin",
+  "e2freefrag": "/usr/sbin",
+  "e2fsck": "/usr/sbin",
+  "e2image": "/usr/sbin",
+  "e2label": "/usr/sbin",
+  "e2mmpstatus": "/usr/sbin",
+  "e2scrub": "/usr/sbin",
+  "e2scrub_all": "/usr/sbin",
+  "e2undo": "/usr/sbin",
+  "e4crypt": "/usr/sbin",
+  "e4defrag": "/usr/sbin",
+  "eatmydata": "/usr/bin",
+  "ebtables": "/usr/sbin",
+  "ebtables-nft": "/usr/sbin",
+  "ebtables-nft-restore": "/usr/sbin",
+  "ebtables-nft-save": "/usr/sbin",
+  "ebtables-restore": "/usr/sbin",
+  "ebtables-save": "/usr/sbin",
+  "ebtables-translate": "/usr/sbin",
+  "ec2metadata": "/usr/bin",
+  "echo": "/usr/bin",
+  "ed": "/usr/bin",
+  "editor": "/usr/bin",
+  "eepdump": "/usr/bin",
+  "eepflash.sh": "/usr/bin",
+  "eepmake": "/usr/bin",
+  "egrep": "/usr/bin",
+  "eject": "/usr/bin",
+  "elfedit": "/usr/bin",
+  "enc2xs": "/usr/bin",
+  "encguess": "/usr/bin",
+  "env": "/usr/bin",
+  "envsubst": "/usr/bin",
+  "eqn": "/usr/bin",
+  "ethtool": "/usr/sbin",
+  "ex": "/usr/bin",
+  "exfat2img": "/usr/sbin",
+  "exfatlabel": "/usr/sbin",
+  "expand": "/usr/bin",
+  "expiry": "/usr/bin",
+  "expr": "/usr/bin",
+  "factor": "/usr/bin",
+  "faillock": "/usr/sbin",
+  "faked-sysv": "/usr/bin",
+  "faked-tcp": "/usr/bin",
+  "fakeroot-sysv": "/usr/bin",
+  "fakeroot-tcp": "/usr/bin",
+  "fallocate": "/usr/bin",
+  "false": "/usr/bin",
+  "fatlabel": "/usr/sbin",
+  "fbset": "/usr/bin",
+  "fbtest": "/usr/bin",
+  "fdisk": "/usr/sbin",
+  "fdtdump": "/usr/bin",
+  "fdtget": "/usr/bin",
+  "fdtoverlay": "/usr/bin",
+  "fdtput": "/usr/bin",
+  "fgconsole": "/usr/bin",
+  "fgrep": "/usr/bin",
+  "file": "/usr/bin",
+  "filefrag": "/usr/sbin",
+  "find": "/usr/bin",
+  "findfs": "/usr/sbin",
+  "findmnt": "/usr/bin",
+  "fixparts": "/usr/sbin",
+  "flashrom": "/usr/sbin",
+  "flock": "/usr/bin",
+  "fmt": "/usr/bin",
+  "fold": "/usr/bin",
+  "free": "/usr/bin",
+  "fsck": "/usr/sbin",
+  "fsck.exfat": "/usr/sbin",
+  "fsck.ext2": "/usr/sbin",
+  "fsck.ext3": "/usr/sbin",
+  "fsck.ext4": "/usr/sbin",
+  "fsck.fat": "/usr/sbin",
+  "fsck.msdos": "/usr/sbin",
+  "fsck.vfat": "/usr/sbin",
+  "fsfreeze": "/usr/sbin",
+  "fsnotifywait": "/usr/bin",
+  "fsnotifywatch": "/usr/bin",
+  "fstab-decode": "/usr/sbin",
+  "fstrim": "/usr/sbin",
+  "fullcircle": "/usr/bin",
+  "funzip": "/usr/bin",
+  "fuser": "/usr/bin",
+  "fusermount": "/usr/bin",
+  "fusermount3": "/usr/bin",
+  "g++": "/usr/bin",
+  "g++-14": "/usr/bin",
+  "gatttool": "/usr/bin",
+  "gcc": "/usr/bin",
+  "gcc-14": "/usr/bin",
+  "gcc-ar": "/usr/bin",
+  "gcc-ar-14": "/usr/bin",
+  "gcc-nm": "/usr/bin",
+  "gcc-nm-14": "/usr/bin",
+  "gcc-ranlib": "/usr/bin",
+  "gcc-ranlib-14": "/usr/bin",
+  "gcore": "/usr/bin",
+  "gcov": "/usr/bin",
+  "gcov-14": "/usr/bin",
+  "gcov-dump": "/usr/bin",
+  "gcov-dump-14": "/usr/bin",
+  "gcov-tool": "/usr/bin",
+  "gcov-tool-14": "/usr/bin",
+  "gdb": "/usr/bin",
+  "gdb-add-index": "/usr/bin",
+  "gdbtui": "/usr/bin",
+  "gdisk": "/usr/sbin",
+  "gencat": "/usr/bin",
+  "genl": "/usr/sbin",
+  "geqn": "/usr/bin",
+  "getcap": "/usr/sbin",
+  "getcifsacl": "/usr/bin",
+  "getconf": "/usr/bin",
+  "getent": "/usr/bin",
+  "getkeycodes": "/usr/bin",
+  "getopt": "/usr/bin",
+  "getpcaps": "/usr/sbin",
+  "gettext": "/usr/bin",
+  "gettext.sh": "/usr/bin",
+  "getty": "/usr/sbin",
+  "git": "/usr/bin",
+  "git-receive-pack": "/usr/bin",
+  "git-shell": "/usr/bin",
+  "git-upload-archive": "/usr/bin",
+  "git-upload-pack": "/usr/bin",
+  "gmake": "/usr/bin",
+  "gp-archive": "/usr/bin",
+  "gp-collect-app": "/usr/bin",
+  "gp-display-html": "/usr/bin",
+  "gp-display-src": "/usr/bin",
+  "gp-display-text": "/usr/bin",
+  "gpasswd": "/usr/bin",
+  "gpg": "/usr/bin",
+  "gpg-agent": "/usr/bin",
+  "gpg-connect-agent": "/usr/bin",
+  "gpg-mail-tube": "/usr/bin",
+  "gpg-wks-client": "/usr/bin",
+  "gpgconf": "/usr/bin",
+  "gpgparsemail": "/usr/bin",
+  "gpgsm": "/usr/bin",
+  "gpgsplit": "/usr/bin",
+  "gpgtar": "/usr/bin",
+  "gpgv": "/usr/bin",
+  "gpic": "/usr/bin",
+  "gpiodetect": "/usr/bin",
+  "gpioget": "/usr/bin",
+  "gpioinfo": "/usr/bin",
+  "gpiomon": "/usr/bin",
+  "gpionotify": "/usr/bin",
+  "gpioset": "/usr/bin",
+  "gprof": "/usr/bin",
+  "gprofng": "/usr/bin",
+  "gprofng-archive": "/usr/bin",
+  "gprofng-collect-app": "/usr/bin",
+  "gprofng-display-html": "/usr/bin",
+  "gprofng-display-src": "/usr/bin",
+  "gprofng-display-text": "/usr/bin",
+  "grep": "/usr/bin",
+  "groff": "/usr/bin",
+  "grog": "/usr/bin",
+  "grops": "/usr/bin",
+  "grotty": "/usr/bin",
+  "groupadd": "/usr/sbin",
+  "groupdel": "/usr/sbin",
+  "groupmod": "/usr/sbin",
+  "groups": "/usr/bin",
+  "growpart": "/usr/bin",
+  "grpck": "/usr/sbin",
+  "grpconv": "/usr/sbin",
+  "grpunconv": "/usr/sbin",
+  "gstack": "/usr/bin",
+  "gtbl": "/usr/bin",
+  "gunzip": "/usr/bin",
+  "gzexe": "/usr/bin",
+  "gzip": "/usr/bin",
+  "h2ph": "/usr/bin",
+  "h2xs": "/usr/bin",
+  "halt": "/usr/sbin",
+  "hardlink": "/usr/bin",
+  "hciattach": "/usr/bin",
+  "hciconfig": "/usr/bin",
+  "hcitool": "/usr/bin",
+  "hd": "/usr/bin",
+  "head": "/usr/bin",
+  "helpztags": "/usr/bin",
+  "hex2hcd": "/usr/bin",
+  "hexdump": "/usr/bin",
+  "hostid": "/usr/bin",
+  "hostname": "/usr/bin",
+  "hostnamectl": "/usr/bin",
+  "htop": "/usr/bin",
+  "iconv": "/usr/bin",
+  "iconvconfig": "/usr/sbin",
+  "id": "/usr/bin",
+  "iecset": "/usr/bin",
+  "ifconfig": "/usr/sbin",
+  "infocmp": "/usr/bin",
+  "infotocap": "/usr/bin",
+  "init": "/usr/sbin",
+  "inotifywait": "/usr/bin",
+  "inotifywatch": "/usr/bin",
+  "insmod": "/usr/sbin",
+  "install": "/usr/bin",
+  "install-sgmlcatalog": "/usr/sbin",
+  "installkernel": "/usr/sbin",
+  "instmodsh": "/usr/bin",
+  "invoke-rc.d": "/usr/sbin",
+  "ionice": "/usr/bin",
+  "ip": "/usr/sbin",
+  "ip6tables": "/usr/sbin",
+  "ip6tables-apply": "/usr/sbin",
+  "ip6tables-legacy": "/usr/sbin",
+  "ip6tables-legacy-restore": "/usr/sbin",
+  "ip6tables-legacy-save": "/usr/sbin",
+  "ip6tables-nft": "/usr/sbin",
+  "ip6tables-nft-restore": "/usr/sbin",
+  "ip6tables-nft-save": "/usr/sbin",
+  "ip6tables-restore": "/usr/sbin",
+  "ip6tables-restore-translate": "/usr/sbin",
+  "ip6tables-save": "/usr/sbin",
+  "ip6tables-translate": "/usr/sbin",
+  "ipcmk": "/usr/bin",
+  "ipcrm": "/usr/bin",
+  "ipcs": "/usr/bin",
+  "ipmaddr": "/usr/sbin",
+  "iptables": "/usr/sbin",
+  "iptables-apply": "/usr/sbin",
+  "iptables-legacy": "/usr/sbin",
+  "iptables-legacy-restore": "/usr/sbin",
+  "iptables-legacy-save": "/usr/sbin",
+  "iptables-nft": "/usr/sbin",
+  "iptables-nft-restore": "/usr/sbin",
+  "iptables-nft-save": "/usr/sbin",
+  "iptables-restore": "/usr/sbin",
+  "iptables-restore-translate": "/usr/sbin",
+  "iptables-save": "/usr/sbin",
+  "iptables-translate": "/usr/sbin",
+  "iptables-xml": "/usr/bin",
+  "iptunnel": "/usr/sbin",
+  "ir-ctl": "/usr/bin",
+  "ischroot": "/usr/bin",
+  "isosize": "/usr/sbin",
+  "ivtv-ctl": "/usr/bin",
+  "iw": "/usr/sbin",
+  "iwconfig": "/usr/sbin",
+  "iwevent": "/usr/sbin",
+  "iwgetid": "/usr/sbin",
+  "iwlist": "/usr/sbin",
+  "iwpriv": "/usr/sbin",
+  "iwspy": "/usr/sbin",
+  "join": "/usr/bin",
+  "journalctl": "/usr/bin",
+  "json-patch-jsondiff": "/usr/bin",
+  "json_pp": "/usr/bin",
+  "jsonpatch": "/usr/bin",
+  "jsonpointer": "/usr/bin",
+  "jsonschema": "/usr/bin",
+  "kbd_mode": "/usr/bin",
+  "kbdinfo": "/usr/bin",
+  "kbdrate": "/usr/sbin",
+  "kbxutil": "/usr/bin",
+  "kdtc": "/usr/bin",
+  "kernel-install": "/usr/bin",
+  "kill": "/usr/bin",
+  "killall": "/usr/bin",
+  "killall5": "/usr/sbin",
+  "kmod": "/usr/bin",
+  "kmsblank": "/usr/bin",
+  "kmsprint": "/usr/bin",
+  "kmstest": "/usr/bin",
+  "l2ping": "/usr/bin",
+  "l2test": "/usr/bin",
+  "ld": "/usr/bin",
+  "ld.bfd": "/usr/bin",
+  "ld.so": "/usr/bin",
+  "ldattach": "/usr/sbin",
+  "ldconfig": "/usr/sbin",
+  "ldd": "/usr/bin",
+  "less": "/usr/bin",
+  "lessecho": "/usr/bin",
+  "lessfile": "/usr/bin",
+  "lesskey": "/usr/bin",
+  "lesspipe": "/usr/bin",
+  "lexgrog": "/usr/bin",
+  "libnetcfg": "/usr/bin",
+  "link": "/usr/bin",
+  "linux-check-removal": "/usr/bin",
+  "linux-run-hooks": "/usr/bin",
+  "linux-update-symlinks": "/usr/bin",
+  "linux-version": "/usr/bin",
+  "linux32": "/usr/bin",
+  "linux64": "/usr/bin",
+  "ln": "/usr/bin",
+  "lnstat": "/usr/bin",
+  "loadkeys": "/usr/bin",
+  "loadunimap": "/usr/bin",
+  "locale": "/usr/bin",
+  "locale-gen": "/usr/sbin",
+  "localectl": "/usr/bin",
+  "localedef": "/usr/bin",
+  "logger": "/usr/bin",
+  "login": "/usr/bin",
+  "loginctl": "/usr/bin",
+  "logname": "/usr/bin",
+  "logrotate": "/usr/sbin",
+  "logsave": "/usr/sbin",
+  "look": "/usr/bin",
+  "losetup": "/usr/sbin",
+  "lowntfs-3g": "/usr/bin",
+  "ls": "/usr/bin",
+  "lsattr": "/usr/bin",
+  "lsb_release": "/usr/bin",
+  "lsblk": "/usr/bin",
+  "lscpu": "/usr/bin",
+  "lsinitramfs": "/usr/bin",
+  "lsipc": "/usr/bin",
+  "lslocks": "/usr/bin",
+  "lslogins": "/usr/bin",
+  "lsmem": "/usr/bin",
+  "lsmod": "/usr/sbin",
+  "lsns": "/usr/bin",
+  "lspci": "/usr/bin",
+  "lspgpot": "/usr/bin",
+  "lsusb": "/usr/bin",
+  "lto-dump": "/usr/bin",
+  "lto-dump-14": "/usr/bin",
+  "lua5.1": "/usr/bin",
+  "luac5.1": "/usr/bin",
+  "luajit": "/usr/bin",
+  "lzcat": "/usr/bin",
+  "lzcmp": "/usr/bin",
+  "lzdiff": "/usr/bin",
+  "lzegrep": "/usr/bin",
+  "lzfgrep": "/usr/bin",
+  "lzgrep": "/usr/bin",
+  "lzless": "/usr/bin",
+  "lzma": "/usr/bin",
+  "lzmainfo": "/usr/bin",
+  "lzmore": "/usr/bin",
+  "mac2unix": "/usr/bin",
+  "make": "/usr/bin",
+  "make-first-existing-target": "/usr/bin",
+  "man": "/usr/bin",
+  "man-recode": "/usr/bin",
+  "mandb": "/usr/bin",
+  "manpath": "/usr/bin",
+  "mapscrn": "/usr/bin",
+  "markdown-it": "/usr/bin",
+  "mawk": "/usr/bin",
+  "mcookie": "/usr/bin",
+  "md5sum": "/usr/bin",
+  "media-ctl": "/usr/bin",
+  "migrate-pubring-from-classic-gpg": "/usr/bin",
+  "mii-tool": "/usr/sbin",
+  "mk_modmap": "/usr/bin",
+  "mkdir": "/usr/bin",
+  "mkdosfs": "/usr/sbin",
+  "mke2fs": "/usr/sbin",
+  "mkfifo": "/usr/bin",
+  "mkfs": "/usr/sbin",
+  "mkfs.exfat": "/usr/sbin",
+  "mkfs.ext2": "/usr/sbin",
+  "mkfs.ext3": "/usr/sbin",
+  "mkfs.ext4": "/usr/sbin",
+  "mkfs.fat": "/usr/sbin",
+  "mkfs.msdos": "/usr/sbin",
+  "mkfs.ntfs": "/usr/sbin",
+  "mkfs.vfat": "/usr/sbin",
+  "mkhomedir_helper": "/usr/sbin",
+  "mkinitramfs": "/usr/sbin",
+  "mklost+found": "/usr/sbin",
+  "mknod": "/usr/bin",
+  "mkntfs": "/usr/sbin",
+  "mkswap": "/usr/sbin",
+  "mktemp": "/usr/bin",
+  "mkvextract": "/usr/bin",
+  "mkvinfo": "/usr/bin",
+  "mkvmerge": "/usr/bin",
+  "mkvpropedit": "/usr/bin",
+  "modeline2fb": "/usr/bin",
+  "modinfo": "/usr/sbin",
+  "modprobe": "/usr/sbin",
+  "more": "/usr/bin",
+  "mount": "/usr/bin",
+  "mount.cifs": "/usr/sbin",
+  "mount.fuse": "/usr/sbin",
+  "mount.fuse3": "/usr/sbin",
+  "mount.lowntfs-3g": "/usr/sbin",
+  "mount.ntfs": "/usr/sbin",
+  "mount.ntfs-3g": "/usr/sbin",
+  "mount.smb3": "/usr/sbin",
+  "mountpoint": "/usr/bin",
+  "mpris-proxy": "/usr/bin",
+  "mt": "/usr/bin",
+  "mt-gnu": "/usr/bin",
+  "mv": "/usr/bin",
+  "namei": "/usr/bin",
+  "nameif": "/usr/sbin",
+  "nano": "/usr/bin",
+  "nawk": "/usr/bin",
+  "nc": "/usr/bin",
+  "nc.openbsd": "/usr/bin",
+  "ncdu": "/usr/bin",
+  "neqn": "/usr/bin",
+  "netcat": "/usr/bin",
+  "netplan": "/usr/sbin",
+  "netstat": "/usr/bin",
+  "networkctl": "/usr/bin",
+  "newgrp": "/usr/bin",
+  "newusers": "/usr/sbin",
+  "nfnl_osf": "/usr/sbin",
+  "nft": "/usr/sbin",
+  "ngettext": "/usr/bin",
+  "nhlt-dmic-info": "/usr/bin",
+  "nice": "/usr/bin",
+  "nisdomainname": "/usr/bin",
+  "nl": "/usr/bin",
+  "nm": "/usr/bin",
+  "nm-online": "/usr/bin",
+  "nmcli": "/usr/bin",
+  "nmtui": "/usr/bin",
+  "nmtui-connect": "/usr/bin",
+  "nmtui-edit": "/usr/bin",
+  "nmtui-hostname": "/usr/bin",
+  "nohup": "/usr/bin",
+  "nologin": "/usr/sbin",
+  "normalizer": "/usr/bin",
+  "nproc": "/usr/bin",
+  "nroff": "/usr/bin",
+  "nsenter": "/usr/bin",
+  "nstat": "/usr/bin",
+  "ntfs-3g": "/usr/bin",
+  "ntfs-3g.probe": "/usr/bin",
+  "ntfscat": "/usr/bin",
+  "ntfsclone": "/usr/sbin",
+  "ntfscluster": "/usr/bin",
+  "ntfscmp": "/usr/bin",
+  "ntfscp": "/usr/sbin",
+  "ntfsdecrypt": "/usr/bin",
+  "ntfsfallocate": "/usr/bin",
+  "ntfsfix": "/usr/bin",
+  "ntfsinfo": "/usr/bin",
+  "ntfslabel": "/usr/sbin",
+  "ntfsls": "/usr/bin",
+  "ntfsmove": "/usr/bin",
+  "ntfsrecover": "/usr/bin",
+  "ntfsresize": "/usr/sbin",
+  "ntfssecaudit": "/usr/bin",
+  "ntfstruncate": "/usr/bin",
+  "ntfsundelete": "/usr/sbin",
+  "ntfsusermap": "/usr/bin",
+  "ntfswipe": "/usr/bin",
+  "numfmt": "/usr/bin",
+  "obexctl": "/usr/bin",
+  "objcopy": "/usr/bin",
+  "objdump": "/usr/bin",
+  "od": "/usr/bin",
+  "openssl": "/usr/bin",
+  "openvt": "/usr/bin",
+  "otpset": "/usr/bin",
+  "overlaycheck": "/usr/bin",
+  "ovmerge": "/usr/bin",
+  "p7zip": "/usr/bin",
+  "pager": "/usr/bin",
+  "pahole": "/usr/bin",
+  "pam-auth-update": "/usr/sbin",
+  "pam_getenv": "/usr/sbin",
+  "pam_namespace_helper": "/usr/sbin",
+  "pam_timestamp_check": "/usr/sbin",
+  "parted": "/usr/sbin",
+  "partprobe": "/usr/sbin",
+  "partx": "/usr/bin",
+  "passwd": "/usr/bin",
+  "paste": "/usr/bin",
+  "pastebinit": "/usr/bin",
+  "patch": "/usr/bin",
+  "pathchk": "/usr/bin",
+  "pbget": "/usr/bin",
+  "pbput": "/usr/bin",
+  "pbputs": "/usr/bin",
+  "pcilmr": "/usr/bin",
+  "pdb3": "/usr/bin",
+  "pdb3.13": "/usr/bin",
+  "pdwtags": "/usr/bin",
+  "peekfd": "/usr/bin",
+  "perl": "/usr/bin",
+  "perl5.40-aarch64-linux-gnu": "/usr/bin",
+  "perl5.40.1": "/usr/bin",
+  "perlbug": "/usr/bin",
+  "perldoc": "/usr/bin",
+  "perlivp": "/usr/bin",
+  "perlthanks": "/usr/bin",
+  "pfunct": "/usr/bin",
+  "pglobal": "/usr/bin",
+  "pgrep": "/usr/bin",
+  "pic": "/usr/bin",
+  "pico": "/usr/bin",
+  "piconv": "/usr/bin",
+  "pidof": "/usr/bin",
+  "pidwait": "/usr/bin",
+  "pigz": "/usr/bin",
+  "pinctrl": "/usr/bin",
+  "pinentry-curses": "/usr/bin",
+  "ping": "/usr/bin",
+  "ping4": "/usr/bin",
+  "ping6": "/usr/bin",
+  "pinky": "/usr/bin",
+  "pinout": "/usr/bin",
+  "pintest": "/usr/bin",
+  "pivot_root": "/usr/sbin",
+  "pkaction": "/usr/bin",
+  "pkcheck": "/usr/bin",
+  "pkg-config": "/usr/bin",
+  "pkgconf": "/usr/bin",
+  "pkill": "/usr/bin",
+  "pkttyagent": "/usr/bin",
+  "pl2pm": "/usr/bin",
+  "pldd": "/usr/bin",
+  "plipconfig": "/usr/sbin",
+  "plog": "/usr/bin",
+  "pmap": "/usr/bin",
+  "pod2html": "/usr/bin",
+  "pod2man": "/usr/bin",
+  "pod2text": "/usr/bin",
+  "pod2usage": "/usr/bin",
+  "podchecker": "/usr/bin",
+  "poff": "/usr/bin",
+  "pon": "/usr/bin",
+  "poweroff": "/usr/sbin",
+  "pppd": "/usr/sbin",
+  "pppdump": "/usr/sbin",
+  "pppoe-discovery": "/usr/sbin",
+  "pppstats": "/usr/sbin",
+  "pr": "/usr/bin",
+  "preconv": "/usr/bin",
+  "prefcnt": "/usr/bin",
+  "printenv": "/usr/bin",
+  "printf": "/usr/bin",
+  "prlimit": "/usr/bin",
+  "prove": "/usr/bin",
+  "prtstat": "/usr/bin",
+  "ps": "/usr/bin",
+  "psfaddtable": "/usr/bin",
+  "psfgettable": "/usr/bin",
+  "psfstriptable": "/usr/bin",
+  "psfxtable": "/usr/bin",
+  "pslog": "/usr/bin",
+  "pstree": "/usr/bin",
+  "pstree.x11": "/usr/bin",
+  "ptar": "/usr/bin",
+  "ptardiff": "/usr/bin",
+  "ptargrep": "/usr/bin",
+  "ptx": "/usr/bin",
+  "pwck": "/usr/sbin",
+  "pwconv": "/usr/sbin",
+  "pwd": "/usr/bin",
+  "pwdx": "/usr/bin",
+  "pwhistory_helper": "/usr/sbin",
+  "pwunconv": "/usr/sbin",
+  "py3clean": "/usr/bin",
+  "py3compile": "/usr/bin",
+  "py3versions": "/usr/bin",
+  "pybabel-python3": "/usr/bin",
+  "pydoc": "/usr/bin",
+  "pydoc3": "/usr/bin",
+  "pydoc3.13": "/usr/bin",
+  "pygettext3": "/usr/bin",
+  "pygettext3.13": "/usr/bin",
+  "pygmentize": "/usr/bin",
+  "python": "/usr/bin",
+  "python3": "/usr/bin",
+  "python3.13": "/usr/bin",
+  "pzstd": "/usr/bin",
+  "ranlib": "/usr/bin",
+  "rarp": "/usr/sbin",
+  "raspi-config": "/usr/bin",
+  "raspinfo": "/usr/bin",
+  "rbash": "/usr/bin",
+  "rcp": "/usr/bin",
+  "rctest": "/usr/bin",
+  "rdma": "/usr/bin",
+  "rds-ctl": "/usr/bin",
+  "readelf": "/usr/bin",
+  "readlink": "/usr/bin",
+  "readprofile": "/usr/sbin",
+  "realpath": "/usr/bin",
+  "reboot": "/usr/sbin",
+  "red": "/usr/bin",
+  "remove-shell": "/usr/sbin",
+  "rename-user": "/usr/bin",
+  "rename.ul": "/usr/bin",
+  "renice": "/usr/bin",
+  "reset": "/usr/bin",
+  "resize2fs": "/usr/sbin",
+  "rev": "/usr/bin",
+  "rfcomm": "/usr/bin",
+  "rfkill": "/usr/sbin",
+  "rgrep": "/usr/bin",
+  "rlogin": "/usr/bin",
+  "rm": "/usr/bin",
+  "rmdir": "/usr/bin",
+  "rmmod": "/usr/sbin",
+  "rmt": "/usr/sbin",
+  "rmt-tar": "/usr/sbin",
+  "rnano": "/usr/bin",
+  "rootlesskit": "/usr/bin",
+  "route": "/usr/sbin",
+  "routel": "/usr/bin",
+  "rpcgen": "/usr/bin",
+  "rpi-bootloader-key-convert": "/usr/bin",
+  "rpi-bootloader-version": "/usr/bin",
+  "rpi-connect": "/usr/bin",
+  "rpi-connectd": "/usr/bin",
+  "rpi-eeprom-config": "/usr/bin",
+  "rpi-eeprom-digest": "/usr/bin",
+  "rpi-eeprom-update": "/usr/bin",
+  "rpi-keyboard-config": "/usr/bin",
+  "rpi-keyboard-fw-update": "/usr/bin",
+  "rpi-otp-private-key": "/usr/bin",
+  "rpi-sign-bootcode": "/usr/bin",
+  "rpi-systemd-config": "/usr/bin",
+  "rpi-update": "/usr/bin",
+  "rpi-usb-gadget": "/usr/bin",
+  "rpicam-hello": "/usr/bin",
+  "rpicam-jpeg": "/usr/bin",
+  "rpicam-raw": "/usr/bin",
+  "rpicam-still": "/usr/bin",
+  "rpicam-vid": "/usr/bin",
+  "rrsync": "/usr/bin",
+  "rsh": "/usr/bin",
+  "rsync": "/usr/bin",
+  "rsync-ssl": "/usr/bin",
+  "rtacct": "/usr/sbin",
+  "rtcwake": "/usr/sbin",
+  "rtmon": "/usr/sbin",
+  "rtstat": "/usr/bin",
+  "run-parts": "/usr/bin",
+  "run0": "/usr/bin",
+  "runc": "/usr/bin",
+  "runcon": "/usr/bin",
+  "runlevel": "/usr/sbin",
+  "runuser": "/usr/sbin",
+  "rview": "/usr/bin",
+  "savelog": "/usr/bin",
+  "scalar": "/usr/bin",
+  "scncopy": "/usr/bin",
+  "scp": "/usr/bin",
+  "screendump": "/usr/bin",
+  "script": "/usr/bin",
+  "scriptlive": "/usr/bin",
+  "scriptreplay": "/usr/bin",
+  "sdiff": "/usr/bin",
+  "sdptool": "/usr/bin",
+  "sed": "/usr/bin",
+  "select-editor": "/usr/bin",
+  "sensible-browser": "/usr/bin",
+  "sensible-editor": "/usr/bin",
+  "sensible-pager": "/usr/bin",
+  "sensible-terminal": "/usr/bin",
+  "seq": "/usr/bin",
+  "service": "/usr/sbin",
+  "setarch": "/usr/bin",
+  "setcap": "/usr/sbin",
+  "setcifsacl": "/usr/bin",
+  "setfont": "/usr/bin",
+  "setkeycodes": "/usr/bin",
+  "setleds": "/usr/bin",
+  "setlogcons": "/usr/bin",
+  "setmetamode": "/usr/bin",
+  "setpci": "/usr/bin",
+  "setpriv": "/usr/bin",
+  "setsid": "/usr/bin",
+  "setterm": "/usr/bin",
+  "setupcon": "/usr/bin",
+  "setvesablank": "/usr/sbin",
+  "setvtrgb": "/usr/bin",
+  "sfdisk": "/usr/sbin",
+  "sftp": "/usr/bin",
+  "sg": "/usr/bin",
+  "sgdisk": "/usr/sbin",
+  "sh": "/usr/bin",
+  "sha1sum": "/usr/bin",
+  "sha224sum": "/usr/bin",
+  "sha256sum": "/usr/bin",
+  "sha384sum": "/usr/bin",
+  "sha512sum": "/usr/bin",
+  "shadowconfig": "/usr/sbin",
+  "shasum": "/usr/bin",
+  "showconsolefont": "/usr/bin",
+  "showkey": "/usr/bin",
+  "shred": "/usr/bin",
+  "shuf": "/usr/bin",
+  "shutdown": "/usr/sbin",
+  "size": "/usr/bin",
+  "skill": "/usr/bin",
+  "slabtop": "/usr/bin",
+  "slattach": "/usr/sbin",
+  "sleep": "/usr/bin",
+  "smb2-quota": "/usr/bin",
+  "smbinfo": "/usr/bin",
+  "snice": "/usr/bin",
+  "soelim": "/usr/bin",
+  "sort": "/usr/bin",
+  "speaker-test": "/usr/bin",
+  "splain": "/usr/bin",
+  "split": "/usr/bin",
+  "splitfont": "/usr/bin",
+  "sq": "/usr/bin",
+  "sqv": "/usr/bin",
+  "ss": "/usr/bin",
+  "ssh": "/usr/bin",
+  "ssh-add": "/usr/bin",
+  "ssh-agent": "/usr/bin",
+  "ssh-argv0": "/usr/bin",
+  "ssh-copy-id": "/usr/bin",
+  "ssh-import-id": "/usr/bin",
+  "ssh-import-id-gh": "/usr/bin",
+  "ssh-import-id-lp": "/usr/bin",
+  "ssh-keygen": "/usr/bin",
+  "ssh-keyscan": "/usr/bin",
+  "sshd": "/usr/sbin",
+  "start-stop-daemon": "/usr/sbin",
+  "stat": "/usr/bin",
+  "stdbuf": "/usr/bin",
+  "strace": "/usr/bin",
+  "strace-log-merge": "/usr/bin",
+  "streamzip": "/usr/bin",
+  "strings": "/usr/bin",
+  "strip": "/usr/bin",
+  "stty": "/usr/bin",
+  "su": "/usr/bin",
+  "sudo": "/usr/bin",
+  "sudo_logsrvd": "/usr/sbin",
+  "sudo_sendlog": "/usr/sbin",
+  "sudoedit": "/usr/bin",
+  "sudoreplay": "/usr/bin",
+  "sulogin": "/usr/sbin",
+  "sum": "/usr/bin",
+  "swaplabel": "/usr/sbin",
+  "swapoff": "/usr/sbin",
+  "swapon": "/usr/sbin",
+  "switch_root": "/usr/sbin",
+  "sync": "/usr/bin",
+  "syscse": "/usr/bin",
+  "sysctl": "/usr/sbin",
+  "systemctl": "/usr/bin",
+  "systemd-ac-power": "/usr/bin",
+  "systemd-analyze": "/usr/bin",
+  "systemd-ask-password": "/usr/bin",
+  "systemd-cat": "/usr/bin",
+  "systemd-cgls": "/usr/bin",
+  "systemd-cgtop": "/usr/bin",
+  "systemd-confext": "/usr/bin",
+  "systemd-creds": "/usr/bin",
+  "systemd-delta": "/usr/bin",
+  "systemd-detect-virt": "/usr/bin",
+  "systemd-escape": "/usr/bin",
+  "systemd-firstboot": "/usr/bin",
+  "systemd-hwdb": "/usr/bin",
+  "systemd-id128": "/usr/bin",
+  "systemd-inhibit": "/usr/bin",
+  "systemd-machine-id-setup": "/usr/bin",
+  "systemd-mount": "/usr/bin",
+  "systemd-notify": "/usr/bin",
+  "systemd-path": "/usr/bin",
+  "systemd-run": "/usr/bin",
+  "systemd-socket-activate": "/usr/bin",
+  "systemd-stdio-bridge": "/usr/bin",
+  "systemd-sysext": "/usr/bin",
+  "systemd-sysusers": "/usr/bin",
+  "systemd-tmpfiles": "/usr/bin",
+  "systemd-tty-ask-password-agent": "/usr/bin",
+  "systemd-umount": "/usr/bin",
+  "systemd-vpick": "/usr/bin",
+  "tabs": "/usr/bin",
+  "tac": "/usr/bin",
+  "tail": "/usr/bin",
+  "tar": "/usr/bin",
+  "tarcat": "/usr/sbin",
+  "taskset": "/usr/bin",
+  "tbl": "/usr/bin",
+  "tc": "/usr/sbin",
+  "tee": "/usr/bin",
+  "telinit": "/usr/sbin",
+  "tempfile": "/usr/bin",
+  "test": "/usr/bin",
+  "tic": "/usr/bin",
+  "timedatectl": "/usr/bin",
+  "timeout": "/usr/bin",
+  "tipc": "/usr/sbin",
+  "tload": "/usr/bin",
+  "toe": "/usr/bin",
+  "top": "/usr/bin",
+  "touch": "/usr/bin",
+  "tput": "/usr/bin",
+  "tr": "/usr/bin",
+  "troff": "/usr/bin",
+  "true": "/usr/bin",
+  "truncate": "/usr/bin",
+  "tset": "/usr/bin",
+  "tsort": "/usr/bin",
+  "tty": "/usr/bin",
+  "tune.exfat": "/usr/sbin",
+  "tune2fs": "/usr/sbin",
+  "tzselect": "/usr/bin",
+  "ucf": "/usr/bin",
+  "ucfq": "/usr/bin",
+  "ucfr": "/usr/bin",
+  "uclampset": "/usr/bin",
+  "udevadm": "/usr/bin",
+  "udisksctl": "/usr/bin",
+  "ul": "/usr/bin",
+  "umount": "/usr/bin",
+  "umount.udisks2": "/usr/sbin",
+  "uname": "/usr/bin",
+  "uncompress": "/usr/bin",
+  "unexpand": "/usr/bin",
+  "unicode_start": "/usr/bin",
+  "unicode_stop": "/usr/bin",
+  "uniq": "/usr/bin",
+  "unix2dos": "/usr/bin",
+  "unix2mac": "/usr/bin",
+  "unix_chkpwd": "/usr/sbin",
+  "unix_update": "/usr/sbin",
+  "unlink": "/usr/bin",
+  "unlzma": "/usr/bin",
+  "unmkinitramfs": "/usr/bin",
+  "unpigz": "/usr/bin",
+  "unshare": "/usr/bin",
+  "unxz": "/usr/bin",
+  "unzip": "/usr/bin",
+  "unzipsfx": "/usr/bin",
+  "unzstd": "/usr/bin",
+  "update-alternatives": "/usr/bin",
+  "update-ca-certificates": "/usr/sbin",
+  "update-catalog": "/usr/sbin",
+  "update-initramfs": "/usr/sbin",
+  "update-locale": "/usr/sbin",
+  "update-mime-database": "/usr/bin",
+  "update-passwd": "/usr/sbin",
+  "update-pciids": "/usr/sbin",
+  "update-rc.d": "/usr/sbin",
+  "update-shells": "/usr/sbin",
+  "update-xmlcatalog": "/usr/sbin",
+  "uptime": "/usr/bin",
+  "usb-devices": "/usr/bin",
+  "usb_modeswitch": "/usr/sbin",
+  "usb_modeswitch_dispatcher": "/usr/sbin",
+  "usbhid-dump": "/usr/bin",
+  "usbreset": "/usr/bin",
+  "useradd": "/usr/sbin",
+  "userdel": "/usr/sbin",
+  "usermod": "/usr/sbin",
+  "users": "/usr/bin",
+  "uuid": "/usr/bin",
+  "v4l2-compliance": "/usr/bin",
+  "v4l2-ctl": "/usr/bin",
+  "v4l2-dbg": "/usr/sbin",
+  "v4l2-sysfs-path": "/usr/bin",
+  "validlocale": "/usr/sbin",
+  "varlinkctl": "/usr/bin",
+  "vcgencmd": "/usr/bin",
+  "vclog": "/usr/bin",
+  "vcmailbox": "/usr/bin",
+  "vcs-run": "/usr/bin",
+  "vcstime": "/usr/sbin",
+  "vdir": "/usr/bin",
+  "vdpa": "/usr/sbin",
+  "vi": "/usr/bin",
+  "view": "/usr/bin",
+  "vigr": "/usr/sbin",
+  "vim.tiny": "/usr/bin",
+  "vipw": "/usr/sbin",
+  "visudo": "/usr/sbin",
+  "vmstat": "/usr/bin",
+  "w": "/usr/bin",
+  "wall": "/usr/bin",
+  "watch": "/usr/bin",
+  "watchgnupg": "/usr/bin",
+  "wc": "/usr/bin",
+  "wcurl": "/usr/bin",
+  "wdctl": "/usr/bin",
+  "wget": "/usr/bin",
+  "whatis": "/usr/bin",
+  "whereis": "/usr/bin",
+  "which": "/usr/bin",
+  "which.debianutils": "/usr/bin",
+  "whiptail": "/usr/bin",
+  "who": "/usr/bin",
+  "whoami": "/usr/bin",
+  "wipefs": "/usr/sbin",
+  "wpa_action": "/usr/sbin",
+  "wpa_cli": "/usr/sbin",
+  "wpa_passphrase": "/usr/bin",
+  "wpa_supplicant": "/usr/sbin",
+  "write": "/usr/bin",
+  "xargs": "/usr/bin",
+  "xauth": "/usr/bin",
+  "xdg-user-dir": "/usr/bin",
+  "xdg-user-dirs-update": "/usr/bin",
+  "xsubpp": "/usr/bin",
+  "xtables-legacy-multi": "/usr/sbin",
+  "xtables-monitor": "/usr/sbin",
+  "xtables-nft-multi": "/usr/sbin",
+  "xz": "/usr/bin",
+  "xzcat": "/usr/bin",
+  "xzcmp": "/usr/bin",
+  "xzdiff": "/usr/bin",
+  "xzegrep": "/usr/bin",
+  "xzfgrep": "/usr/bin",
+  "xzgrep": "/usr/bin",
+  "xzless": "/usr/bin",
+  "xzmore": "/usr/bin",
+  "yes": "/usr/bin",
+  "ypdomainname": "/usr/bin",
+  "zcat": "/usr/bin",
+  "zcmp": "/usr/bin",
+  "zdiff": "/usr/bin",
+  "zdump": "/usr/bin",
+  "zegrep": "/usr/bin",
+  "zfgrep": "/usr/bin",
+  "zforce": "/usr/bin",
+  "zgrep": "/usr/bin",
+  "zic": "/usr/sbin",
+  "zip": "/usr/bin",
+  "zipcloak": "/usr/bin",
+  "zipdetails": "/usr/bin",
+  "zipgrep": "/usr/bin",
+  "zipinfo": "/usr/bin",
+  "zipnote": "/usr/bin",
+  "zipsplit": "/usr/bin",
+  "zless": "/usr/bin",
+  "zmore": "/usr/bin",
+  "znew": "/usr/bin",
+  "zramctl": "/usr/sbin",
+  "zstd": "/usr/bin",
+  "zstdcat": "/usr/bin",
+  "zstdgrep": "/usr/bin",
+  "zstdless": "/usr/bin",
+  "zstdmt": "/usr/bin"
+ },
+ "owners": {
+  "/usr/bin/7z": [
+   "7zip"
+  ],
+  "/usr/bin/7za": [
+   "7zip"
+  ],
+  "/usr/bin/7zr": [
+   "7zip"
+  ],
+  "/usr/bin/[": [
+   "coreutils"
+  ],
+  "/usr/bin/aa-enabled": [
+   "apparmor"
+  ],
+  "/usr/bin/aa-exec": [
+   "apparmor"
+  ],
+  "/usr/bin/aa-features-abi": [
+   "apparmor"
+  ],
+  "/usr/bin/aarch64-linux-gnu-addr2line": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-ar": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-as": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-c++filt": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-cpp": [
+   "cpp-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-cpp-14": [
+   "cpp-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-elfedit": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-g++": [
+   "g++-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-g++-14": [
+   "g++-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-ar": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-ar-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-nm": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-nm-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-ranlib": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcc-ranlib-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov-dump": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov-dump-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov-tool": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gcov-tool-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-gprof": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-ld": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-ld.bfd": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-lto-dump": [
+   "gcc-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-lto-dump-14": [
+   "gcc-14-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-nm": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-objcopy": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-objdump": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-pkg-config": [
+   "pkgconf"
+  ],
+  "/usr/bin/aarch64-linux-gnu-pkgconf": [
+   "pkgconf"
+  ],
+  "/usr/bin/aarch64-linux-gnu-ranlib": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-readelf": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-run": [
+   "gdb"
+  ],
+  "/usr/bin/aarch64-linux-gnu-size": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-strings": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aarch64-linux-gnu-strip": [
+   "binutils-aarch64-linux-gnu"
+  ],
+  "/usr/bin/aconnect": [
+   "alsa-utils"
+  ],
+  "/usr/bin/addr2line": [
+   "binutils"
+  ],
+  "/usr/bin/alsabat": [
+   "alsa-utils"
+  ],
+  "/usr/bin/alsaloop": [
+   "alsa-utils"
+  ],
+  "/usr/bin/alsamixer": [
+   "alsa-utils"
+  ],
+  "/usr/bin/alsatplg": [
+   "alsa-utils"
+  ],
+  "/usr/bin/alsaucm": [
+   "alsa-utils"
+  ],
+  "/usr/bin/amidi": [
+   "alsa-utils"
+  ],
+  "/usr/bin/amixer": [
+   "alsa-utils"
+  ],
+  "/usr/bin/aplay": [
+   "alsa-utils"
+  ],
+  "/usr/bin/aplaymidi": [
+   "alsa-utils"
+  ],
+  "/usr/bin/aplaymidi2": [
+   "alsa-utils"
+  ],
+  "/usr/bin/apropos": [
+   "man-db"
+  ],
+  "/usr/bin/apt": [
+   "apt"
+  ],
+  "/usr/bin/apt-cache": [
+   "apt"
+  ],
+  "/usr/bin/apt-cdrom": [
+   "apt"
+  ],
+  "/usr/bin/apt-config": [
+   "apt"
+  ],
+  "/usr/bin/apt-extracttemplates": [
+   "apt-utils"
+  ],
+  "/usr/bin/apt-ftparchive": [
+   "apt-utils"
+  ],
+  "/usr/bin/apt-get": [
+   "apt"
+  ],
+  "/usr/bin/apt-listchanges": [
+   "apt-listchanges"
+  ],
+  "/usr/bin/apt-mark": [
+   "apt"
+  ],
+  "/usr/bin/apt-sortpkgs": [
+   "apt-utils"
+  ],
+  "/usr/bin/ar": [
+   "binutils"
+  ],
+  "/usr/bin/arch": [
+   "coreutils"
+  ],
+  "/usr/bin/arecord": [
+   "alsa-utils"
+  ],
+  "/usr/bin/arecordmidi": [
+   "alsa-utils"
+  ],
+  "/usr/bin/arecordmidi2": [
+   "alsa-utils"
+  ],
+  "/usr/bin/arping": [
+   "iputils-arping"
+  ],
+  "/usr/bin/as": [
+   "binutils"
+  ],
+  "/usr/bin/aseqdump": [
+   "alsa-utils"
+  ],
+  "/usr/bin/aseqnet": [
+   "alsa-utils"
+  ],
+  "/usr/bin/aseqsend": [
+   "alsa-utils"
+  ],
+  "/usr/bin/awk": [
+   "mawk (alternative)"
+  ],
+  "/usr/bin/axfer": [
+   "alsa-utils"
+  ],
+  "/usr/bin/b2sum": [
+   "coreutils"
+  ],
+  "/usr/bin/base32": [
+   "coreutils"
+  ],
+  "/usr/bin/base64": [
+   "coreutils"
+  ],
+  "/usr/bin/basename": [
+   "coreutils"
+  ],
+  "/usr/bin/basenc": [
+   "coreutils"
+  ],
+  "/usr/bin/bash": [
+   "bash"
+  ],
+  "/usr/bin/bashbug": [
+   "bash"
+  ],
+  "/usr/bin/bluemoon": [
+   "bluez"
+  ],
+  "/usr/bin/bluetoothctl": [
+   "bluez"
+  ],
+  "/usr/bin/btattach": [
+   "bluez"
+  ],
+  "/usr/bin/btfdiff": [
+   "pahole"
+  ],
+  "/usr/bin/btmgmt": [
+   "bluez"
+  ],
+  "/usr/bin/btmon": [
+   "bluez"
+  ],
+  "/usr/bin/bunzip2": [
+   "bzip2"
+  ],
+  "/usr/bin/busctl": [
+   "systemd"
+  ],
+  "/usr/bin/busybox": [
+   "busybox"
+  ],
+  "/usr/bin/bzcat": [
+   "bzip2"
+  ],
+  "/usr/bin/bzcmp": [
+   "bzip2"
+  ],
+  "/usr/bin/bzdiff": [
+   "bzip2"
+  ],
+  "/usr/bin/bzegrep": [
+   "bzip2"
+  ],
+  "/usr/bin/bzexe": [
+   "bzip2"
+  ],
+  "/usr/bin/bzfgrep": [
+   "bzip2"
+  ],
+  "/usr/bin/bzgrep": [
+   "bzip2"
+  ],
+  "/usr/bin/bzip2": [
+   "bzip2"
+  ],
+  "/usr/bin/bzip2recover": [
+   "bzip2"
+  ],
+  "/usr/bin/bzless": [
+   "bzip2"
+  ],
+  "/usr/bin/bzmore": [
+   "bzip2"
+  ],
+  "/usr/bin/c++": [
+   "g++ (alternative)"
+  ],
+  "/usr/bin/c++filt": [
+   "binutils"
+  ],
+  "/usr/bin/c89": [
+   "gcc (alternative)"
+  ],
+  "/usr/bin/c89-gcc": [
+   "gcc"
+  ],
+  "/usr/bin/c99": [
+   "gcc (alternative)"
+  ],
+  "/usr/bin/c99-gcc": [
+   "gcc"
+  ],
+  "/usr/bin/c_rehash": [
+   "openssl"
+  ],
+  "/usr/bin/camera-bug-report": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/cancel-rename": [
+   "userconf-pi"
+  ],
+  "/usr/bin/captoinfo": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/cat": [
+   "coreutils"
+  ],
+  "/usr/bin/catman": [
+   "man-db"
+  ],
+  "/usr/bin/cc": [
+   "gcc (alternative)"
+  ],
+  "/usr/bin/cec-compliance": [
+   "v4l-utils"
+  ],
+  "/usr/bin/cec-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/cec-follower": [
+   "v4l-utils"
+  ],
+  "/usr/bin/chage": [
+   "passwd"
+  ],
+  "/usr/bin/chardet": [
+   "python3-chardet"
+  ],
+  "/usr/bin/chardetect": [
+   "python3-chardet"
+  ],
+  "/usr/bin/chattr": [
+   "e2fsprogs"
+  ],
+  "/usr/bin/chcon": [
+   "coreutils"
+  ],
+  "/usr/bin/chfn": [
+   "passwd"
+  ],
+  "/usr/bin/chgrp": [
+   "coreutils"
+  ],
+  "/usr/bin/chmod": [
+   "coreutils"
+  ],
+  "/usr/bin/choom": [
+   "util-linux"
+  ],
+  "/usr/bin/chown": [
+   "coreutils"
+  ],
+  "/usr/bin/chrt": [
+   "util-linux"
+  ],
+  "/usr/bin/chsh": [
+   "passwd"
+  ],
+  "/usr/bin/chvt": [
+   "kbd"
+  ],
+  "/usr/bin/cifscreds": [
+   "cifs-utils"
+  ],
+  "/usr/bin/ciptool": [
+   "bluez"
+  ],
+  "/usr/bin/ckbcomp": [
+   "console-setup"
+  ],
+  "/usr/bin/cksum": [
+   "coreutils"
+  ],
+  "/usr/bin/clear": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/clear_console": [
+   "bash"
+  ],
+  "/usr/bin/cloud-id": [
+   "cloud-init"
+  ],
+  "/usr/bin/cloud-init": [
+   "cloud-init"
+  ],
+  "/usr/bin/cloud-init-per": [
+   "cloud-init"
+  ],
+  "/usr/bin/cmp": [
+   "diffutils"
+  ],
+  "/usr/bin/codepage": [
+   "kbd"
+  ],
+  "/usr/bin/codiff": [
+   "pahole"
+  ],
+  "/usr/bin/col": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/colcrt": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/colrm": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/column": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/comm": [
+   "coreutils"
+  ],
+  "/usr/bin/con2fbmap": [
+   "fbset"
+  ],
+  "/usr/bin/containerd": [
+   "containerd.io"
+  ],
+  "/usr/bin/containerd-shim-runc-v2": [
+   "containerd.io"
+  ],
+  "/usr/bin/convert-dtsv0": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/corelist": [
+   "perl"
+  ],
+  "/usr/bin/cp": [
+   "coreutils"
+  ],
+  "/usr/bin/cpan": [
+   "perl"
+  ],
+  "/usr/bin/cpan5.40-aarch64-linux-gnu": [
+   "libperl5.40"
+  ],
+  "/usr/bin/cpio": [
+   "cpio"
+  ],
+  "/usr/bin/cpp": [
+   "cpp"
+  ],
+  "/usr/bin/cpp-14": [
+   "cpp-14"
+  ],
+  "/usr/bin/crontab": [
+   "cron"
+  ],
+  "/usr/bin/csplit": [
+   "coreutils"
+  ],
+  "/usr/bin/ctr": [
+   "containerd.io"
+  ],
+  "/usr/bin/ctracer": [
+   "pahole"
+  ],
+  "/usr/bin/ctstat": [
+   "iproute2"
+  ],
+  "/usr/bin/curl": [
+   "curl"
+  ],
+  "/usr/bin/cut": [
+   "coreutils"
+  ],
+  "/usr/bin/cvtsudoers": [
+   "sudo"
+  ],
+  "/usr/bin/cx18-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/dash": [
+   "dash"
+  ],
+  "/usr/bin/date": [
+   "coreutils"
+  ],
+  "/usr/bin/dbus-cleanup-sockets": [
+   "dbus-bin"
+  ],
+  "/usr/bin/dbus-daemon": [
+   "dbus-daemon"
+  ],
+  "/usr/bin/dbus-monitor": [
+   "dbus-bin"
+  ],
+  "/usr/bin/dbus-run-session": [
+   "dbus-daemon"
+  ],
+  "/usr/bin/dbus-send": [
+   "dbus-bin"
+  ],
+  "/usr/bin/dbus-update-activation-environment": [
+   "dbus-bin"
+  ],
+  "/usr/bin/dbus-uuidgen": [
+   "dbus-bin"
+  ],
+  "/usr/bin/dconf": [
+   "dconf-cli"
+  ],
+  "/usr/bin/dd": [
+   "coreutils"
+  ],
+  "/usr/bin/deallocvt": [
+   "kbd"
+  ],
+  "/usr/bin/deb-systemd-helper": [
+   "init-system-helpers"
+  ],
+  "/usr/bin/deb-systemd-invoke": [
+   "init-system-helpers"
+  ],
+  "/usr/bin/debconf": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-apt-progress": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-communicate": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-copydb": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-escape": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-get-selections": [
+   "debconf-utils"
+  ],
+  "/usr/bin/debconf-getlang": [
+   "debconf-utils"
+  ],
+  "/usr/bin/debconf-loadtemplate": [
+   "debconf-utils"
+  ],
+  "/usr/bin/debconf-mergetemplate": [
+   "debconf-utils"
+  ],
+  "/usr/bin/debconf-set-selections": [
+   "debconf"
+  ],
+  "/usr/bin/debconf-show": [
+   "debconf"
+  ],
+  "/usr/bin/decode_tm6000": [
+   "v4l-utils"
+  ],
+  "/usr/bin/df": [
+   "coreutils"
+  ],
+  "/usr/bin/dh_bash-completion": [
+   "bash-completion"
+  ],
+  "/usr/bin/dh_installxmlcatalogs": [
+   "xml-core"
+  ],
+  "/usr/bin/diff": [
+   "diffutils"
+  ],
+  "/usr/bin/diff3": [
+   "diffutils"
+  ],
+  "/usr/bin/dir": [
+   "coreutils"
+  ],
+  "/usr/bin/dircolors": [
+   "coreutils"
+  ],
+  "/usr/bin/dirmngr": [
+   "dirmngr"
+  ],
+  "/usr/bin/dirmngr-client": [
+   "dirmngr"
+  ],
+  "/usr/bin/dirname": [
+   "coreutils"
+  ],
+  "/usr/bin/dmesg": [
+   "util-linux"
+  ],
+  "/usr/bin/dnsdomainname": [
+   "hostname"
+  ],
+  "/usr/bin/docker": [
+   "docker-ce-cli"
+  ],
+  "/usr/bin/docker-proxy": [
+   "docker-ce"
+  ],
+  "/usr/bin/dockerd": [
+   "docker-ce"
+  ],
+  "/usr/bin/dockerd-rootless-setuptool.sh": [
+   "docker-ce-rootless-extras"
+  ],
+  "/usr/bin/dockerd-rootless.sh": [
+   "docker-ce-rootless-extras"
+  ],
+  "/usr/bin/domainname": [
+   "hostname"
+  ],
+  "/usr/bin/dos2unix": [
+   "dos2unix"
+  ],
+  "/usr/bin/dpkg": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-architecture": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-buildapi": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-buildflags": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-buildpackage": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-buildtree": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-checkbuilddeps": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-deb": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-distaddfile": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-divert": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-genbuildinfo": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-genchanges": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-gencontrol": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-gensymbols": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-maintscript-helper": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-mergechangelogs": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-name": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-parsechangelog": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-query": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-realpath": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-scanpackages": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-scansources": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-shlibdeps": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-source": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dpkg-split": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-statoverride": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-trigger": [
+   "dpkg"
+  ],
+  "/usr/bin/dpkg-vendor": [
+   "dpkg-dev"
+  ],
+  "/usr/bin/dtagnames": [
+   "pahole"
+  ],
+  "/usr/bin/dtc": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/dtdiff": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/dtmerge": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/dtoverlay": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/dtparam": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/du": [
+   "coreutils"
+  ],
+  "/usr/bin/dumpkeys": [
+   "kbd"
+  ],
+  "/usr/bin/eatmydata": [
+   "eatmydata"
+  ],
+  "/usr/bin/ec2metadata": [
+   "cloud-guest-utils"
+  ],
+  "/usr/bin/echo": [
+   "coreutils"
+  ],
+  "/usr/bin/ed": [
+   "ed"
+  ],
+  "/usr/bin/editor": [
+   "nano (alternative)",
+   "vim-tiny (alternative)"
+  ],
+  "/usr/bin/eepdump": [
+   "raspi-utils-eeprom"
+  ],
+  "/usr/bin/eepflash.sh": [
+   "raspi-utils-eeprom"
+  ],
+  "/usr/bin/eepmake": [
+   "raspi-utils-eeprom"
+  ],
+  "/usr/bin/egrep": [
+   "grep"
+  ],
+  "/usr/bin/eject": [
+   "eject"
+  ],
+  "/usr/bin/elfedit": [
+   "binutils"
+  ],
+  "/usr/bin/enc2xs": [
+   "perl"
+  ],
+  "/usr/bin/encguess": [
+   "perl"
+  ],
+  "/usr/bin/env": [
+   "coreutils"
+  ],
+  "/usr/bin/envsubst": [
+   "gettext-base"
+  ],
+  "/usr/bin/eqn": [
+   "groff-base"
+  ],
+  "/usr/bin/ex": [
+   "vim-tiny (alternative)"
+  ],
+  "/usr/bin/expand": [
+   "coreutils"
+  ],
+  "/usr/bin/expiry": [
+   "passwd"
+  ],
+  "/usr/bin/expr": [
+   "coreutils"
+  ],
+  "/usr/bin/factor": [
+   "coreutils"
+  ],
+  "/usr/bin/faked-sysv": [
+   "fakeroot"
+  ],
+  "/usr/bin/faked-tcp": [
+   "fakeroot"
+  ],
+  "/usr/bin/fakeroot-sysv": [
+   "fakeroot"
+  ],
+  "/usr/bin/fakeroot-tcp": [
+   "fakeroot"
+  ],
+  "/usr/bin/fallocate": [
+   "util-linux"
+  ],
+  "/usr/bin/false": [
+   "coreutils"
+  ],
+  "/usr/bin/fbset": [
+   "fbset"
+  ],
+  "/usr/bin/fbtest": [
+   "kms++-utils"
+  ],
+  "/usr/bin/fdtdump": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/fdtget": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/fdtoverlay": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/fdtput": [
+   "device-tree-compiler"
+  ],
+  "/usr/bin/fgconsole": [
+   "kbd"
+  ],
+  "/usr/bin/fgrep": [
+   "grep"
+  ],
+  "/usr/bin/file": [
+   "file"
+  ],
+  "/usr/bin/find": [
+   "findutils"
+  ],
+  "/usr/bin/findmnt": [
+   "util-linux"
+  ],
+  "/usr/bin/flock": [
+   "util-linux"
+  ],
+  "/usr/bin/fmt": [
+   "coreutils"
+  ],
+  "/usr/bin/fold": [
+   "coreutils"
+  ],
+  "/usr/bin/free": [
+   "procps"
+  ],
+  "/usr/bin/fsnotifywait": [
+   "inotify-tools"
+  ],
+  "/usr/bin/fsnotifywatch": [
+   "inotify-tools"
+  ],
+  "/usr/bin/fullcircle": [
+   "pahole"
+  ],
+  "/usr/bin/funzip": [
+   "unzip"
+  ],
+  "/usr/bin/fuser": [
+   "psmisc"
+  ],
+  "/usr/bin/fusermount": [
+   "fuse3"
+  ],
+  "/usr/bin/fusermount3": [
+   "fuse3"
+  ],
+  "/usr/bin/g++": [
+   "g++"
+  ],
+  "/usr/bin/g++-14": [
+   "g++-14"
+  ],
+  "/usr/bin/gatttool": [
+   "bluez"
+  ],
+  "/usr/bin/gcc": [
+   "gcc"
+  ],
+  "/usr/bin/gcc-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcc-ar": [
+   "gcc"
+  ],
+  "/usr/bin/gcc-ar-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcc-nm": [
+   "gcc"
+  ],
+  "/usr/bin/gcc-nm-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcc-ranlib": [
+   "gcc"
+  ],
+  "/usr/bin/gcc-ranlib-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcore": [
+   "gdb"
+  ],
+  "/usr/bin/gcov": [
+   "gcc"
+  ],
+  "/usr/bin/gcov-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcov-dump": [
+   "gcc"
+  ],
+  "/usr/bin/gcov-dump-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gcov-tool": [
+   "gcc"
+  ],
+  "/usr/bin/gcov-tool-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/gdb": [
+   "gdb"
+  ],
+  "/usr/bin/gdb-add-index": [
+   "gdb"
+  ],
+  "/usr/bin/gdbtui": [
+   "gdb"
+  ],
+  "/usr/bin/gencat": [
+   "libc-dev-bin"
+  ],
+  "/usr/bin/geqn": [
+   "groff-base"
+  ],
+  "/usr/bin/getcifsacl": [
+   "cifs-utils"
+  ],
+  "/usr/bin/getconf": [
+   "libc-bin"
+  ],
+  "/usr/bin/getent": [
+   "libc-bin"
+  ],
+  "/usr/bin/getkeycodes": [
+   "kbd"
+  ],
+  "/usr/bin/getopt": [
+   "util-linux"
+  ],
+  "/usr/bin/gettext": [
+   "gettext-base"
+  ],
+  "/usr/bin/gettext.sh": [
+   "gettext-base"
+  ],
+  "/usr/bin/git": [
+   "git"
+  ],
+  "/usr/bin/git-receive-pack": [
+   "git"
+  ],
+  "/usr/bin/git-shell": [
+   "git"
+  ],
+  "/usr/bin/git-upload-archive": [
+   "git"
+  ],
+  "/usr/bin/git-upload-pack": [
+   "git"
+  ],
+  "/usr/bin/gmake": [
+   "make"
+  ],
+  "/usr/bin/gp-archive": [
+   "binutils"
+  ],
+  "/usr/bin/gp-collect-app": [
+   "binutils"
+  ],
+  "/usr/bin/gp-display-html": [
+   "binutils"
+  ],
+  "/usr/bin/gp-display-src": [
+   "binutils"
+  ],
+  "/usr/bin/gp-display-text": [
+   "binutils"
+  ],
+  "/usr/bin/gpasswd": [
+   "passwd"
+  ],
+  "/usr/bin/gpg": [
+   "gpg"
+  ],
+  "/usr/bin/gpg-agent": [
+   "gpg-agent"
+  ],
+  "/usr/bin/gpg-connect-agent": [
+   "gpgconf"
+  ],
+  "/usr/bin/gpg-mail-tube": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/gpg-wks-client": [
+   "gpg-wks-client"
+  ],
+  "/usr/bin/gpgconf": [
+   "gpgconf"
+  ],
+  "/usr/bin/gpgparsemail": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/gpgsm": [
+   "gpgsm"
+  ],
+  "/usr/bin/gpgsplit": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/gpgtar": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/gpgv": [
+   "gpgv"
+  ],
+  "/usr/bin/gpic": [
+   "groff-base"
+  ],
+  "/usr/bin/gpiodetect": [
+   "gpiod"
+  ],
+  "/usr/bin/gpioget": [
+   "gpiod"
+  ],
+  "/usr/bin/gpioinfo": [
+   "gpiod"
+  ],
+  "/usr/bin/gpiomon": [
+   "gpiod"
+  ],
+  "/usr/bin/gpionotify": [
+   "gpiod"
+  ],
+  "/usr/bin/gpioset": [
+   "gpiod"
+  ],
+  "/usr/bin/gprof": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng-archive": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng-collect-app": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng-display-html": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng-display-src": [
+   "binutils"
+  ],
+  "/usr/bin/gprofng-display-text": [
+   "binutils"
+  ],
+  "/usr/bin/grep": [
+   "grep"
+  ],
+  "/usr/bin/groff": [
+   "groff-base"
+  ],
+  "/usr/bin/grog": [
+   "groff-base"
+  ],
+  "/usr/bin/grops": [
+   "groff-base"
+  ],
+  "/usr/bin/grotty": [
+   "groff-base"
+  ],
+  "/usr/bin/groups": [
+   "coreutils"
+  ],
+  "/usr/bin/growpart": [
+   "cloud-guest-utils"
+  ],
+  "/usr/bin/gstack": [
+   "gdb"
+  ],
+  "/usr/bin/gtbl": [
+   "groff-base"
+  ],
+  "/usr/bin/gunzip": [
+   "gzip"
+  ],
+  "/usr/bin/gzexe": [
+   "gzip"
+  ],
+  "/usr/bin/gzip": [
+   "gzip"
+  ],
+  "/usr/bin/h2ph": [
+   "perl"
+  ],
+  "/usr/bin/h2xs": [
+   "perl"
+  ],
+  "/usr/bin/hardlink": [
+   "util-linux"
+  ],
+  "/usr/bin/hciattach": [
+   "bluez"
+  ],
+  "/usr/bin/hciconfig": [
+   "bluez"
+  ],
+  "/usr/bin/hcitool": [
+   "bluez"
+  ],
+  "/usr/bin/hd": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/head": [
+   "coreutils"
+  ],
+  "/usr/bin/helpztags": [
+   "vim-common"
+  ],
+  "/usr/bin/hex2hcd": [
+   "bluez"
+  ],
+  "/usr/bin/hexdump": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/hostid": [
+   "coreutils"
+  ],
+  "/usr/bin/hostname": [
+   "hostname"
+  ],
+  "/usr/bin/hostnamectl": [
+   "systemd"
+  ],
+  "/usr/bin/htop": [
+   "htop"
+  ],
+  "/usr/bin/iconv": [
+   "libc-bin"
+  ],
+  "/usr/bin/id": [
+   "coreutils"
+  ],
+  "/usr/bin/iecset": [
+   "alsa-utils"
+  ],
+  "/usr/bin/infocmp": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/infotocap": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/inotifywait": [
+   "inotify-tools"
+  ],
+  "/usr/bin/inotifywatch": [
+   "inotify-tools"
+  ],
+  "/usr/bin/install": [
+   "coreutils"
+  ],
+  "/usr/bin/instmodsh": [
+   "perl"
+  ],
+  "/usr/bin/ionice": [
+   "util-linux"
+  ],
+  "/usr/bin/ip": [
+   "iproute2"
+  ],
+  "/usr/bin/ipcmk": [
+   "util-linux"
+  ],
+  "/usr/bin/ipcrm": [
+   "util-linux"
+  ],
+  "/usr/bin/ipcs": [
+   "util-linux"
+  ],
+  "/usr/bin/iptables-xml": [
+   "iptables"
+  ],
+  "/usr/bin/ir-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/ischroot": [
+   "debianutils"
+  ],
+  "/usr/bin/ivtv-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/join": [
+   "coreutils"
+  ],
+  "/usr/bin/journalctl": [
+   "systemd"
+  ],
+  "/usr/bin/json-patch-jsondiff": [
+   "python3-jsonpatch"
+  ],
+  "/usr/bin/json_pp": [
+   "perl"
+  ],
+  "/usr/bin/jsonpatch": [
+   "python3-jsonpatch"
+  ],
+  "/usr/bin/jsonpointer": [
+   "python3-json-pointer"
+  ],
+  "/usr/bin/jsonschema": [
+   "python3-jsonschema"
+  ],
+  "/usr/bin/kbd_mode": [
+   "kbd"
+  ],
+  "/usr/bin/kbdinfo": [
+   "kbd"
+  ],
+  "/usr/bin/kbxutil": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/kdtc": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/kernel-install": [
+   "systemd"
+  ],
+  "/usr/bin/kill": [
+   "procps"
+  ],
+  "/usr/bin/killall": [
+   "psmisc"
+  ],
+  "/usr/bin/kmod": [
+   "kmod"
+  ],
+  "/usr/bin/kmsblank": [
+   "kms++-utils"
+  ],
+  "/usr/bin/kmsprint": [
+   "kms++-utils"
+  ],
+  "/usr/bin/kmstest": [
+   "kms++-utils"
+  ],
+  "/usr/bin/l2ping": [
+   "bluez"
+  ],
+  "/usr/bin/l2test": [
+   "bluez"
+  ],
+  "/usr/bin/ld": [
+   "binutils"
+  ],
+  "/usr/bin/ld.bfd": [
+   "binutils"
+  ],
+  "/usr/bin/ld.so": [
+   "libc-bin"
+  ],
+  "/usr/bin/ldd": [
+   "libc-bin"
+  ],
+  "/usr/bin/less": [
+   "less"
+  ],
+  "/usr/bin/lessecho": [
+   "less"
+  ],
+  "/usr/bin/lessfile": [
+   "less"
+  ],
+  "/usr/bin/lesskey": [
+   "less"
+  ],
+  "/usr/bin/lesspipe": [
+   "less"
+  ],
+  "/usr/bin/lexgrog": [
+   "man-db"
+  ],
+  "/usr/bin/libnetcfg": [
+   "perl"
+  ],
+  "/usr/bin/link": [
+   "coreutils"
+  ],
+  "/usr/bin/linux-check-removal": [
+   "linux-base"
+  ],
+  "/usr/bin/linux-run-hooks": [
+   "linux-base"
+  ],
+  "/usr/bin/linux-update-symlinks": [
+   "linux-base"
+  ],
+  "/usr/bin/linux-version": [
+   "linux-base"
+  ],
+  "/usr/bin/linux32": [
+   "util-linux"
+  ],
+  "/usr/bin/linux64": [
+   "util-linux"
+  ],
+  "/usr/bin/ln": [
+   "coreutils"
+  ],
+  "/usr/bin/lnstat": [
+   "iproute2"
+  ],
+  "/usr/bin/loadkeys": [
+   "kbd"
+  ],
+  "/usr/bin/loadunimap": [
+   "kbd"
+  ],
+  "/usr/bin/locale": [
+   "libc-bin"
+  ],
+  "/usr/bin/localectl": [
+   "systemd"
+  ],
+  "/usr/bin/localedef": [
+   "libc-bin"
+  ],
+  "/usr/bin/logger": [
+   "bsdutils"
+  ],
+  "/usr/bin/login": [
+   "login"
+  ],
+  "/usr/bin/loginctl": [
+   "systemd"
+  ],
+  "/usr/bin/logname": [
+   "coreutils"
+  ],
+  "/usr/bin/look": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/lowntfs-3g": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ls": [
+   "coreutils"
+  ],
+  "/usr/bin/lsattr": [
+   "e2fsprogs"
+  ],
+  "/usr/bin/lsb_release": [
+   "lsb-release"
+  ],
+  "/usr/bin/lsblk": [
+   "util-linux"
+  ],
+  "/usr/bin/lscpu": [
+   "util-linux"
+  ],
+  "/usr/bin/lsinitramfs": [
+   "initramfs-tools-core"
+  ],
+  "/usr/bin/lsipc": [
+   "util-linux"
+  ],
+  "/usr/bin/lslocks": [
+   "util-linux"
+  ],
+  "/usr/bin/lslogins": [
+   "util-linux"
+  ],
+  "/usr/bin/lsmem": [
+   "util-linux"
+  ],
+  "/usr/bin/lsmod": [
+   "kmod"
+  ],
+  "/usr/bin/lsns": [
+   "util-linux"
+  ],
+  "/usr/bin/lspci": [
+   "pciutils"
+  ],
+  "/usr/bin/lspgpot": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/lsusb": [
+   "usbutils"
+  ],
+  "/usr/bin/lto-dump": [
+   "gcc"
+  ],
+  "/usr/bin/lto-dump-14": [
+   "gcc-14"
+  ],
+  "/usr/bin/lua5.1": [
+   "lua5.1"
+  ],
+  "/usr/bin/luac5.1": [
+   "lua5.1"
+  ],
+  "/usr/bin/luajit": [
+   "luajit"
+  ],
+  "/usr/bin/lzcat": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzcmp": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzdiff": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzegrep": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzfgrep": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzgrep": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzless": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzma": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/lzmainfo": [
+   "xz-utils"
+  ],
+  "/usr/bin/lzmore": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/mac2unix": [
+   "dos2unix"
+  ],
+  "/usr/bin/make": [
+   "make"
+  ],
+  "/usr/bin/make-first-existing-target": [
+   "make"
+  ],
+  "/usr/bin/man": [
+   "man-db"
+  ],
+  "/usr/bin/man-recode": [
+   "man-db"
+  ],
+  "/usr/bin/mandb": [
+   "man-db"
+  ],
+  "/usr/bin/manpath": [
+   "man-db"
+  ],
+  "/usr/bin/mapscrn": [
+   "kbd"
+  ],
+  "/usr/bin/markdown-it": [
+   "python3-markdown-it"
+  ],
+  "/usr/bin/mawk": [
+   "mawk"
+  ],
+  "/usr/bin/mcookie": [
+   "util-linux"
+  ],
+  "/usr/bin/md5sum": [
+   "coreutils"
+  ],
+  "/usr/bin/media-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/migrate-pubring-from-classic-gpg": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/mk_modmap": [
+   "kbd"
+  ],
+  "/usr/bin/mkdir": [
+   "coreutils"
+  ],
+  "/usr/bin/mkfifo": [
+   "coreutils"
+  ],
+  "/usr/bin/mknod": [
+   "coreutils"
+  ],
+  "/usr/bin/mktemp": [
+   "coreutils"
+  ],
+  "/usr/bin/mkvextract": [
+   "mkvtoolnix"
+  ],
+  "/usr/bin/mkvinfo": [
+   "mkvtoolnix"
+  ],
+  "/usr/bin/mkvmerge": [
+   "mkvtoolnix"
+  ],
+  "/usr/bin/mkvpropedit": [
+   "mkvtoolnix"
+  ],
+  "/usr/bin/modeline2fb": [
+   "fbset"
+  ],
+  "/usr/bin/more": [
+   "util-linux"
+  ],
+  "/usr/bin/mount": [
+   "mount"
+  ],
+  "/usr/bin/mountpoint": [
+   "util-linux"
+  ],
+  "/usr/bin/mpris-proxy": [
+   "bluez"
+  ],
+  "/usr/bin/mt": [
+   "cpio (alternative)"
+  ],
+  "/usr/bin/mt-gnu": [
+   "cpio"
+  ],
+  "/usr/bin/mv": [
+   "coreutils"
+  ],
+  "/usr/bin/namei": [
+   "util-linux"
+  ],
+  "/usr/bin/nano": [
+   "nano"
+  ],
+  "/usr/bin/nawk": [
+   "mawk (alternative)"
+  ],
+  "/usr/bin/nc": [
+   "netcat-openbsd (alternative)"
+  ],
+  "/usr/bin/nc.openbsd": [
+   "netcat-openbsd"
+  ],
+  "/usr/bin/ncdu": [
+   "ncdu"
+  ],
+  "/usr/bin/neqn": [
+   "groff-base"
+  ],
+  "/usr/bin/netcat": [
+   "netcat-openbsd (alternative)"
+  ],
+  "/usr/bin/netstat": [
+   "net-tools"
+  ],
+  "/usr/bin/networkctl": [
+   "systemd"
+  ],
+  "/usr/bin/newgrp": [
+   "login"
+  ],
+  "/usr/bin/ngettext": [
+   "gettext-base"
+  ],
+  "/usr/bin/nhlt-dmic-info": [
+   "alsa-utils"
+  ],
+  "/usr/bin/nice": [
+   "coreutils"
+  ],
+  "/usr/bin/nisdomainname": [
+   "hostname"
+  ],
+  "/usr/bin/nl": [
+   "coreutils"
+  ],
+  "/usr/bin/nm": [
+   "binutils"
+  ],
+  "/usr/bin/nm-online": [
+   "network-manager"
+  ],
+  "/usr/bin/nmcli": [
+   "network-manager"
+  ],
+  "/usr/bin/nmtui": [
+   "network-manager"
+  ],
+  "/usr/bin/nmtui-connect": [
+   "network-manager"
+  ],
+  "/usr/bin/nmtui-edit": [
+   "network-manager"
+  ],
+  "/usr/bin/nmtui-hostname": [
+   "network-manager"
+  ],
+  "/usr/bin/nohup": [
+   "coreutils"
+  ],
+  "/usr/bin/normalizer": [
+   "python3-charset-normalizer"
+  ],
+  "/usr/bin/nproc": [
+   "coreutils"
+  ],
+  "/usr/bin/nroff": [
+   "groff-base"
+  ],
+  "/usr/bin/nsenter": [
+   "util-linux"
+  ],
+  "/usr/bin/nstat": [
+   "iproute2"
+  ],
+  "/usr/bin/ntfs-3g": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfs-3g.probe": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfscat": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfscluster": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfscmp": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsdecrypt": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsfallocate": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsfix": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsinfo": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsls": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsmove": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsrecover": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfssecaudit": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfstruncate": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfsusermap": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/ntfswipe": [
+   "ntfs-3g"
+  ],
+  "/usr/bin/numfmt": [
+   "coreutils"
+  ],
+  "/usr/bin/obexctl": [
+   "bluez"
+  ],
+  "/usr/bin/objcopy": [
+   "binutils"
+  ],
+  "/usr/bin/objdump": [
+   "binutils"
+  ],
+  "/usr/bin/od": [
+   "coreutils"
+  ],
+  "/usr/bin/openssl": [
+   "openssl"
+  ],
+  "/usr/bin/openvt": [
+   "kbd"
+  ],
+  "/usr/bin/otpset": [
+   "raspi-utils-otp"
+  ],
+  "/usr/bin/overlaycheck": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/ovmerge": [
+   "raspi-utils-dt"
+  ],
+  "/usr/bin/p7zip": [
+   "7zip"
+  ],
+  "/usr/bin/pager": [
+   "less (alternative)"
+  ],
+  "/usr/bin/pahole": [
+   "pahole"
+  ],
+  "/usr/bin/partx": [
+   "util-linux"
+  ],
+  "/usr/bin/passwd": [
+   "passwd"
+  ],
+  "/usr/bin/paste": [
+   "coreutils"
+  ],
+  "/usr/bin/pastebinit": [
+   "pastebinit"
+  ],
+  "/usr/bin/patch": [
+   "patch"
+  ],
+  "/usr/bin/pathchk": [
+   "coreutils"
+  ],
+  "/usr/bin/pbget": [
+   "pastebinit"
+  ],
+  "/usr/bin/pbput": [
+   "pastebinit"
+  ],
+  "/usr/bin/pbputs": [
+   "pastebinit"
+  ],
+  "/usr/bin/pcilmr": [
+   "pciutils"
+  ],
+  "/usr/bin/pdb3": [
+   "python3"
+  ],
+  "/usr/bin/pdb3.13": [
+   "python3.13"
+  ],
+  "/usr/bin/pdwtags": [
+   "pahole"
+  ],
+  "/usr/bin/peekfd": [
+   "psmisc"
+  ],
+  "/usr/bin/perl": [
+   "perl-base"
+  ],
+  "/usr/bin/perl5.40-aarch64-linux-gnu": [
+   "libperl5.40"
+  ],
+  "/usr/bin/perl5.40.1": [
+   "perl-base"
+  ],
+  "/usr/bin/perlbug": [
+   "perl"
+  ],
+  "/usr/bin/perldoc": [
+   "perl"
+  ],
+  "/usr/bin/perlivp": [
+   "perl"
+  ],
+  "/usr/bin/perlthanks": [
+   "perl"
+  ],
+  "/usr/bin/pfunct": [
+   "pahole"
+  ],
+  "/usr/bin/pglobal": [
+   "pahole"
+  ],
+  "/usr/bin/pgrep": [
+   "procps"
+  ],
+  "/usr/bin/pic": [
+   "groff-base"
+  ],
+  "/usr/bin/pico": [
+   "nano (alternative)"
+  ],
+  "/usr/bin/piconv": [
+   "perl"
+  ],
+  "/usr/bin/pidof": [
+   "sysvinit-utils"
+  ],
+  "/usr/bin/pidwait": [
+   "procps"
+  ],
+  "/usr/bin/pigz": [
+   "pigz"
+  ],
+  "/usr/bin/pinctrl": [
+   "raspi-utils-core"
+  ],
+  "/usr/bin/pinentry-curses": [
+   "pinentry-curses"
+  ],
+  "/usr/bin/ping": [
+   "iputils-ping"
+  ],
+  "/usr/bin/ping4": [
+   "iputils-ping"
+  ],
+  "/usr/bin/ping6": [
+   "iputils-ping"
+  ],
+  "/usr/bin/pinky": [
+   "coreutils"
+  ],
+  "/usr/bin/pinout": [
+   "python3-gpiozero"
+  ],
+  "/usr/bin/pintest": [
+   "python3-gpiozero"
+  ],
+  "/usr/bin/pkaction": [
+   "polkitd"
+  ],
+  "/usr/bin/pkcheck": [
+   "polkitd"
+  ],
+  "/usr/bin/pkg-config": [
+   "pkgconf"
+  ],
+  "/usr/bin/pkgconf": [
+   "pkgconf-bin"
+  ],
+  "/usr/bin/pkill": [
+   "procps"
+  ],
+  "/usr/bin/pkttyagent": [
+   "polkitd"
+  ],
+  "/usr/bin/pl2pm": [
+   "perl"
+  ],
+  "/usr/bin/pldd": [
+   "libc-bin"
+  ],
+  "/usr/bin/plog": [
+   "ppp"
+  ],
+  "/usr/bin/pmap": [
+   "procps"
+  ],
+  "/usr/bin/pod2html": [
+   "perl"
+  ],
+  "/usr/bin/pod2man": [
+   "perl"
+  ],
+  "/usr/bin/pod2text": [
+   "perl"
+  ],
+  "/usr/bin/pod2usage": [
+   "perl"
+  ],
+  "/usr/bin/podchecker": [
+   "perl"
+  ],
+  "/usr/bin/poff": [
+   "ppp"
+  ],
+  "/usr/bin/pon": [
+   "ppp"
+  ],
+  "/usr/bin/pr": [
+   "coreutils"
+  ],
+  "/usr/bin/preconv": [
+   "groff-base"
+  ],
+  "/usr/bin/prefcnt": [
+   "pahole"
+  ],
+  "/usr/bin/printenv": [
+   "coreutils"
+  ],
+  "/usr/bin/printf": [
+   "coreutils"
+  ],
+  "/usr/bin/prlimit": [
+   "util-linux"
+  ],
+  "/usr/bin/prove": [
+   "perl"
+  ],
+  "/usr/bin/prtstat": [
+   "psmisc"
+  ],
+  "/usr/bin/ps": [
+   "procps"
+  ],
+  "/usr/bin/psfaddtable": [
+   "kbd"
+  ],
+  "/usr/bin/psfgettable": [
+   "kbd"
+  ],
+  "/usr/bin/psfstriptable": [
+   "kbd"
+  ],
+  "/usr/bin/psfxtable": [
+   "kbd"
+  ],
+  "/usr/bin/pslog": [
+   "psmisc"
+  ],
+  "/usr/bin/pstree": [
+   "psmisc"
+  ],
+  "/usr/bin/pstree.x11": [
+   "psmisc"
+  ],
+  "/usr/bin/ptar": [
+   "perl"
+  ],
+  "/usr/bin/ptardiff": [
+   "perl"
+  ],
+  "/usr/bin/ptargrep": [
+   "perl"
+  ],
+  "/usr/bin/ptx": [
+   "coreutils"
+  ],
+  "/usr/bin/pwd": [
+   "coreutils"
+  ],
+  "/usr/bin/pwdx": [
+   "procps"
+  ],
+  "/usr/bin/py3clean": [
+   "python3-minimal"
+  ],
+  "/usr/bin/py3compile": [
+   "python3-minimal"
+  ],
+  "/usr/bin/py3versions": [
+   "python3-minimal"
+  ],
+  "/usr/bin/pybabel-python3": [
+   "python3-babel"
+  ],
+  "/usr/bin/pydoc": [
+   "python-is-python3"
+  ],
+  "/usr/bin/pydoc3": [
+   "python3"
+  ],
+  "/usr/bin/pydoc3.13": [
+   "python3.13"
+  ],
+  "/usr/bin/pygettext3": [
+   "python3"
+  ],
+  "/usr/bin/pygettext3.13": [
+   "python3.13"
+  ],
+  "/usr/bin/pygmentize": [
+   "python3-pygments"
+  ],
+  "/usr/bin/python": [
+   "python-is-python3"
+  ],
+  "/usr/bin/python3": [
+   "python3-minimal"
+  ],
+  "/usr/bin/python3.13": [
+   "python3.13-minimal"
+  ],
+  "/usr/bin/pzstd": [
+   "zstd"
+  ],
+  "/usr/bin/ranlib": [
+   "binutils"
+  ],
+  "/usr/bin/raspi-config": [
+   "raspi-config-core"
+  ],
+  "/usr/bin/raspinfo": [
+   "raspinfo"
+  ],
+  "/usr/bin/rbash": [
+   "bash"
+  ],
+  "/usr/bin/rcp": [
+   "openssh-client (alternative)"
+  ],
+  "/usr/bin/rctest": [
+   "bluez"
+  ],
+  "/usr/bin/rdma": [
+   "iproute2"
+  ],
+  "/usr/bin/rds-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/readelf": [
+   "binutils"
+  ],
+  "/usr/bin/readlink": [
+   "coreutils"
+  ],
+  "/usr/bin/realpath": [
+   "coreutils"
+  ],
+  "/usr/bin/red": [
+   "ed"
+  ],
+  "/usr/bin/rename-user": [
+   "userconf-pi"
+  ],
+  "/usr/bin/rename.ul": [
+   "util-linux"
+  ],
+  "/usr/bin/renice": [
+   "bsdutils"
+  ],
+  "/usr/bin/reset": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/rev": [
+   "util-linux"
+  ],
+  "/usr/bin/rfcomm": [
+   "bluez"
+  ],
+  "/usr/bin/rgrep": [
+   "grep"
+  ],
+  "/usr/bin/rlogin": [
+   "openssh-client (alternative)"
+  ],
+  "/usr/bin/rm": [
+   "coreutils"
+  ],
+  "/usr/bin/rmdir": [
+   "coreutils"
+  ],
+  "/usr/bin/rnano": [
+   "nano"
+  ],
+  "/usr/bin/rootlesskit": [
+   "docker-ce-rootless-extras"
+  ],
+  "/usr/bin/routel": [
+   "iproute2"
+  ],
+  "/usr/bin/rpcgen": [
+   "rpcsvc-proto"
+  ],
+  "/usr/bin/rpi-bootloader-key-convert": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-bootloader-version": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-connect": [
+   "rpi-connect-lite"
+  ],
+  "/usr/bin/rpi-connectd": [
+   "rpi-connect-lite"
+  ],
+  "/usr/bin/rpi-eeprom-config": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-eeprom-digest": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-eeprom-update": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-keyboard-config": [
+   "rpi-keyboard-config"
+  ],
+  "/usr/bin/rpi-keyboard-fw-update": [
+   "rpi-keyboard-fw-update"
+  ],
+  "/usr/bin/rpi-otp-private-key": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-sign-bootcode": [
+   "rpi-eeprom"
+  ],
+  "/usr/bin/rpi-systemd-config": [
+   "rpi-systemd-config"
+  ],
+  "/usr/bin/rpi-update": [
+   "rpi-update"
+  ],
+  "/usr/bin/rpi-usb-gadget": [
+   "rpi-usb-gadget"
+  ],
+  "/usr/bin/rpicam-hello": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/rpicam-jpeg": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/rpicam-raw": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/rpicam-still": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/rpicam-vid": [
+   "rpicam-apps-core"
+  ],
+  "/usr/bin/rrsync": [
+   "rsync"
+  ],
+  "/usr/bin/rsh": [
+   "openssh-client (alternative)"
+  ],
+  "/usr/bin/rsync": [
+   "rsync"
+  ],
+  "/usr/bin/rsync-ssl": [
+   "rsync"
+  ],
+  "/usr/bin/rtstat": [
+   "iproute2"
+  ],
+  "/usr/bin/run-parts": [
+   "debianutils"
+  ],
+  "/usr/bin/run0": [
+   "systemd"
+  ],
+  "/usr/bin/runc": [
+   "containerd.io"
+  ],
+  "/usr/bin/runcon": [
+   "coreutils"
+  ],
+  "/usr/bin/rview": [
+   "vim-tiny (alternative)"
+  ],
+  "/usr/bin/savelog": [
+   "debianutils"
+  ],
+  "/usr/bin/scalar": [
+   "git"
+  ],
+  "/usr/bin/scncopy": [
+   "pahole"
+  ],
+  "/usr/bin/scp": [
+   "openssh-client"
+  ],
+  "/usr/bin/screendump": [
+   "kbd"
+  ],
+  "/usr/bin/script": [
+   "bsdutils"
+  ],
+  "/usr/bin/scriptlive": [
+   "bsdutils"
+  ],
+  "/usr/bin/scriptreplay": [
+   "bsdutils"
+  ],
+  "/usr/bin/sdiff": [
+   "diffutils"
+  ],
+  "/usr/bin/sdptool": [
+   "bluez"
+  ],
+  "/usr/bin/sed": [
+   "sed"
+  ],
+  "/usr/bin/select-editor": [
+   "sensible-utils"
+  ],
+  "/usr/bin/sensible-browser": [
+   "sensible-utils"
+  ],
+  "/usr/bin/sensible-editor": [
+   "sensible-utils"
+  ],
+  "/usr/bin/sensible-pager": [
+   "sensible-utils"
+  ],
+  "/usr/bin/sensible-terminal": [
+   "sensible-utils"
+  ],
+  "/usr/bin/seq": [
+   "coreutils"
+  ],
+  "/usr/bin/setarch": [
+   "util-linux"
+  ],
+  "/usr/bin/setcifsacl": [
+   "cifs-utils"
+  ],
+  "/usr/bin/setfont": [
+   "kbd"
+  ],
+  "/usr/bin/setkeycodes": [
+   "kbd"
+  ],
+  "/usr/bin/setleds": [
+   "kbd"
+  ],
+  "/usr/bin/setlogcons": [
+   "kbd"
+  ],
+  "/usr/bin/setmetamode": [
+   "kbd"
+  ],
+  "/usr/bin/setpci": [
+   "pciutils"
+  ],
+  "/usr/bin/setpriv": [
+   "util-linux"
+  ],
+  "/usr/bin/setsid": [
+   "util-linux"
+  ],
+  "/usr/bin/setterm": [
+   "util-linux"
+  ],
+  "/usr/bin/setupcon": [
+   "console-setup"
+  ],
+  "/usr/bin/setvtrgb": [
+   "kbd"
+  ],
+  "/usr/bin/sftp": [
+   "openssh-client"
+  ],
+  "/usr/bin/sg": [
+   "login"
+  ],
+  "/usr/bin/sh": [
+   "dash"
+  ],
+  "/usr/bin/sha1sum": [
+   "coreutils"
+  ],
+  "/usr/bin/sha224sum": [
+   "coreutils"
+  ],
+  "/usr/bin/sha256sum": [
+   "coreutils"
+  ],
+  "/usr/bin/sha384sum": [
+   "coreutils"
+  ],
+  "/usr/bin/sha512sum": [
+   "coreutils"
+  ],
+  "/usr/bin/shasum": [
+   "perl"
+  ],
+  "/usr/bin/showconsolefont": [
+   "kbd"
+  ],
+  "/usr/bin/showkey": [
+   "kbd"
+  ],
+  "/usr/bin/shred": [
+   "coreutils"
+  ],
+  "/usr/bin/shuf": [
+   "coreutils"
+  ],
+  "/usr/bin/size": [
+   "binutils"
+  ],
+  "/usr/bin/skill": [
+   "procps"
+  ],
+  "/usr/bin/slabtop": [
+   "procps"
+  ],
+  "/usr/bin/sleep": [
+   "coreutils"
+  ],
+  "/usr/bin/smb2-quota": [
+   "cifs-utils"
+  ],
+  "/usr/bin/smbinfo": [
+   "cifs-utils"
+  ],
+  "/usr/bin/snice": [
+   "procps"
+  ],
+  "/usr/bin/soelim": [
+   "groff-base"
+  ],
+  "/usr/bin/sort": [
+   "coreutils"
+  ],
+  "/usr/bin/speaker-test": [
+   "alsa-utils"
+  ],
+  "/usr/bin/splain": [
+   "perl"
+  ],
+  "/usr/bin/split": [
+   "coreutils"
+  ],
+  "/usr/bin/splitfont": [
+   "kbd"
+  ],
+  "/usr/bin/sq": [
+   "sq"
+  ],
+  "/usr/bin/sqv": [
+   "sqv"
+  ],
+  "/usr/bin/ss": [
+   "iproute2"
+  ],
+  "/usr/bin/ssh": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-add": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-agent": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-argv0": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-copy-id": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-import-id": [
+   "ssh-import-id"
+  ],
+  "/usr/bin/ssh-import-id-gh": [
+   "ssh-import-id"
+  ],
+  "/usr/bin/ssh-import-id-lp": [
+   "ssh-import-id"
+  ],
+  "/usr/bin/ssh-keygen": [
+   "openssh-client"
+  ],
+  "/usr/bin/ssh-keyscan": [
+   "openssh-client"
+  ],
+  "/usr/bin/stat": [
+   "coreutils"
+  ],
+  "/usr/bin/stdbuf": [
+   "coreutils"
+  ],
+  "/usr/bin/strace": [
+   "strace"
+  ],
+  "/usr/bin/strace-log-merge": [
+   "strace"
+  ],
+  "/usr/bin/streamzip": [
+   "perl"
+  ],
+  "/usr/bin/strings": [
+   "binutils"
+  ],
+  "/usr/bin/strip": [
+   "binutils"
+  ],
+  "/usr/bin/stty": [
+   "coreutils"
+  ],
+  "/usr/bin/su": [
+   "util-linux"
+  ],
+  "/usr/bin/sudo": [
+   "sudo"
+  ],
+  "/usr/bin/sudoedit": [
+   "sudo"
+  ],
+  "/usr/bin/sudoreplay": [
+   "sudo"
+  ],
+  "/usr/bin/sum": [
+   "coreutils"
+  ],
+  "/usr/bin/sync": [
+   "coreutils"
+  ],
+  "/usr/bin/syscse": [
+   "pahole"
+  ],
+  "/usr/bin/systemctl": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-ac-power": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-analyze": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-ask-password": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-cat": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-cgls": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-cgtop": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-confext": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-creds": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-delta": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-detect-virt": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-escape": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-firstboot": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-hwdb": [
+   "udev"
+  ],
+  "/usr/bin/systemd-id128": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-inhibit": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-machine-id-setup": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-mount": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-notify": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-path": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-run": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-socket-activate": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-stdio-bridge": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-sysext": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-sysusers": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-tmpfiles": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-tty-ask-password-agent": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-umount": [
+   "systemd"
+  ],
+  "/usr/bin/systemd-vpick": [
+   "systemd"
+  ],
+  "/usr/bin/tabs": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/tac": [
+   "coreutils"
+  ],
+  "/usr/bin/tail": [
+   "coreutils"
+  ],
+  "/usr/bin/tar": [
+   "tar"
+  ],
+  "/usr/bin/taskset": [
+   "util-linux"
+  ],
+  "/usr/bin/tbl": [
+   "groff-base"
+  ],
+  "/usr/bin/tee": [
+   "coreutils"
+  ],
+  "/usr/bin/tempfile": [
+   "debianutils"
+  ],
+  "/usr/bin/test": [
+   "coreutils"
+  ],
+  "/usr/bin/tic": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/timedatectl": [
+   "systemd"
+  ],
+  "/usr/bin/timeout": [
+   "coreutils"
+  ],
+  "/usr/bin/tload": [
+   "procps"
+  ],
+  "/usr/bin/toe": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/top": [
+   "procps"
+  ],
+  "/usr/bin/touch": [
+   "coreutils"
+  ],
+  "/usr/bin/tput": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/tr": [
+   "coreutils"
+  ],
+  "/usr/bin/troff": [
+   "groff-base"
+  ],
+  "/usr/bin/true": [
+   "coreutils"
+  ],
+  "/usr/bin/truncate": [
+   "coreutils"
+  ],
+  "/usr/bin/tset": [
+   "ncurses-bin"
+  ],
+  "/usr/bin/tsort": [
+   "coreutils"
+  ],
+  "/usr/bin/tty": [
+   "coreutils"
+  ],
+  "/usr/bin/tzselect": [
+   "libc-bin"
+  ],
+  "/usr/bin/ucf": [
+   "ucf"
+  ],
+  "/usr/bin/ucfq": [
+   "ucf"
+  ],
+  "/usr/bin/ucfr": [
+   "ucf"
+  ],
+  "/usr/bin/uclampset": [
+   "util-linux"
+  ],
+  "/usr/bin/udevadm": [
+   "udev"
+  ],
+  "/usr/bin/udisksctl": [
+   "udisks2"
+  ],
+  "/usr/bin/ul": [
+   "bsdextrautils"
+  ],
+  "/usr/bin/umount": [
+   "mount"
+  ],
+  "/usr/bin/uname": [
+   "coreutils"
+  ],
+  "/usr/bin/uncompress": [
+   "gzip"
+  ],
+  "/usr/bin/unexpand": [
+   "coreutils"
+  ],
+  "/usr/bin/unicode_start": [
+   "kbd"
+  ],
+  "/usr/bin/unicode_stop": [
+   "kbd"
+  ],
+  "/usr/bin/uniq": [
+   "coreutils"
+  ],
+  "/usr/bin/unix2dos": [
+   "dos2unix"
+  ],
+  "/usr/bin/unix2mac": [
+   "dos2unix"
+  ],
+  "/usr/bin/unlink": [
+   "coreutils"
+  ],
+  "/usr/bin/unlzma": [
+   "xz-utils (alternative)"
+  ],
+  "/usr/bin/unmkinitramfs": [
+   "initramfs-tools-bin"
+  ],
+  "/usr/bin/unpigz": [
+   "pigz"
+  ],
+  "/usr/bin/unshare": [
+   "util-linux"
+  ],
+  "/usr/bin/unxz": [
+   "xz-utils"
+  ],
+  "/usr/bin/unzip": [
+   "unzip"
+  ],
+  "/usr/bin/unzipsfx": [
+   "unzip"
+  ],
+  "/usr/bin/unzstd": [
+   "zstd"
+  ],
+  "/usr/bin/update-alternatives": [
+   "dpkg"
+  ],
+  "/usr/bin/update-mime-database": [
+   "shared-mime-info"
+  ],
+  "/usr/bin/uptime": [
+   "procps"
+  ],
+  "/usr/bin/usb-devices": [
+   "usbutils"
+  ],
+  "/usr/bin/usbhid-dump": [
+   "usbutils"
+  ],
+  "/usr/bin/usbreset": [
+   "usbutils"
+  ],
+  "/usr/bin/users": [
+   "coreutils"
+  ],
+  "/usr/bin/uuid": [
+   "uuid"
+  ],
+  "/usr/bin/v4l2-compliance": [
+   "v4l-utils"
+  ],
+  "/usr/bin/v4l2-ctl": [
+   "v4l-utils"
+  ],
+  "/usr/bin/v4l2-sysfs-path": [
+   "v4l-utils"
+  ],
+  "/usr/bin/varlinkctl": [
+   "systemd"
+  ],
+  "/usr/bin/vcgencmd": [
+   "raspi-utils-core"
+  ],
+  "/usr/bin/vclog": [
+   "raspi-utils-core"
+  ],
+  "/usr/bin/vcmailbox": [
+   "raspi-utils-core"
+  ],
+  "/usr/bin/vcs-run": [
+   "cloud-guest-utils"
+  ],
+  "/usr/bin/vdir": [
+   "coreutils"
+  ],
+  "/usr/bin/vi": [
+   "vim-tiny (alternative)"
+  ],
+  "/usr/bin/view": [
+   "vim-tiny (alternative)"
+  ],
+  "/usr/bin/vim.tiny": [
+   "vim-tiny"
+  ],
+  "/usr/bin/vmstat": [
+   "procps"
+  ],
+  "/usr/bin/w": [
+   "procps"
+  ],
+  "/usr/bin/wall": [
+   "bsdutils"
+  ],
+  "/usr/bin/watch": [
+   "procps"
+  ],
+  "/usr/bin/watchgnupg": [
+   "gnupg-utils"
+  ],
+  "/usr/bin/wc": [
+   "coreutils"
+  ],
+  "/usr/bin/wcurl": [
+   "curl"
+  ],
+  "/usr/bin/wdctl": [
+   "util-linux"
+  ],
+  "/usr/bin/wget": [
+   "wget"
+  ],
+  "/usr/bin/whatis": [
+   "man-db"
+  ],
+  "/usr/bin/whereis": [
+   "util-linux"
+  ],
+  "/usr/bin/which": [
+   "debianutils (alternative)"
+  ],
+  "/usr/bin/which.debianutils": [
+   "debianutils"
+  ],
+  "/usr/bin/whiptail": [
+   "whiptail"
+  ],
+  "/usr/bin/who": [
+   "coreutils"
+  ],
+  "/usr/bin/whoami": [
+   "coreutils"
+  ],
+  "/usr/bin/wpa_passphrase": [
+   "wpasupplicant"
+  ],
+  "/usr/bin/write": [
+   "bsdextrautils (alternative)"
+  ],
+  "/usr/bin/xargs": [
+   "findutils"
+  ],
+  "/usr/bin/xauth": [
+   "xauth"
+  ],
+  "/usr/bin/xdg-user-dir": [
+   "xdg-user-dirs"
+  ],
+  "/usr/bin/xdg-user-dirs-update": [
+   "xdg-user-dirs"
+  ],
+  "/usr/bin/xsubpp": [
+   "perl"
+  ],
+  "/usr/bin/xz": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzcat": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzcmp": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzdiff": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzegrep": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzfgrep": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzgrep": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzless": [
+   "xz-utils"
+  ],
+  "/usr/bin/xzmore": [
+   "xz-utils"
+  ],
+  "/usr/bin/yes": [
+   "coreutils"
+  ],
+  "/usr/bin/ypdomainname": [
+   "hostname"
+  ],
+  "/usr/bin/zcat": [
+   "gzip"
+  ],
+  "/usr/bin/zcmp": [
+   "gzip"
+  ],
+  "/usr/bin/zdiff": [
+   "gzip"
+  ],
+  "/usr/bin/zdump": [
+   "libc-bin"
+  ],
+  "/usr/bin/zegrep": [
+   "gzip"
+  ],
+  "/usr/bin/zfgrep": [
+   "gzip"
+  ],
+  "/usr/bin/zforce": [
+   "gzip"
+  ],
+  "/usr/bin/zgrep": [
+   "gzip"
+  ],
+  "/usr/bin/zip": [
+   "zip"
+  ],
+  "/usr/bin/zipcloak": [
+   "zip"
+  ],
+  "/usr/bin/zipdetails": [
+   "perl"
+  ],
+  "/usr/bin/zipgrep": [
+   "unzip"
+  ],
+  "/usr/bin/zipinfo": [
+   "unzip"
+  ],
+  "/usr/bin/zipnote": [
+   "zip"
+  ],
+  "/usr/bin/zipsplit": [
+   "zip"
+  ],
+  "/usr/bin/zless": [
+   "gzip"
+  ],
+  "/usr/bin/zmore": [
+   "gzip"
+  ],
+  "/usr/bin/znew": [
+   "gzip"
+  ],
+  "/usr/bin/zstd": [
+   "zstd"
+  ],
+  "/usr/bin/zstdcat": [
+   "zstd"
+  ],
+  "/usr/bin/zstdgrep": [
+   "zstd"
+  ],
+  "/usr/bin/zstdless": [
+   "zstd"
+  ],
+  "/usr/bin/zstdmt": [
+   "zstd"
+  ],
+  "/usr/sbin/NetworkManager": [
+   "network-manager"
+  ],
+  "/usr/sbin/aa-load": [
+   "apparmor"
+  ],
+  "/usr/sbin/aa-remove-unknown": [
+   "apparmor"
+  ],
+  "/usr/sbin/aa-status": [
+   "apparmor"
+  ],
+  "/usr/sbin/aa-teardown": [
+   "apparmor"
+  ],
+  "/usr/sbin/accessdb": [
+   "man-db"
+  ],
+  "/usr/sbin/add-shell": [
+   "debianutils"
+  ],
+  "/usr/sbin/addgnupghome": [
+   "gnupg-utils"
+  ],
+  "/usr/sbin/addgroup": [
+   "adduser"
+  ],
+  "/usr/sbin/adduser": [
+   "adduser"
+  ],
+  "/usr/sbin/agetty": [
+   "util-linux"
+  ],
+  "/usr/sbin/alsa-info": [
+   "alsa-utils"
+  ],
+  "/usr/sbin/alsabat-test": [
+   "alsa-utils"
+  ],
+  "/usr/sbin/alsactl": [
+   "alsa-utils"
+  ],
+  "/usr/sbin/apparmor_parser": [
+   "apparmor"
+  ],
+  "/usr/sbin/apparmor_status": [
+   "apparmor"
+  ],
+  "/usr/sbin/applygnupgdefaults": [
+   "gnupg-utils"
+  ],
+  "/usr/sbin/arp": [
+   "net-tools"
+  ],
+  "/usr/sbin/arpd": [
+   "iproute2"
+  ],
+  "/usr/sbin/arptables": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/arptables-nft": [
+   "iptables"
+  ],
+  "/usr/sbin/arptables-nft-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/arptables-nft-save": [
+   "iptables"
+  ],
+  "/usr/sbin/arptables-restore": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/arptables-save": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/arptables-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/avahi-daemon": [
+   "avahi-daemon"
+  ],
+  "/usr/sbin/badblocks": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/blkdeactivate": [
+   "dmsetup"
+  ],
+  "/usr/sbin/blkdiscard": [
+   "util-linux"
+  ],
+  "/usr/sbin/blkid": [
+   "util-linux"
+  ],
+  "/usr/sbin/blkzone": [
+   "util-linux"
+  ],
+  "/usr/sbin/blockdev": [
+   "util-linux"
+  ],
+  "/usr/sbin/bluetoothd": [
+   "bluez"
+  ],
+  "/usr/sbin/bridge": [
+   "iproute2"
+  ],
+  "/usr/sbin/capsh": [
+   "libcap2-bin"
+  ],
+  "/usr/sbin/cfdisk": [
+   "fdisk"
+  ],
+  "/usr/sbin/cgdisk": [
+   "gdisk"
+  ],
+  "/usr/sbin/chat": [
+   "ppp"
+  ],
+  "/usr/sbin/chcpu": [
+   "util-linux"
+  ],
+  "/usr/sbin/chgpasswd": [
+   "passwd"
+  ],
+  "/usr/sbin/chmem": [
+   "util-linux"
+  ],
+  "/usr/sbin/chpasswd": [
+   "passwd"
+  ],
+  "/usr/sbin/chroot": [
+   "coreutils"
+  ],
+  "/usr/sbin/cifs.idmap": [
+   "cifs-utils"
+  ],
+  "/usr/sbin/cifs.upcall": [
+   "cifs-utils"
+  ],
+  "/usr/sbin/cron": [
+   "cron"
+  ],
+  "/usr/sbin/dcb": [
+   "iproute2"
+  ],
+  "/usr/sbin/debugfs": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/delgroup": [
+   "adduser"
+  ],
+  "/usr/sbin/deluser": [
+   "adduser"
+  ],
+  "/usr/sbin/depmod": [
+   "kmod"
+  ],
+  "/usr/sbin/devlink": [
+   "iproute2"
+  ],
+  "/usr/sbin/dhcpcd": [
+   "dhcpcd-base"
+  ],
+  "/usr/sbin/dmidecode": [
+   "dmidecode"
+  ],
+  "/usr/sbin/dmsetup": [
+   "dmsetup"
+  ],
+  "/usr/sbin/dmstats": [
+   "dmsetup"
+  ],
+  "/usr/sbin/dnsmasq": [
+   "dnsmasq-base"
+  ],
+  "/usr/sbin/dosfsck": [
+   "dosfstools"
+  ],
+  "/usr/sbin/dosfslabel": [
+   "dosfstools"
+  ],
+  "/usr/sbin/dpkg-preconfigure": [
+   "debconf"
+  ],
+  "/usr/sbin/dpkg-reconfigure": [
+   "debconf"
+  ],
+  "/usr/sbin/dump.exfat": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/dumpe2fs": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2freefrag": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2fsck": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2image": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2label": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2mmpstatus": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2scrub": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2scrub_all": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e2undo": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e4crypt": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/e4defrag": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/ebtables": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ebtables-nft": [
+   "iptables"
+  ],
+  "/usr/sbin/ebtables-nft-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/ebtables-nft-save": [
+   "iptables"
+  ],
+  "/usr/sbin/ebtables-restore": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ebtables-save": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ebtables-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/ethtool": [
+   "ethtool"
+  ],
+  "/usr/sbin/exfat2img": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/exfatlabel": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/faillock": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/fatlabel": [
+   "dosfstools"
+  ],
+  "/usr/sbin/fdisk": [
+   "fdisk"
+  ],
+  "/usr/sbin/filefrag": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/findfs": [
+   "util-linux"
+  ],
+  "/usr/sbin/fixparts": [
+   "gdisk"
+  ],
+  "/usr/sbin/flashrom": [
+   "flashrom"
+  ],
+  "/usr/sbin/fsck": [
+   "util-linux"
+  ],
+  "/usr/sbin/fsck.exfat": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/fsck.ext2": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/fsck.ext3": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/fsck.ext4": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/fsck.fat": [
+   "dosfstools"
+  ],
+  "/usr/sbin/fsck.msdos": [
+   "dosfstools"
+  ],
+  "/usr/sbin/fsck.vfat": [
+   "dosfstools"
+  ],
+  "/usr/sbin/fsfreeze": [
+   "util-linux"
+  ],
+  "/usr/sbin/fstab-decode": [
+   "sysvinit-utils"
+  ],
+  "/usr/sbin/fstrim": [
+   "util-linux"
+  ],
+  "/usr/sbin/gdisk": [
+   "gdisk"
+  ],
+  "/usr/sbin/genl": [
+   "iproute2"
+  ],
+  "/usr/sbin/getcap": [
+   "libcap2-bin"
+  ],
+  "/usr/sbin/getpcaps": [
+   "libcap2-bin"
+  ],
+  "/usr/sbin/getty": [
+   "util-linux"
+  ],
+  "/usr/sbin/groupadd": [
+   "passwd"
+  ],
+  "/usr/sbin/groupdel": [
+   "passwd"
+  ],
+  "/usr/sbin/groupmod": [
+   "passwd"
+  ],
+  "/usr/sbin/grpck": [
+   "passwd"
+  ],
+  "/usr/sbin/grpconv": [
+   "passwd"
+  ],
+  "/usr/sbin/grpunconv": [
+   "passwd"
+  ],
+  "/usr/sbin/halt": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/iconvconfig": [
+   "libc-bin"
+  ],
+  "/usr/sbin/ifconfig": [
+   "net-tools"
+  ],
+  "/usr/sbin/init": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/insmod": [
+   "kmod"
+  ],
+  "/usr/sbin/install-sgmlcatalog": [
+   "sgml-base"
+  ],
+  "/usr/sbin/installkernel": [
+   "debianutils"
+  ],
+  "/usr/sbin/invoke-rc.d": [
+   "init-system-helpers"
+  ],
+  "/usr/sbin/ip": [
+   "iproute2"
+  ],
+  "/usr/sbin/ip6tables": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ip6tables-apply": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-legacy": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-legacy-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-legacy-save": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-nft": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-nft-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-nft-save": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-restore": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ip6tables-restore-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/ip6tables-save": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/ip6tables-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/ipmaddr": [
+   "net-tools"
+  ],
+  "/usr/sbin/iptables": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/iptables-apply": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-legacy": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-legacy-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-legacy-save": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-nft": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-nft-restore": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-nft-save": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-restore": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/iptables-restore-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/iptables-save": [
+   "iptables (alternative)"
+  ],
+  "/usr/sbin/iptables-translate": [
+   "iptables"
+  ],
+  "/usr/sbin/iptunnel": [
+   "net-tools"
+  ],
+  "/usr/sbin/isosize": [
+   "util-linux"
+  ],
+  "/usr/sbin/iw": [
+   "iw"
+  ],
+  "/usr/sbin/iwconfig": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/iwevent": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/iwgetid": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/iwlist": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/iwpriv": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/iwspy": [
+   "wireless-tools"
+  ],
+  "/usr/sbin/kbdrate": [
+   "kbd"
+  ],
+  "/usr/sbin/killall5": [
+   "sysvinit-utils"
+  ],
+  "/usr/sbin/ldattach": [
+   "util-linux"
+  ],
+  "/usr/sbin/ldconfig": [
+   "libc-bin"
+  ],
+  "/usr/sbin/locale-gen": [
+   "locales"
+  ],
+  "/usr/sbin/logrotate": [
+   "logrotate"
+  ],
+  "/usr/sbin/logsave": [
+   "logsave"
+  ],
+  "/usr/sbin/losetup": [
+   "mount"
+  ],
+  "/usr/sbin/lsmod": [
+   "kmod"
+  ],
+  "/usr/sbin/mii-tool": [
+   "net-tools"
+  ],
+  "/usr/sbin/mkdosfs": [
+   "dosfstools"
+  ],
+  "/usr/sbin/mke2fs": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/mkfs": [
+   "util-linux"
+  ],
+  "/usr/sbin/mkfs.exfat": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/mkfs.ext2": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/mkfs.ext3": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/mkfs.ext4": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/mkfs.fat": [
+   "dosfstools"
+  ],
+  "/usr/sbin/mkfs.msdos": [
+   "dosfstools"
+  ],
+  "/usr/sbin/mkfs.ntfs": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/mkfs.vfat": [
+   "dosfstools"
+  ],
+  "/usr/sbin/mkhomedir_helper": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/mkinitramfs": [
+   "initramfs-tools-core"
+  ],
+  "/usr/sbin/mklost+found": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/mkntfs": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/mkswap": [
+   "util-linux"
+  ],
+  "/usr/sbin/modinfo": [
+   "kmod"
+  ],
+  "/usr/sbin/modprobe": [
+   "kmod"
+  ],
+  "/usr/sbin/mount.cifs": [
+   "cifs-utils"
+  ],
+  "/usr/sbin/mount.fuse": [
+   "fuse3"
+  ],
+  "/usr/sbin/mount.fuse3": [
+   "fuse3"
+  ],
+  "/usr/sbin/mount.lowntfs-3g": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/mount.ntfs": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/mount.ntfs-3g": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/mount.smb3": [
+   "cifs-utils"
+  ],
+  "/usr/sbin/nameif": [
+   "net-tools"
+  ],
+  "/usr/sbin/netplan": [
+   "netplan.io"
+  ],
+  "/usr/sbin/newusers": [
+   "passwd"
+  ],
+  "/usr/sbin/nfnl_osf": [
+   "iptables"
+  ],
+  "/usr/sbin/nft": [
+   "nftables"
+  ],
+  "/usr/sbin/nologin": [
+   "login"
+  ],
+  "/usr/sbin/ntfsclone": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/ntfscp": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/ntfslabel": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/ntfsresize": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/ntfsundelete": [
+   "ntfs-3g"
+  ],
+  "/usr/sbin/pam-auth-update": [
+   "libpam-runtime"
+  ],
+  "/usr/sbin/pam_getenv": [
+   "libpam-runtime"
+  ],
+  "/usr/sbin/pam_namespace_helper": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/pam_timestamp_check": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/parted": [
+   "parted"
+  ],
+  "/usr/sbin/partprobe": [
+   "parted"
+  ],
+  "/usr/sbin/pivot_root": [
+   "util-linux"
+  ],
+  "/usr/sbin/plipconfig": [
+   "net-tools"
+  ],
+  "/usr/sbin/poweroff": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/pppd": [
+   "ppp"
+  ],
+  "/usr/sbin/pppdump": [
+   "ppp"
+  ],
+  "/usr/sbin/pppoe-discovery": [
+   "ppp"
+  ],
+  "/usr/sbin/pppstats": [
+   "ppp"
+  ],
+  "/usr/sbin/pwck": [
+   "passwd"
+  ],
+  "/usr/sbin/pwconv": [
+   "passwd"
+  ],
+  "/usr/sbin/pwhistory_helper": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/pwunconv": [
+   "passwd"
+  ],
+  "/usr/sbin/rarp": [
+   "net-tools"
+  ],
+  "/usr/sbin/readprofile": [
+   "util-linux"
+  ],
+  "/usr/sbin/reboot": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/remove-shell": [
+   "debianutils"
+  ],
+  "/usr/sbin/resize2fs": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/rfkill": [
+   "rfkill"
+  ],
+  "/usr/sbin/rmmod": [
+   "kmod"
+  ],
+  "/usr/sbin/rmt": [
+   "tar (alternative)"
+  ],
+  "/usr/sbin/rmt-tar": [
+   "tar"
+  ],
+  "/usr/sbin/route": [
+   "net-tools"
+  ],
+  "/usr/sbin/rtacct": [
+   "iproute2"
+  ],
+  "/usr/sbin/rtcwake": [
+   "util-linux"
+  ],
+  "/usr/sbin/rtmon": [
+   "iproute2"
+  ],
+  "/usr/sbin/runlevel": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/runuser": [
+   "util-linux"
+  ],
+  "/usr/sbin/service": [
+   "init-system-helpers"
+  ],
+  "/usr/sbin/setcap": [
+   "libcap2-bin"
+  ],
+  "/usr/sbin/setvesablank": [
+   "kbd"
+  ],
+  "/usr/sbin/sfdisk": [
+   "fdisk"
+  ],
+  "/usr/sbin/sgdisk": [
+   "gdisk"
+  ],
+  "/usr/sbin/shadowconfig": [
+   "passwd"
+  ],
+  "/usr/sbin/shutdown": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/slattach": [
+   "net-tools"
+  ],
+  "/usr/sbin/sshd": [
+   "openssh-server"
+  ],
+  "/usr/sbin/start-stop-daemon": [
+   "dpkg"
+  ],
+  "/usr/sbin/sudo_logsrvd": [
+   "sudo"
+  ],
+  "/usr/sbin/sudo_sendlog": [
+   "sudo"
+  ],
+  "/usr/sbin/sulogin": [
+   "util-linux"
+  ],
+  "/usr/sbin/swaplabel": [
+   "util-linux"
+  ],
+  "/usr/sbin/swapoff": [
+   "mount"
+  ],
+  "/usr/sbin/swapon": [
+   "mount"
+  ],
+  "/usr/sbin/switch_root": [
+   "util-linux"
+  ],
+  "/usr/sbin/sysctl": [
+   "procps"
+  ],
+  "/usr/sbin/tarcat": [
+   "tar"
+  ],
+  "/usr/sbin/tc": [
+   "iproute2"
+  ],
+  "/usr/sbin/telinit": [
+   "systemd-sysv"
+  ],
+  "/usr/sbin/tipc": [
+   "iproute2"
+  ],
+  "/usr/sbin/tune.exfat": [
+   "exfatprogs"
+  ],
+  "/usr/sbin/tune2fs": [
+   "e2fsprogs"
+  ],
+  "/usr/sbin/umount.udisks2": [
+   "udisks2"
+  ],
+  "/usr/sbin/unix_chkpwd": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/unix_update": [
+   "libpam-modules-bin"
+  ],
+  "/usr/sbin/update-ca-certificates": [
+   "ca-certificates"
+  ],
+  "/usr/sbin/update-catalog": [
+   "sgml-base"
+  ],
+  "/usr/sbin/update-initramfs": [
+   "initramfs-tools"
+  ],
+  "/usr/sbin/update-locale": [
+   "locales"
+  ],
+  "/usr/sbin/update-passwd": [
+   "base-passwd"
+  ],
+  "/usr/sbin/update-pciids": [
+   "pciutils"
+  ],
+  "/usr/sbin/update-rc.d": [
+   "init-system-helpers"
+  ],
+  "/usr/sbin/update-shells": [
+   "debianutils"
+  ],
+  "/usr/sbin/update-xmlcatalog": [
+   "xml-core"
+  ],
+  "/usr/sbin/usb_modeswitch": [
+   "usb-modeswitch"
+  ],
+  "/usr/sbin/usb_modeswitch_dispatcher": [
+   "usb-modeswitch"
+  ],
+  "/usr/sbin/useradd": [
+   "passwd"
+  ],
+  "/usr/sbin/userdel": [
+   "passwd"
+  ],
+  "/usr/sbin/usermod": [
+   "passwd"
+  ],
+  "/usr/sbin/v4l2-dbg": [
+   "v4l-utils"
+  ],
+  "/usr/sbin/validlocale": [
+   "locales"
+  ],
+  "/usr/sbin/vcstime": [
+   "kbd"
+  ],
+  "/usr/sbin/vdpa": [
+   "iproute2"
+  ],
+  "/usr/sbin/vigr": [
+   "passwd"
+  ],
+  "/usr/sbin/vipw": [
+   "passwd"
+  ],
+  "/usr/sbin/visudo": [
+   "sudo"
+  ],
+  "/usr/sbin/wipefs": [
+   "util-linux"
+  ],
+  "/usr/sbin/wpa_action": [
+   "wpasupplicant"
+  ],
+  "/usr/sbin/wpa_cli": [
+   "wpasupplicant"
+  ],
+  "/usr/sbin/wpa_supplicant": [
+   "wpasupplicant"
+  ],
+  "/usr/sbin/xtables-legacy-multi": [
+   "iptables"
+  ],
+  "/usr/sbin/xtables-monitor": [
+   "iptables"
+  ],
+  "/usr/sbin/xtables-nft-multi": [
+   "iptables"
+  ],
+  "/usr/sbin/zic": [
+   "libc-bin"
+  ],
+  "/usr/sbin/zramctl": [
+   "util-linux"
+  ]
+ }
+}

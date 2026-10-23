@@ -1,0 +1,19 @@
+# publish_check.allow - hits tools/publish_check.sh lets through, each for one file and
+# one kind, by a digest of exactly the strings found there (the strings are not written
+# here). A changed or added string changes the digest and is reported again.
+# Site values and lab addresses can never be allowed.
+# Format: path<TAB>kind<TAB>digest<TAB>why
+#
+# Upstream Cowrie (ddd97e97) as it ships, untouched by the Cowrie teammate's patch
+# (checked against changes.patch, 2026-10-16): its sample users' home folders (in its
+# docs, its tests and its fake filesystem) and the fake
+# /etc/shadow inside its fake filesystem. Public upstream data, not ours.
+cowrie/docs/FAQ.rst	home path	d171796212da35a8	upstream's sample users
+cowrie/src/cowrie/data/etc/cowrie.cfg.dist	home path	532c44678b3922f5	upstream's sample users
+cowrie/src/cowrie/data/fs.pickle	home path	87935b8301d8a9de	upstream's sample users
+cowrie/src/cowrie/data/fs.pickle	password hash	1ad20a6acecb75b4	upstream's fake shadow file in its fake filesystem
+cowrie/src/cowrie/data/pool_configs/wrt_arm_guest.xml	home path	22c83dc0461d0c85	upstream's sample users
+cowrie/src/cowrie/test/test_filetransfer.py	home path	fe0560f694773595	upstream's sample users
+cowrie/src/cowrie/test/test_finger.py	home path	fe0560f694773595	upstream's sample users
+cowrie/src/cowrie/test/test_session_home.py	home path	8033bf35ea173607	upstream's sample users
+cowrie/src/cowrie/test/test_su.py	home path	45ff0554c31cf0e6	upstream's sample users

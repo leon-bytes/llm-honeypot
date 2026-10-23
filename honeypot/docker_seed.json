@@ -1,0 +1,3254 @@
+{
+ "source": "gt_api_phase1_2026-09.json n=2, 3, 6, 7, 8, 9, 17, 19, 21, 23, 25, 27 (recorded 2026-09-28)",
+ "containers": [
+  {
+   "Id": "d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334",
+   "Created": "2026-09-27T22:04:26.721717741Z",
+   "Path": "./entrypoint.sh",
+   "Args": [],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1198,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-29T00:35:01.841588168Z",
+    "FinishedAt": "2026-09-29T00:33:47.296934002Z",
+    "Health": {
+     "Status": "healthy",
+     "FailingStreak": 0,
+     "Log": [
+      {
+       "Start": "2026-09-28T21:57:48.835828312-04:00",
+       "End": "2026-09-28T21:57:48.934068146-04:00",
+       "ExitCode": 0,
+       "Output": ""
+      },
+      {
+       "Start": "2026-09-28T21:58:18.93558694-04:00",
+       "End": "2026-09-28T21:58:19.037702522-04:00",
+       "ExitCode": 0,
+       "Output": ""
+      },
+      {
+       "Start": "2026-09-28T21:58:49.039267828-04:00",
+       "End": "2026-09-28T21:58:49.139399874-04:00",
+       "ExitCode": 0,
+       "Output": ""
+      },
+      {
+       "Start": "2026-09-28T21:59:19.141141315-04:00",
+       "End": "2026-09-28T21:59:19.237693997-04:00",
+       "ExitCode": 0,
+       "Output": ""
+      },
+      {
+       "Start": "2026-09-28T21:59:49.238676077-04:00",
+       "End": "2026-09-28T21:59:49.337626031-04:00",
+       "ExitCode": 0,
+       "Output": ""
+      }
+     ]
+    }
+   },
+   "Image": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+   "ResolvConfPath": "/var/lib/docker/containers/d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334/hostname",
+   "HostsPath": "/var/lib/docker/containers/d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334/hosts",
+   "LogPath": "/var/lib/docker/containers/d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334/d139ff53533c7de3002a3a73db79943a968d3ab1da93dd637a4e292bd1ed3334-json.log",
+   "Name": "/iot-stack-nodered-1",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "iot-stack_nodered-data:/data:rw"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {}
+    },
+    "NetworkMode": "iot-stack_default",
+    "PortBindings": {
+     "1880/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "1880"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "unless-stopped",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": [],
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": [],
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "volume",
+     "Name": "iot-stack_nodered-data",
+     "Source": "/var/lib/docker/volumes/iot-stack_nodered-data/_data",
+     "Destination": "/data",
+     "Driver": "local",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": ""
+    }
+   ],
+   "Config": {
+    "Hostname": "d139ff53533c",
+    "Domainname": "",
+    "User": "node-red",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "1880/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "TZ=America/New_York",
+     "PATH=/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "NODE_VERSION=20.20.2",
+     "YARN_VERSION=1.22.22",
+     "NODE_RED_VERSION=v4.1.12",
+     "NODE_PATH=/usr/src/node-red/node_modules:/data/node_modules",
+     "FLOWS=flows.json"
+    ],
+    "Cmd": null,
+    "Healthcheck": {
+     "Test": [
+      "CMD-SHELL",
+      "node /healthcheck.js"
+     ]
+    },
+    "Image": "nodered/node-red:4.1",
+    "Volumes": null,
+    "WorkingDir": "/usr/src/node-red",
+    "Entrypoint": [
+     "./entrypoint.sh"
+    ],
+    "Labels": {
+     "authors": "Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan",
+     "com.docker.compose.config-hash": "c145fb09ceefe8dda3aa81c7e9c96cd7fb28b5831a84f4bc63fd71023520df05",
+     "com.docker.compose.container-number": "1",
+     "com.docker.compose.depends_on": "influxdb:service_started:false,mosquitto:service_started:false",
+     "com.docker.compose.image": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+     "com.docker.compose.oneoff": "False",
+     "com.docker.compose.project": "iot-stack",
+     "com.docker.compose.project.config_files": "/root/iot-stack/docker-compose.yml",
+     "com.docker.compose.project.working_dir": "/root/iot-stack",
+     "com.docker.compose.service": "nodered",
+     "com.docker.compose.version": "5.5.1",
+     "org.label-schema.arch": "",
+     "org.label-schema.build-date": "2026-07-30T10:02:50Z",
+     "org.label-schema.description": "Low-code programming for event-driven applications.",
+     "org.label-schema.docker.dockerfile": ".docker/Dockerfile.alpine",
+     "org.label-schema.license": "Apache-2.0",
+     "org.label-schema.name": "Node-RED",
+     "org.label-schema.url": "https://nodered.org",
+     "org.label-schema.vcs-ref": "",
+     "org.label-schema.vcs-type": "Git",
+     "org.label-schema.vcs-url": "https://github.com/node-red/node-red-docker",
+     "org.label-schema.version": "4.1.12",
+     "org.opencontainers.image.source": "https://github.com/node-red/node-red-docker"
+    }
+   },
+   "NetworkSettings": {
+    "SandboxID": "3e2c4e7e6d58436ae82619e91033809a9b7314f480dd73f5c2a202f5a215d9a5",
+    "SandboxKey": "/var/run/docker/netns/3e2c4e7e6d58",
+    "Ports": {
+     "1880/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "1880"
+      }
+     ]
+    },
+    "Networks": {
+     "iot-stack_default": {
+      "IPAMConfig": null,
+      "Links": null,
+      "Aliases": [
+       "iot-stack-nodered-1",
+       "nodered"
+      ],
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "f5676ba9b003828d64655fe9859da8587bc3ed69104684860b336f000430c855",
+      "EndpointID": "4c041bd786603a343258463284408fe72c71a6b1c8ac1ec5c771aba5506716f6",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.2",
+      "MacAddress": "56:cc:29:53:91:03",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "DNSNames": [
+       "iot-stack-nodered-1",
+       "nodered",
+       "d139ff53533c"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+    "size": 2942,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/nodered/node-red:4.1",
+     "org.opencontainers.image.ref.name": "4.1"
+    },
+    "platform": {
+     "architecture": "arm64",
+     "os": "linux"
+    }
+   }
+  },
+  {
+   "Id": "443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594",
+   "Created": "2026-09-27T22:04:17.992142103Z",
+   "Path": "/entrypoint.sh",
+   "Args": [
+    "influxd"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1199,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-29T00:35:01.759202872Z",
+    "FinishedAt": "2026-09-29T00:33:47.269193937Z"
+   },
+   "Image": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+   "ResolvConfPath": "/var/lib/docker/containers/443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594/hostname",
+   "HostsPath": "/var/lib/docker/containers/443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594/hosts",
+   "LogPath": "/var/lib/docker/containers/443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594/443074d3a15d7c1ec1140452284abb8d481f98c9ad8c224c39698f50fb7c0594-json.log",
+   "Name": "/iot-stack-influxdb-1",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "iot-stack_influxdb-data:/var/lib/influxdb2:rw",
+     "iot-stack_influxdb-config:/etc/influxdb2:rw"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {}
+    },
+    "NetworkMode": "iot-stack_default",
+    "PortBindings": {
+     "8086/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8086"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "unless-stopped",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": [],
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": [],
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "volume",
+     "Name": "iot-stack_influxdb-config",
+     "Source": "/var/lib/docker/volumes/iot-stack_influxdb-config/_data",
+     "Destination": "/etc/influxdb2",
+     "Driver": "local",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": ""
+    },
+    {
+     "Type": "volume",
+     "Name": "iot-stack_influxdb-data",
+     "Source": "/var/lib/docker/volumes/iot-stack_influxdb-data/_data",
+     "Destination": "/var/lib/influxdb2",
+     "Driver": "local",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": ""
+    }
+   ],
+   "Config": {
+    "Hostname": "443074d3a15d",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "8086/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "DOCKER_INFLUXDB_INIT_USERNAME=@@influx_user@@",
+     "DOCKER_INFLUXDB_INIT_PASSWORD=@@influx_password@@",
+     "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=@@influx_token@@",
+     "TZ=America/New_York",
+     "DOCKER_INFLUXDB_INIT_MODE=setup",
+     "DOCKER_INFLUXDB_INIT_ORG=home",
+     "DOCKER_INFLUXDB_INIT_BUCKET=sensors",
+     "DOCKER_INFLUXDB_INIT_RETENTION=52w",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "INFLUXDB_VERSION=2.7.12",
+     "INFLUX_CLI_VERSION=2.7.5",
+     "INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs",
+     "INFLUXD_INIT_PORT=9999",
+     "INFLUXD_INIT_PING_ATTEMPTS=600",
+     "DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default"
+    ],
+    "Cmd": [
+     "influxd"
+    ],
+    "Image": "influxdb:2.7-alpine",
+    "Volumes": {
+     "/etc/influxdb2": {},
+     "/var/lib/influxdb2": {}
+    },
+    "WorkingDir": "/",
+    "Entrypoint": [
+     "/entrypoint.sh"
+    ],
+    "Labels": {
+     "com.docker.compose.config-hash": "befcde1e54b041888fddcb4a11d08422934f9b874065d23f41e6cc38f9bfd8d4",
+     "com.docker.compose.container-number": "1",
+     "com.docker.compose.depends_on": "",
+     "com.docker.compose.image": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+     "com.docker.compose.oneoff": "False",
+     "com.docker.compose.project": "iot-stack",
+     "com.docker.compose.project.config_files": "/root/iot-stack/docker-compose.yml",
+     "com.docker.compose.project.working_dir": "/root/iot-stack",
+     "com.docker.compose.service": "influxdb",
+     "com.docker.compose.version": "5.5.1"
+    }
+   },
+   "NetworkSettings": {
+    "SandboxID": "222f59dd49b03bc2b62de6efd75e273da1465a235daf8ba65db9f85b781d2fbe",
+    "SandboxKey": "/var/run/docker/netns/222f59dd49b0",
+    "Ports": {
+     "8086/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "8086"
+      }
+     ]
+    },
+    "Networks": {
+     "iot-stack_default": {
+      "IPAMConfig": null,
+      "Links": null,
+      "Aliases": [
+       "iot-stack-influxdb-1",
+       "influxdb"
+      ],
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "f5676ba9b003828d64655fe9859da8587bc3ed69104684860b336f000430c855",
+      "EndpointID": "fcd21c095dc66693d39645e9839ff233dfae8af89893d91c057ca76a56dbd896",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.4",
+      "MacAddress": "82:ef:5e:94:60:08",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "DNSNames": [
+       "iot-stack-influxdb-1",
+       "influxdb",
+       "443074d3a15d"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+    "size": 1846,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/influxdb:2.7-alpine",
+     "org.opencontainers.image.ref.name": "2.7-alpine"
+    },
+    "platform": {
+     "architecture": "arm64",
+     "os": "linux",
+     "variant": "v8"
+    }
+   }
+  },
+  {
+   "Id": "d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89",
+   "Created": "2026-09-27T22:04:17.991193986Z",
+   "Path": "/docker-entrypoint.sh",
+   "Args": [
+    "/usr/sbin/mosquitto",
+    "-c",
+    "/mosquitto/config/mosquitto.conf"
+   ],
+   "State": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 1200,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-29T00:35:01.718669242Z",
+    "FinishedAt": "2026-09-29T00:33:47.279301067Z"
+   },
+   "Image": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+   "ResolvConfPath": "/var/lib/docker/containers/d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89/resolv.conf",
+   "HostnamePath": "/var/lib/docker/containers/d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89/hostname",
+   "HostsPath": "/var/lib/docker/containers/d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89/hosts",
+   "LogPath": "/var/lib/docker/containers/d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89/d3775f38b3d46fd726f64510ab68d268e93aae6709f80cbc02c5710a256f3b89-json.log",
+   "Name": "/iot-stack-mosquitto-1",
+   "RestartCount": 0,
+   "Driver": "overlayfs",
+   "Platform": "linux",
+   "MountLabel": "",
+   "ProcessLabel": "",
+   "AppArmorProfile": "",
+   "ExecIDs": null,
+   "HostConfig": {
+    "Binds": [
+     "iot-stack_mosquitto-data:/mosquitto/data:rw",
+     "/root/iot-stack/mosquitto/config:/mosquitto/config:ro"
+    ],
+    "ContainerIDFile": "",
+    "LogConfig": {
+     "Type": "json-file",
+     "Config": {}
+    },
+    "NetworkMode": "iot-stack_default",
+    "PortBindings": {
+     "1883/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "1883"
+      }
+     ]
+    },
+    "RestartPolicy": {
+     "Name": "unless-stopped",
+     "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+     0,
+     0
+    ],
+    "CapAdd": null,
+    "CapDrop": null,
+    "CgroupnsMode": "private",
+    "Dns": [],
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": [],
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": false,
+    "SecurityOpt": null,
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 0,
+    "NanoCpus": 0,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": null,
+    "BlkioDeviceReadBps": null,
+    "BlkioDeviceWriteBps": null,
+    "BlkioDeviceReadIOps": null,
+    "BlkioDeviceWriteIOps": null,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": null,
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": null,
+    "Ulimits": null,
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "MaskedPaths": [
+     "/proc/acpi",
+     "/proc/asound",
+     "/proc/interrupts",
+     "/proc/kcore",
+     "/proc/keys",
+     "/proc/latency_stats",
+     "/proc/sched_debug",
+     "/proc/scsi",
+     "/proc/timer_list",
+     "/proc/timer_stats",
+     "/sys/devices/virtual/powercap",
+     "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+     "/proc/bus",
+     "/proc/fs",
+     "/proc/irq",
+     "/proc/sys",
+     "/proc/sysrq-trigger"
+    ]
+   },
+   "Storage": {
+    "RootFS": {
+     "Snapshot": {
+      "Name": "overlayfs"
+     }
+    }
+   },
+   "Mounts": [
+    {
+     "Type": "bind",
+     "Source": "/root/iot-stack/mosquitto/config",
+     "Destination": "/mosquitto/config",
+     "Mode": "ro",
+     "RW": false,
+     "Propagation": "rprivate"
+    },
+    {
+     "Type": "volume",
+     "Name": "iot-stack_mosquitto-data",
+     "Source": "/var/lib/docker/volumes/iot-stack_mosquitto-data/_data",
+     "Destination": "/mosquitto/data",
+     "Driver": "local",
+     "Mode": "rw",
+     "RW": true,
+     "Propagation": ""
+    },
+    {
+     "Type": "volume",
+     "Name": "ff693fcfe6b68afd5f4868310999134480b3a79e78de11eb79a715fe7c97cb95",
+     "Source": "/var/lib/docker/volumes/ff693fcfe6b68afd5f4868310999134480b3a79e78de11eb79a715fe7c97cb95/_data",
+     "Destination": "/mosquitto/log",
+     "Driver": "local",
+     "Mode": "",
+     "RW": true,
+     "Propagation": ""
+    }
+   ],
+   "Config": {
+    "Hostname": "d3775f38b3d4",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "AttachStderr": true,
+    "ExposedPorts": {
+     "1883/tcp": {}
+    },
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+     "TZ=America/New_York",
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "VERSION=2.1.2",
+     "DOWNLOAD_SHA256=fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02",
+     "GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7"
+    ],
+    "Cmd": [
+     "/usr/sbin/mosquitto",
+     "-c",
+     "/mosquitto/config/mosquitto.conf"
+    ],
+    "Image": "eclipse-mosquitto:2",
+    "Volumes": {
+     "/mosquitto/data": {},
+     "/mosquitto/log": {}
+    },
+    "WorkingDir": "/",
+    "Entrypoint": [
+     "/docker-entrypoint.sh"
+    ],
+    "Labels": {
+     "com.docker.compose.config-hash": "611d499c75bc951ea18cbb6e3198d25e5c7d41c01e0e862856a1f830aec8c08a",
+     "com.docker.compose.container-number": "1",
+     "com.docker.compose.depends_on": "",
+     "com.docker.compose.image": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+     "com.docker.compose.oneoff": "False",
+     "com.docker.compose.project": "iot-stack",
+     "com.docker.compose.project.config_files": "/root/iot-stack/docker-compose.yml",
+     "com.docker.compose.project.working_dir": "/root/iot-stack",
+     "com.docker.compose.service": "mosquitto",
+     "com.docker.compose.version": "5.5.1",
+     "org.opencontainers.image.authors": "Roger Light <roger@atchoo.org>",
+     "org.opencontainers.image.description": "Eclipse Mosquitto MQTT Broker",
+     "org.opencontainers.image.documentation": "https://mosquitto.org/documentation/",
+     "org.opencontainers.image.licenses": "EPL-2.0 OR BSD-3-Clause",
+     "org.opencontainers.image.source": "https://github.com/eclipse-mosquitto/mosquitto",
+     "org.opencontainers.image.title": "eclipse-mosquitto",
+     "org.opencontainers.image.url": "https://mosquitto.org/",
+     "org.opencontainers.image.version": "2.1.2"
+    }
+   },
+   "NetworkSettings": {
+    "SandboxID": "3114f5769576a1a73156ab4cfbe6436fa2341ca16188a4df8f6fe19550d7c1c1",
+    "SandboxKey": "/var/run/docker/netns/3114f5769576",
+    "Ports": {
+     "1883/tcp": [
+      {
+       "HostIp": "127.0.0.1",
+       "HostPort": "1883"
+      }
+     ]
+    },
+    "Networks": {
+     "iot-stack_default": {
+      "IPAMConfig": null,
+      "Links": null,
+      "Aliases": [
+       "iot-stack-mosquitto-1",
+       "mosquitto"
+      ],
+      "DriverOpts": null,
+      "GwPriority": 0,
+      "NetworkID": "f5676ba9b003828d64655fe9859da8587bc3ed69104684860b336f000430c855",
+      "EndpointID": "28ded3c3aad0d1e98c17bc3b46351800750e0a6946f187beea3e617788d9f56a",
+      "Gateway": "172.18.0.1",
+      "IPAddress": "172.18.0.3",
+      "MacAddress": "da:8f:73:fd:64:ce",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "DNSNames": [
+       "iot-stack-mosquitto-1",
+       "mosquitto",
+       "d3775f38b3d4"
+      ]
+     }
+    }
+   },
+   "ImageManifestDescriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+    "size": 739,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/eclipse-mosquitto:2",
+     "org.opencontainers.image.ref.name": "2"
+    },
+    "platform": {
+     "architecture": "arm64",
+     "os": "linux",
+     "variant": "v8"
+    }
+   }
+  }
+ ],
+ "images": [
+  {
+   "Containers": 1,
+   "Created": 1789679701,
+   "Id": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+   "Labels": {
+    "org.opencontainers.image.authors": "Roger Light <roger@atchoo.org>",
+    "org.opencontainers.image.description": "Eclipse Mosquitto MQTT Broker",
+    "org.opencontainers.image.documentation": "https://mosquitto.org/documentation/",
+    "org.opencontainers.image.licenses": "EPL-2.0 OR BSD-3-Clause",
+    "org.opencontainers.image.source": "https://github.com/eclipse-mosquitto/mosquitto",
+    "org.opencontainers.image.title": "eclipse-mosquitto",
+    "org.opencontainers.image.url": "https://mosquitto.org/",
+    "org.opencontainers.image.version": "2.1.2"
+   },
+   "ParentId": "",
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+    "size": 739,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/eclipse-mosquitto:2",
+     "org.opencontainers.image.ref.name": "2"
+    }
+   },
+   "RepoDigests": [
+    "eclipse-mosquitto@sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d"
+   ],
+   "RepoTags": [
+    "eclipse-mosquitto:2"
+   ],
+   "SharedSize": -1,
+   "Size": 56979677
+  },
+  {
+   "Containers": 1,
+   "Created": 1785405906,
+   "Id": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+   "Labels": {
+    "authors": "Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan",
+    "org.label-schema.arch": "",
+    "org.label-schema.build-date": "2026-07-30T10:02:50Z",
+    "org.label-schema.description": "Low-code programming for event-driven applications.",
+    "org.label-schema.docker.dockerfile": ".docker/Dockerfile.alpine",
+    "org.label-schema.license": "Apache-2.0",
+    "org.label-schema.name": "Node-RED",
+    "org.label-schema.url": "https://nodered.org",
+    "org.label-schema.vcs-ref": "",
+    "org.label-schema.vcs-type": "Git",
+    "org.label-schema.vcs-url": "https://github.com/node-red/node-red-docker",
+    "org.label-schema.version": "4.1.12",
+    "org.opencontainers.image.source": "https://github.com/node-red/node-red-docker"
+   },
+   "ParentId": "",
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+    "size": 2942,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/nodered/node-red:4.1",
+     "org.opencontainers.image.ref.name": "4.1"
+    }
+   },
+   "RepoDigests": [
+    "nodered/node-red@sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070"
+   ],
+   "RepoTags": [
+    "nodered/node-red:4.1"
+   ],
+   "SharedSize": -1,
+   "Size": 1395881037
+  },
+  {
+   "Containers": 1,
+   "Created": 1777922648,
+   "Id": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+   "Labels": {},
+   "ParentId": "",
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+    "size": 1846,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/influxdb:2.7-alpine",
+     "org.opencontainers.image.ref.name": "2.7-alpine"
+    }
+   },
+   "RepoDigests": [
+    "influxdb@sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01"
+   ],
+   "RepoTags": [
+    "influxdb:2.7-alpine"
+   ],
+   "SharedSize": -1,
+   "Size": 380989967
+  }
+ ],
+ "networks": [
+  {
+   "Name": "bridge",
+   "Id": "e980f9666992d9dd0234a6875e5a14f3cb4dba30c0e823c639802fd30b599618",
+   "Created": "2026-09-28T20:35:01.558528724-04:00",
+   "Scope": "local",
+   "Driver": "bridge",
+   "EnableIPv4": true,
+   "EnableIPv6": false,
+   "IPAM": {
+    "Driver": "default",
+    "Options": null,
+    "Config": [
+     {
+      "Subnet": "172.17.0.0/16",
+      "Gateway": "172.17.0.1"
+     }
+    ]
+   },
+   "Internal": false,
+   "Attachable": false,
+   "Ingress": false,
+   "ConfigFrom": {
+    "Network": ""
+   },
+   "ConfigOnly": false,
+   "Options": {
+    "com.docker.network.bridge.default_bridge": "true",
+    "com.docker.network.bridge.enable_icc": "true",
+    "com.docker.network.bridge.enable_ip_masquerade": "true",
+    "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+    "com.docker.network.bridge.name": "docker0",
+    "com.docker.network.driver.mtu": "1500"
+   },
+   "Labels": {}
+  },
+  {
+   "Name": "iot-stack_default",
+   "Id": "f5676ba9b003828d64655fe9859da8587bc3ed69104684860b336f000430c855",
+   "Created": "2026-09-27T18:04:17.930539817-04:00",
+   "Scope": "local",
+   "Driver": "bridge",
+   "EnableIPv4": true,
+   "EnableIPv6": false,
+   "IPAM": {
+    "Driver": "default",
+    "Options": null,
+    "Config": [
+     {
+      "Subnet": "172.18.0.0/16",
+      "Gateway": "172.18.0.1"
+     }
+    ]
+   },
+   "Internal": false,
+   "Attachable": false,
+   "Ingress": false,
+   "ConfigFrom": {
+    "Network": ""
+   },
+   "ConfigOnly": false,
+   "Options": {},
+   "Labels": {
+    "com.docker.compose.config-hash": "b4b4a2eca48e41997f2b71254d4258cbd78f49321ef304a4926fc8fd81b6cc4d",
+    "com.docker.compose.network": "default",
+    "com.docker.compose.project": "iot-stack",
+    "com.docker.compose.version": "5.5.1"
+   }
+  },
+  {
+   "Name": "host",
+   "Id": "1bca9fb4face9c109d453852922dd3ac628143208254af5fda04425a5290723e",
+   "Created": "2026-09-27T18:03:15.060933907-04:00",
+   "Scope": "local",
+   "Driver": "host",
+   "EnableIPv4": true,
+   "EnableIPv6": false,
+   "IPAM": {
+    "Driver": "default",
+    "Options": null,
+    "Config": null
+   },
+   "Internal": false,
+   "Attachable": false,
+   "Ingress": false,
+   "ConfigFrom": {
+    "Network": ""
+   },
+   "ConfigOnly": false,
+   "Options": {},
+   "Labels": {}
+  },
+  {
+   "Name": "none",
+   "Id": "57821afcfdc550dfab3d4cc4c38f786880689b3dcdd0d4c394d5cd5da9396901",
+   "Created": "2026-09-27T18:03:15.047596642-04:00",
+   "Scope": "local",
+   "Driver": "null",
+   "EnableIPv4": true,
+   "EnableIPv6": false,
+   "IPAM": {
+    "Driver": "default",
+    "Options": null,
+    "Config": null
+   },
+   "Internal": false,
+   "Attachable": false,
+   "Ingress": false,
+   "ConfigFrom": {
+    "Network": ""
+   },
+   "ConfigOnly": false,
+   "Options": {},
+   "Labels": {}
+  }
+ ],
+ "volumes": [
+  {
+   "CreatedAt": "2026-09-27T18:04:17-04:00",
+   "Driver": "local",
+   "Labels": {
+    "com.docker.compose.config-hash": "b6f04d19815aec22b7be359029c0fd133cd84eceb1dae63d30a8233908b3e56d",
+    "com.docker.compose.project": "iot-stack",
+    "com.docker.compose.version": "5.5.1",
+    "com.docker.compose.volume": "nodered-data"
+   },
+   "Mountpoint": "/var/lib/docker/volumes/iot-stack_nodered-data/_data",
+   "Name": "iot-stack_nodered-data",
+   "Options": null,
+   "Scope": "local"
+  },
+  {
+   "CreatedAt": "2026-09-27T18:04:26-04:00",
+   "Driver": "local",
+   "Labels": {
+    "com.docker.volume.anonymous": ""
+   },
+   "Mountpoint": "/var/lib/docker/volumes/ff693fcfe6b68afd5f4868310999134480b3a79e78de11eb79a715fe7c97cb95/_data",
+   "Name": "ff693fcfe6b68afd5f4868310999134480b3a79e78de11eb79a715fe7c97cb95",
+   "Options": null,
+   "Scope": "local"
+  },
+  {
+   "CreatedAt": "2026-09-27T18:04:17-04:00",
+   "Driver": "local",
+   "Labels": {
+    "com.docker.compose.config-hash": "2f7474ab37a87734a88dab780b0dbcf0c093e7bd57a580f51bcfc53fd7296f5c",
+    "com.docker.compose.project": "iot-stack",
+    "com.docker.compose.version": "5.5.1",
+    "com.docker.compose.volume": "influxdb-config"
+   },
+   "Mountpoint": "/var/lib/docker/volumes/iot-stack_influxdb-config/_data",
+   "Name": "iot-stack_influxdb-config",
+   "Options": null,
+   "Scope": "local"
+  },
+  {
+   "CreatedAt": "2026-09-27T18:04:17-04:00",
+   "Driver": "local",
+   "Labels": {
+    "com.docker.compose.config-hash": "453fac2a9d6695cf748f6f2f3d14be7b77ac1dc02412081adc59b13dfe20ed32",
+    "com.docker.compose.project": "iot-stack",
+    "com.docker.compose.version": "5.5.1",
+    "com.docker.compose.volume": "influxdb-data"
+   },
+   "Mountpoint": "/var/lib/docker/volumes/iot-stack_influxdb-data/_data",
+   "Name": "iot-stack_influxdb-data",
+   "Options": null,
+   "Scope": "local"
+  },
+  {
+   "CreatedAt": "2026-09-27T18:04:17-04:00",
+   "Driver": "local",
+   "Labels": {
+    "com.docker.compose.config-hash": "eb93584e48daa8a85c19b0b44d0488117539e9afab09579cc8e984bd95fe4325",
+    "com.docker.compose.project": "iot-stack",
+    "com.docker.compose.version": "5.5.1",
+    "com.docker.compose.volume": "mosquitto-data"
+   },
+   "Mountpoint": "/var/lib/docker/volumes/iot-stack_mosquitto-data/_data",
+   "Name": "iot-stack_mosquitto-data",
+   "Options": null,
+   "Scope": "local"
+  }
+ ],
+ "version": {
+  "Platform": {
+   "Name": "Docker Engine - Community"
+  },
+  "Version": "29.8.1",
+  "ApiVersion": "1.56",
+  "MinAPIVersion": "1.40",
+  "Os": "linux",
+  "Arch": "arm64",
+  "Components": [
+   {
+    "Name": "Engine",
+    "Version": "29.8.1",
+    "Details": {
+     "ApiVersion": "1.56",
+     "Arch": "arm64",
+     "BuildTime": "2026-09-15T16:25:24.000000000+00:00",
+     "Experimental": "false",
+     "GitCommit": "464cd50",
+     "GoVersion": "go1.26.8",
+     "KernelVersion": "6.12.75+rpt-rpi-2712",
+     "MinAPIVersion": "1.40",
+     "Module": "github.com/moby/moby/v2",
+     "ModuleVersion": "v2.0.0+unknown",
+     "Os": "linux"
+    }
+   },
+   {
+    "Name": "containerd",
+    "Version": "v2.3.6",
+    "Details": {
+     "GitCommit": "ee2735368117d2eb259779949d5e75cdafec9761"
+    }
+   },
+   {
+    "Name": "runc",
+    "Version": "1.5.1",
+    "Details": {
+     "GitCommit": "v1.5.1-0-g8f2685a4"
+    }
+   },
+   {
+    "Name": "docker-init",
+    "Version": "0.19.0",
+    "Details": {
+     "GitCommit": "de40ad0"
+    }
+   }
+  ],
+  "GitCommit": "464cd50",
+  "GoVersion": "go1.26.8",
+  "KernelVersion": "6.12.75+rpt-rpi-2712",
+  "BuildTime": "2026-09-15T16:25:24.000000000+00:00"
+ },
+ "info": {
+  "ID": "718043f1-59cd-4543-8775-b2ee353985c7",
+  "Containers": 3,
+  "ContainersRunning": 3,
+  "ContainersPaused": 0,
+  "ContainersStopped": 0,
+  "Images": 3,
+  "Driver": "overlayfs",
+  "DriverStatus": [
+   [
+    "driver-type",
+    "io.containerd.snapshotter.v1"
+   ]
+  ],
+  "Plugins": {
+   "Volume": [
+    "local"
+   ],
+   "Network": [
+    "bridge",
+    "host",
+    "ipvlan",
+    "macvlan",
+    "null",
+    "overlay"
+   ],
+   "Authorization": null,
+   "Log": [
+    "awslogs",
+    "fluentd",
+    "gcplogs",
+    "gelf",
+    "journald",
+    "json-file",
+    "local",
+    "splunk",
+    "syslog"
+   ]
+  },
+  "MemoryLimit": false,
+  "SwapLimit": false,
+  "CpuCfsPeriod": true,
+  "CpuCfsQuota": true,
+  "CPUShares": true,
+  "CPUSet": true,
+  "PidsLimit": true,
+  "IPv4Forwarding": true,
+  "Debug": false,
+  "NFd": 51,
+  "OomKillDisable": false,
+  "NGoroutines": 71,
+  "SystemTime": "2026-09-28T22:00:06.078723464-04:00",
+  "LoggingDriver": "json-file",
+  "CgroupDriver": "systemd",
+  "CgroupVersion": "2",
+  "NEventsListener": 0,
+  "KernelVersion": "6.12.75+rpt-rpi-2712",
+  "OperatingSystem": "Debian GNU/Linux 13 (trixie)",
+  "OSVersion": "13",
+  "OSType": "linux",
+  "Architecture": "aarch64",
+  "IndexServerAddress": "https://index.docker.io/v1/",
+  "RegistryConfig": {
+   "InsecureRegistryCIDRs": [
+    "::1/128",
+    "127.0.0.0/8"
+   ],
+   "IndexConfigs": {
+    "docker.io": {
+     "Name": "docker.io",
+     "Mirrors": [],
+     "Secure": true,
+     "Official": true
+    }
+   },
+   "Mirrors": []
+  },
+  "NCPU": 4,
+  "MemTotal": 8454619136,
+  "GenericResources": null,
+  "DockerRootDir": "/var/lib/docker",
+  "HttpProxy": "",
+  "HttpsProxy": "",
+  "NoProxy": "",
+  "Name": "raspberrypi",
+  "Labels": [],
+  "ExperimentalBuild": false,
+  "ServerVersion": "29.8.1",
+  "Runtimes": {
+   "io.containerd.runc.v2": {
+    "path": "runc",
+    "status": {
+     "org.opencontainers.runtime-spec.features": "{\"ociVersionMin\":\"1.0.0\",\"ociVersionMax\":\"1.3.0\",\"hooks\":[\"prestart\",\"createRuntime\",\"createContainer\",\"startContainer\",\"poststart\",\"poststop\"],\"mountOptions\":[\"async\",\"atime\",\"bind\",\"defaults\",\"dev\",\"diratime\",\"dirsync\",\"exec\",\"iversion\",\"lazytime\",\"loud\",\"mand\",\"noatime\",\"nodev\",\"nodiratime\",\"noexec\",\"noiversion\",\"nolazytime\",\"nomand\",\"norelatime\",\"nostrictatime\",\"nosuid\",\"nosymfollow\",\"private\",\"ratime\",\"rbind\",\"rdev\",\"rdiratime\",\"relatime\",\"remount\",\"rexec\",\"rnoatime\",\"rnodev\",\"rnodiratime\",\"rnoexec\",\"rnorelatime\",\"rnostrictatime\",\"rnosuid\",\"rnosymfollow\",\"ro\",\"rprivate\",\"rrelatime\",\"rro\",\"rrw\",\"rshared\",\"rslave\",\"rstrictatime\",\"rsuid\",\"rsymfollow\",\"runbindable\",\"rw\",\"shared\",\"silent\",\"slave\",\"strictatime\",\"suid\",\"symfollow\",\"sync\",\"tmpcopyup\",\"unbindable\"],\"linux\":{\"namespaces\":[\"cgroup\",\"ipc\",\"mount\",\"network\",\"pid\",\"time\",\"user\",\"uts\"],\"capabilities\":[\"CAP_CHOWN\",\"CAP_DAC_OVERRIDE\",\"CAP_DAC_READ_SEARCH\",\"CAP_FOWNER\",\"CAP_FSETID\",\"CAP_KILL\",\"CAP_SETGID\",\"CAP_SETUID\",\"CAP_SETPCAP\",\"CAP_LINUX_IMMUTABLE\",\"CAP_NET_BIND_SERVICE\",\"CAP_NET_BROADCAST\",\"CAP_NET_ADMIN\",\"CAP_NET_RAW\",\"CAP_IPC_LOCK\",\"CAP_IPC_OWNER\",\"CAP_SYS_MODULE\",\"CAP_SYS_RAWIO\",\"CAP_SYS_CHROOT\",\"CAP_SYS_PTRACE\",\"CAP_SYS_PACCT\",\"CAP_SYS_ADMIN\",\"CAP_SYS_BOOT\",\"CAP_SYS_NICE\",\"CAP_SYS_RESOURCE\",\"CAP_SYS_TIME\",\"CAP_SYS_TTY_CONFIG\",\"CAP_MKNOD\",\"CAP_LEASE\",\"CAP_AUDIT_WRITE\",\"CAP_AUDIT_CONTROL\",\"CAP_SETFCAP\",\"CAP_MAC_OVERRIDE\",\"CAP_MAC_ADMIN\",\"CAP_SYSLOG\",\"CAP_WAKE_ALARM\",\"CAP_BLOCK_SUSPEND\",\"CAP_AUDIT_READ\",\"CAP_PERFMON\",\"CAP_BPF\",\"CAP_CHECKPOINT_RESTORE\"],\"cgroup\":{\"v1\":true,\"v2\":true,\"systemd\":true,\"systemdUser\":true,\"rdma\":true},\"seccomp\":{\"enabled\":true,\"actions\":[\"SCMP_ACT_ALLOW\",\"SCMP_ACT_ERRNO\",\"SCMP_ACT_KILL\",\"SCMP_ACT_KILL_PROCESS\",\"SCMP_ACT_KILL_THREAD\",\"SCMP_ACT_LOG\",\"SCMP_ACT_NOTIFY\",\"SCMP_ACT_TRACE\",\"SCMP_ACT_TRAP\"],\"operators\":[\"SCMP_CMP_EQ\",\"SCMP_CMP_GE\",\"SCMP_CMP_GT\",\"SCMP_CMP_LE\",\"SCMP_CMP_LT\",\"SCMP_CMP_MASKED_EQ\",\"SCMP_CMP_NE\"],\"archs\":[\"SCMP_ARCH_AARCH64\",\"SCMP_ARCH_ARM\",\"SCMP_ARCH_LOONGARCH64\",\"SCMP_ARCH_MIPS\",\"SCMP_ARCH_MIPS64\",\"SCMP_ARCH_MIPS64N32\",\"SCMP_ARCH_MIPSEL\",\"SCMP_ARCH_MIPSEL64\",\"SCMP_ARCH_MIPSEL64N32\",\"SCMP_ARCH_PPC\",\"SCMP_ARCH_PPC64\",\"SCMP_ARCH_PPC64LE\",\"SCMP_ARCH_RISCV64\",\"SCMP_ARCH_S390\",\"SCMP_ARCH_S390X\",\"SCMP_ARCH_X32\",\"SCMP_ARCH_X86\",\"SCMP_ARCH_X86_64\"],\"knownFlags\":[\"SECCOMP_FILTER_FLAG_TSYNC\",\"SECCOMP_FILTER_FLAG_SPEC_ALLOW\",\"SECCOMP_FILTER_FLAG_LOG\",\"SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV\"],\"supportedFlags\":[\"SECCOMP_FILTER_FLAG_TSYNC\",\"SECCOMP_FILTER_FLAG_SPEC_ALLOW\",\"SECCOMP_FILTER_FLAG_LOG\",\"SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV\"]},\"apparmor\":{\"enabled\":true},\"selinux\":{\"enabled\":true},\"intelRdt\":{\"enabled\":true,\"schemata\":true,\"monitoring\":true},\"memoryPolicy\":{\"modes\":[\"MPOL_BIND\",\"MPOL_DEFAULT\",\"MPOL_INTERLEAVE\",\"MPOL_LOCAL\",\"MPOL_PREFERRED\",\"MPOL_PREFERRED_MANY\",\"MPOL_WEIGHTED_INTERLEAVE\"],\"flags\":[\"MPOL_F_NUMA_BALANCING\",\"MPOL_F_RELATIVE_NODES\",\"MPOL_F_STATIC_NODES\"]},\"mountExtensions\":{\"idmap\":{\"enabled\":true}},\"netDevices\":{\"enabled\":true}},\"annotations\":{\"io.github.seccomp.libseccomp.version\":\"2.6.0\",\"org.opencontainers.runc.checkpoint.enabled\":\"true\",\"org.opencontainers.runc.commit\":\"v1.5.1-0-g8f2685a4\",\"org.opencontainers.runc.version\":\"1.5.1\"},\"potentiallyUnsafeConfigAnnotations\":[\"bundle\",\"org.systemd.property.\",\"org.criu.config\"]}"
+    }
+   },
+   "runc": {
+    "path": "runc",
+    "status": {
+     "org.opencontainers.runtime-spec.features": "{\"ociVersionMin\":\"1.0.0\",\"ociVersionMax\":\"1.3.0\",\"hooks\":[\"prestart\",\"createRuntime\",\"createContainer\",\"startContainer\",\"poststart\",\"poststop\"],\"mountOptions\":[\"async\",\"atime\",\"bind\",\"defaults\",\"dev\",\"diratime\",\"dirsync\",\"exec\",\"iversion\",\"lazytime\",\"loud\",\"mand\",\"noatime\",\"nodev\",\"nodiratime\",\"noexec\",\"noiversion\",\"nolazytime\",\"nomand\",\"norelatime\",\"nostrictatime\",\"nosuid\",\"nosymfollow\",\"private\",\"ratime\",\"rbind\",\"rdev\",\"rdiratime\",\"relatime\",\"remount\",\"rexec\",\"rnoatime\",\"rnodev\",\"rnodiratime\",\"rnoexec\",\"rnorelatime\",\"rnostrictatime\",\"rnosuid\",\"rnosymfollow\",\"ro\",\"rprivate\",\"rrelatime\",\"rro\",\"rrw\",\"rshared\",\"rslave\",\"rstrictatime\",\"rsuid\",\"rsymfollow\",\"runbindable\",\"rw\",\"shared\",\"silent\",\"slave\",\"strictatime\",\"suid\",\"symfollow\",\"sync\",\"tmpcopyup\",\"unbindable\"],\"linux\":{\"namespaces\":[\"cgroup\",\"ipc\",\"mount\",\"network\",\"pid\",\"time\",\"user\",\"uts\"],\"capabilities\":[\"CAP_CHOWN\",\"CAP_DAC_OVERRIDE\",\"CAP_DAC_READ_SEARCH\",\"CAP_FOWNER\",\"CAP_FSETID\",\"CAP_KILL\",\"CAP_SETGID\",\"CAP_SETUID\",\"CAP_SETPCAP\",\"CAP_LINUX_IMMUTABLE\",\"CAP_NET_BIND_SERVICE\",\"CAP_NET_BROADCAST\",\"CAP_NET_ADMIN\",\"CAP_NET_RAW\",\"CAP_IPC_LOCK\",\"CAP_IPC_OWNER\",\"CAP_SYS_MODULE\",\"CAP_SYS_RAWIO\",\"CAP_SYS_CHROOT\",\"CAP_SYS_PTRACE\",\"CAP_SYS_PACCT\",\"CAP_SYS_ADMIN\",\"CAP_SYS_BOOT\",\"CAP_SYS_NICE\",\"CAP_SYS_RESOURCE\",\"CAP_SYS_TIME\",\"CAP_SYS_TTY_CONFIG\",\"CAP_MKNOD\",\"CAP_LEASE\",\"CAP_AUDIT_WRITE\",\"CAP_AUDIT_CONTROL\",\"CAP_SETFCAP\",\"CAP_MAC_OVERRIDE\",\"CAP_MAC_ADMIN\",\"CAP_SYSLOG\",\"CAP_WAKE_ALARM\",\"CAP_BLOCK_SUSPEND\",\"CAP_AUDIT_READ\",\"CAP_PERFMON\",\"CAP_BPF\",\"CAP_CHECKPOINT_RESTORE\"],\"cgroup\":{\"v1\":true,\"v2\":true,\"systemd\":true,\"systemdUser\":true,\"rdma\":true},\"seccomp\":{\"enabled\":true,\"actions\":[\"SCMP_ACT_ALLOW\",\"SCMP_ACT_ERRNO\",\"SCMP_ACT_KILL\",\"SCMP_ACT_KILL_PROCESS\",\"SCMP_ACT_KILL_THREAD\",\"SCMP_ACT_LOG\",\"SCMP_ACT_NOTIFY\",\"SCMP_ACT_TRACE\",\"SCMP_ACT_TRAP\"],\"operators\":[\"SCMP_CMP_EQ\",\"SCMP_CMP_GE\",\"SCMP_CMP_GT\",\"SCMP_CMP_LE\",\"SCMP_CMP_LT\",\"SCMP_CMP_MASKED_EQ\",\"SCMP_CMP_NE\"],\"archs\":[\"SCMP_ARCH_AARCH64\",\"SCMP_ARCH_ARM\",\"SCMP_ARCH_LOONGARCH64\",\"SCMP_ARCH_MIPS\",\"SCMP_ARCH_MIPS64\",\"SCMP_ARCH_MIPS64N32\",\"SCMP_ARCH_MIPSEL\",\"SCMP_ARCH_MIPSEL64\",\"SCMP_ARCH_MIPSEL64N32\",\"SCMP_ARCH_PPC\",\"SCMP_ARCH_PPC64\",\"SCMP_ARCH_PPC64LE\",\"SCMP_ARCH_RISCV64\",\"SCMP_ARCH_S390\",\"SCMP_ARCH_S390X\",\"SCMP_ARCH_X32\",\"SCMP_ARCH_X86\",\"SCMP_ARCH_X86_64\"],\"knownFlags\":[\"SECCOMP_FILTER_FLAG_TSYNC\",\"SECCOMP_FILTER_FLAG_SPEC_ALLOW\",\"SECCOMP_FILTER_FLAG_LOG\",\"SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV\"],\"supportedFlags\":[\"SECCOMP_FILTER_FLAG_TSYNC\",\"SECCOMP_FILTER_FLAG_SPEC_ALLOW\",\"SECCOMP_FILTER_FLAG_LOG\",\"SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV\"]},\"apparmor\":{\"enabled\":true},\"selinux\":{\"enabled\":true},\"intelRdt\":{\"enabled\":true,\"schemata\":true,\"monitoring\":true},\"memoryPolicy\":{\"modes\":[\"MPOL_BIND\",\"MPOL_DEFAULT\",\"MPOL_INTERLEAVE\",\"MPOL_LOCAL\",\"MPOL_PREFERRED\",\"MPOL_PREFERRED_MANY\",\"MPOL_WEIGHTED_INTERLEAVE\"],\"flags\":[\"MPOL_F_NUMA_BALANCING\",\"MPOL_F_RELATIVE_NODES\",\"MPOL_F_STATIC_NODES\"]},\"mountExtensions\":{\"idmap\":{\"enabled\":true}},\"netDevices\":{\"enabled\":true}},\"annotations\":{\"io.github.seccomp.libseccomp.version\":\"2.6.0\",\"org.opencontainers.runc.checkpoint.enabled\":\"true\",\"org.opencontainers.runc.commit\":\"v1.5.1-0-g8f2685a4\",\"org.opencontainers.runc.version\":\"1.5.1\"},\"potentiallyUnsafeConfigAnnotations\":[\"bundle\",\"org.systemd.property.\",\"org.criu.config\"]}"
+    }
+   }
+  },
+  "DefaultRuntime": "runc",
+  "Swarm": {
+   "NodeID": "",
+   "NodeAddr": "",
+   "LocalNodeState": "inactive",
+   "ControlAvailable": false,
+   "Error": "",
+   "RemoteManagers": null
+  },
+  "LiveRestoreEnabled": false,
+  "Isolation": "",
+  "InitBinary": "docker-init",
+  "ContainerdCommit": {
+   "ID": "ee2735368117d2eb259779949d5e75cdafec9761"
+  },
+  "RuncCommit": {
+   "ID": "v1.5.1-0-g8f2685a4"
+  },
+  "InitCommit": {
+   "ID": "de40ad0"
+  },
+  "SecurityOptions": [
+   "name=seccomp,profile=builtin",
+   "name=cgroupns"
+  ],
+  "FirewallBackend": {
+   "Driver": "iptables",
+   "Info": [
+    [
+     "EnableUserlandProxy",
+     "true"
+    ],
+    [
+     "UserlandProxyPath",
+     "/usr/bin/docker-proxy"
+    ]
+   ]
+  },
+  "CDISpecDirs": [
+   "/etc/cdi",
+   "/var/run/cdi"
+  ],
+  "Containerd": {
+   "Address": "/run/containerd/containerd.sock",
+   "Namespaces": {
+    "Containers": "moby",
+    "Plugins": "plugins.moby"
+   }
+  },
+  "Warnings": [
+   "[DEPRECATION NOTICE]: API is accessible on http://0.0.0.0:2375 without encryption.\n         Access to the remote API is equivalent to root access on the host. Refer\n         to the 'Docker daemon attack surface' section in the documentation for\n         more information: https://docs.docker.com/go/attack-surface/\nIn future versions this will be a hard failure preventing the daemon from starting! Learn more at: https://docs.docker.com/go/api-security/",
+   "WARNING: No memory limit support",
+   "WARNING: No swap limit support"
+  ]
+ },
+ "df": {
+  "LayersSize": 1815521593,
+  "image_shared": {
+   "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d": 0,
+   "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070": 18329088,
+   "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01": 18329088
+  },
+  "container_size": {
+   "/iot-stack-nodered-1": [
+    4096,
+    727265280
+   ],
+   "/iot-stack-influxdb-1": [
+    32768,
+    191635456
+   ],
+   "/iot-stack-mosquitto-1": [
+    4096,
+    29462528
+   ]
+  },
+  "volume_size": {
+   "iot-stack_nodered-data": 42917,
+   "ff693fcfe6b68afd5f4868310999134480b3a79e78de11eb79a715fe7c97cb95": 0,
+   "iot-stack_influxdb-config": 441,
+   "iot-stack_influxdb-data": 253952,
+   "iot-stack_mosquitto-data": 47
+  }
+ },
+ "stats": {
+  "/iot-stack-nodered-1": {
+   "memory_stats": {
+    "stats": {
+     "active_anon": 0,
+     "active_file": 0,
+     "anon": 0,
+     "anon_thp": 0,
+     "file": 0,
+     "file_dirty": 0,
+     "file_mapped": 0,
+     "file_writeback": 0,
+     "inactive_anon": 0,
+     "inactive_file": 0,
+     "kernel_stack": 0,
+     "pgactivate": 0,
+     "pgdeactivate": 0,
+     "pgfault": 0,
+     "pglazyfree": 0,
+     "pglazyfreed": 0,
+     "pgmajfault": 0,
+     "pgrefill": 0,
+     "pgscan": 0,
+     "pgsteal": 0,
+     "shmem": 0,
+     "slab": 0,
+     "slab_reclaimable": 0,
+     "slab_unreclaimable": 0,
+     "sock": 0,
+     "thp_collapse_alloc": 0,
+     "thp_fault_alloc": 0,
+     "unevictable": 0,
+     "workingset_activate": 0,
+     "workingset_nodereclaim": 0,
+     "workingset_refault": 0
+    }
+   },
+   "pids_limit": 9578,
+   "blkio_stats": {
+    "io_service_bytes_recursive": [
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "read",
+      "value": 79564800
+     },
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "write",
+      "value": 0
+     }
+    ],
+    "io_serviced_recursive": null,
+    "io_queue_recursive": null,
+    "io_service_time_recursive": null,
+    "io_wait_time_recursive": null,
+    "io_merged_recursive": null,
+    "io_time_recursive": null,
+    "sectors_recursive": null
+   }
+  },
+  "/iot-stack-influxdb-1": {
+   "memory_stats": {
+    "stats": {
+     "active_anon": 0,
+     "active_file": 0,
+     "anon": 0,
+     "anon_thp": 0,
+     "file": 0,
+     "file_dirty": 0,
+     "file_mapped": 0,
+     "file_writeback": 0,
+     "inactive_anon": 0,
+     "inactive_file": 0,
+     "kernel_stack": 0,
+     "pgactivate": 0,
+     "pgdeactivate": 0,
+     "pgfault": 0,
+     "pglazyfree": 0,
+     "pglazyfreed": 0,
+     "pgmajfault": 0,
+     "pgrefill": 0,
+     "pgscan": 0,
+     "pgsteal": 0,
+     "shmem": 0,
+     "slab": 0,
+     "slab_reclaimable": 0,
+     "slab_unreclaimable": 0,
+     "sock": 0,
+     "thp_collapse_alloc": 0,
+     "thp_fault_alloc": 0,
+     "unevictable": 0,
+     "workingset_activate": 0,
+     "workingset_nodereclaim": 0,
+     "workingset_refault": 0
+    }
+   },
+   "pids_limit": 9578,
+   "blkio_stats": {
+    "io_service_bytes_recursive": [
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "read",
+      "value": 95264768
+     },
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "write",
+      "value": 0
+     }
+    ],
+    "io_serviced_recursive": null,
+    "io_queue_recursive": null,
+    "io_service_time_recursive": null,
+    "io_wait_time_recursive": null,
+    "io_merged_recursive": null,
+    "io_time_recursive": null,
+    "sectors_recursive": null
+   }
+  },
+  "/iot-stack-mosquitto-1": {
+   "memory_stats": {
+    "stats": {
+     "active_anon": 0,
+     "active_file": 0,
+     "anon": 0,
+     "anon_thp": 0,
+     "file": 0,
+     "file_dirty": 0,
+     "file_mapped": 0,
+     "file_writeback": 0,
+     "inactive_anon": 0,
+     "inactive_file": 0,
+     "kernel_stack": 0,
+     "pgactivate": 0,
+     "pgdeactivate": 0,
+     "pgfault": 0,
+     "pglazyfree": 0,
+     "pglazyfreed": 0,
+     "pgmajfault": 0,
+     "pgrefill": 0,
+     "pgscan": 0,
+     "pgsteal": 0,
+     "shmem": 0,
+     "slab": 0,
+     "slab_reclaimable": 0,
+     "slab_unreclaimable": 0,
+     "sock": 0,
+     "thp_collapse_alloc": 0,
+     "thp_fault_alloc": 0,
+     "unevictable": 0,
+     "workingset_activate": 0,
+     "workingset_nodereclaim": 0,
+     "workingset_refault": 0
+    }
+   },
+   "pids_limit": 9578,
+   "blkio_stats": {
+    "io_service_bytes_recursive": [
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "read",
+      "value": 8978432
+     },
+     {
+      "major": 179,
+      "minor": 0,
+      "op": "write",
+      "value": 0
+     }
+    ],
+    "io_serviced_recursive": null,
+    "io_queue_recursive": null,
+    "io_service_time_recursive": null,
+    "io_wait_time_recursive": null,
+    "io_merged_recursive": null,
+    "io_time_recursive": null,
+    "sectors_recursive": null
+   }
+  }
+ },
+ "image_manifests": {
+  "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d": [
+   {
+    "ID": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+    "Descriptor": {
+     "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+     "digest": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+     "size": 739,
+     "annotations": {
+      "io.containerd.image.name": "docker.io/library/eclipse-mosquitto:2",
+      "org.opencontainers.image.ref.name": "2"
+     }
+    },
+    "Available": true,
+    "Size": {
+     "Content": 27541725,
+     "Total": 56979677
+    },
+    "Kind": "image",
+    "ImageData": {
+     "Platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "Size": {
+      "Unpacked": 29437952
+     },
+     "Containers": []
+    }
+   }
+  ],
+  "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070": [
+   {
+    "ID": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+    "Descriptor": {
+     "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+     "digest": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+     "size": 2942,
+     "annotations": {
+      "io.containerd.image.name": "docker.io/nodered/node-red:4.1",
+      "org.opencontainers.image.ref.name": "4.1"
+     }
+    },
+    "Available": true,
+    "Size": {
+     "Content": 668640333,
+     "Total": 1395881037
+    },
+    "Kind": "image",
+    "ImageData": {
+     "Platform": {
+      "architecture": "arm64",
+      "os": "linux"
+     },
+     "Size": {
+      "Unpacked": 727240704
+     },
+     "Containers": []
+    }
+   }
+  ],
+  "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01": [
+   {
+    "ID": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+    "Descriptor": {
+     "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+     "digest": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+     "size": 1846,
+     "annotations": {
+      "io.containerd.image.name": "docker.io/library/influxdb:2.7-alpine",
+      "org.opencontainers.image.ref.name": "2.7-alpine"
+     }
+    },
+    "Available": true,
+    "Size": {
+     "Content": 189407759,
+     "Total": 380989967
+    },
+    "Kind": "image",
+    "ImageData": {
+     "Platform": {
+      "architecture": "arm64",
+      "os": "linux",
+      "variant": "v8"
+     },
+     "Size": {
+      "Unpacked": 191582208
+     },
+     "Containers": []
+    }
+   }
+  ]
+ },
+ "image_inspect": {
+  "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d": {
+   "Id": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+   "RepoTags": [
+    "eclipse-mosquitto:2"
+   ],
+   "RepoDigests": [
+    "eclipse-mosquitto@sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-09-17T21:15:01.931715324Z",
+   "Config": {
+    "ExposedPorts": {
+     "1883/tcp": {}
+    },
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "VERSION=2.1.2",
+     "DOWNLOAD_SHA256=fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02",
+     "GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7"
+    ],
+    "Entrypoint": [
+     "/docker-entrypoint.sh"
+    ],
+    "Cmd": [
+     "/usr/sbin/mosquitto",
+     "-c",
+     "/mosquitto/config/mosquitto.conf"
+    ],
+    "Volumes": {
+     "/mosquitto/data": {},
+     "/mosquitto/log": {}
+    },
+    "WorkingDir": "/",
+    "Labels": {
+     "org.opencontainers.image.authors": "Roger Light <roger@atchoo.org>",
+     "org.opencontainers.image.description": "Eclipse Mosquitto MQTT Broker",
+     "org.opencontainers.image.documentation": "https://mosquitto.org/documentation/",
+     "org.opencontainers.image.licenses": "EPL-2.0 OR BSD-3-Clause",
+     "org.opencontainers.image.source": "https://github.com/eclipse-mosquitto/mosquitto",
+     "org.opencontainers.image.title": "eclipse-mosquitto",
+     "org.opencontainers.image.url": "https://mosquitto.org/",
+     "org.opencontainers.image.version": "2.1.2"
+    }
+   },
+   "Architecture": "arm64",
+   "Variant": "v8",
+   "Os": "linux",
+   "Size": 56979677,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:18932007cc273c0541920263e57c02d40013c4730d7db35437a4ffcc31422eda",
+     "sha256:adef5d49c030e61bc7eb4b8b8e2e01ae39961298946070d4e3232225535866f1",
+     "sha256:066e7cdc1ffb067424c7cfd3a6b1b1c2e2ff4a49380964cc31ef70d3e3a3a3ee"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-09-27T22:03:38.46703748Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+    "size": 739,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/eclipse-mosquitto:2",
+     "org.opencontainers.image.ref.name": "2"
+    }
+   }
+  },
+  "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070": {
+   "Id": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+   "RepoTags": [
+    "nodered/node-red:4.1"
+   ],
+   "RepoDigests": [
+    "nodered/node-red@sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-07-30T10:05:06.975963592Z",
+   "Config": {
+    "User": "node-red",
+    "ExposedPorts": {
+     "1880/tcp": {}
+    },
+    "Env": [
+     "PATH=/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "NODE_VERSION=20.20.2",
+     "YARN_VERSION=1.22.22",
+     "NODE_RED_VERSION=v4.1.12",
+     "NODE_PATH=/usr/src/node-red/node_modules:/data/node_modules",
+     "FLOWS=flows.json"
+    ],
+    "Entrypoint": [
+     "./entrypoint.sh"
+    ],
+    "WorkingDir": "/usr/src/node-red",
+    "Labels": {
+     "authors": "Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan",
+     "org.label-schema.arch": "",
+     "org.label-schema.build-date": "2026-07-30T10:02:50Z",
+     "org.label-schema.description": "Low-code programming for event-driven applications.",
+     "org.label-schema.docker.dockerfile": ".docker/Dockerfile.alpine",
+     "org.label-schema.license": "Apache-2.0",
+     "org.label-schema.name": "Node-RED",
+     "org.label-schema.url": "https://nodered.org",
+     "org.label-schema.vcs-ref": "",
+     "org.label-schema.vcs-type": "Git",
+     "org.label-schema.vcs-url": "https://github.com/node-red/node-red-docker",
+     "org.label-schema.version": "4.1.12",
+     "org.opencontainers.image.source": "https://github.com/node-red/node-red-docker"
+    },
+    "Healthcheck": {
+     "Test": [
+      "CMD-SHELL",
+      "node /healthcheck.js"
+     ]
+    }
+   },
+   "Architecture": "arm64",
+   "Os": "linux",
+   "Size": 1395881037,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:a8d26d037006414043b277ecb95287692d0960219289d9e27b0bcea0ce233b02",
+     "sha256:21e4f00ae03f714ca184b962b542ebb67dc73b5c2f7200659becdef9bdfe320e",
+     "sha256:d71b9385f08ff45e2ffd832dfd8ce8edb39dbe4e0775cf14d142aeecf3350a2d",
+     "sha256:624111e2a83c228bf01f932df89fcff9f9a2b04284fe99114345b3715118740e",
+     "sha256:88ad95f07c69cac9823fdbaa097bec9a51a4bff92f7d77d154ae838d80459c9d",
+     "sha256:e9300810fcc067164c297f386bfbd8620b14d3be9fe9cb47585bfacae8957534",
+     "sha256:64ac3ac2ca94b7f675a712e671a646c1c2f496515cfcbedaeb536acd5bafc342",
+     "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+     "sha256:a6ab7f697fa9afd932d6cbc4b7dc7c21a5d432a87485028356935e3f28013d8d",
+     "sha256:1186b470f247fb9eb7bc6283ee5fc7850941db90c25c4e56d0c7b44a13d6b243",
+     "sha256:97df166f60590c148bb1997e96371f77831f8fd5c5b7d769ccea82678b0cdac1",
+     "sha256:ec3e5736309a095e24c969ecd3a4acb8b9eda9e8fb8f200e2506f75ce1898622",
+     "sha256:c6ba55352e78107a4d6bc48768b2ee3b23c38be4c542e9f1764fcbeb97f35ba7",
+     "sha256:093d95e484483e479e79f122900575c551a6bc8b7d4ba6cddee401e127e73d0a",
+     "sha256:aebeb0308eb7613bd60008ecc024c6e1ba6bdf06dcdd2fbc5cc1361c425ca194",
+     "sha256:e291a707af29ba46040092d07b9c032b3338add9a0b8e697ed3c619038869bf4",
+     "sha256:0254b2cb44ef75b867b8ac4b4abeb5ffcb1eef09ea191a45bcd0db5c8a547488"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-09-27T22:03:56.70369085Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+    "size": 2942,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/nodered/node-red:4.1",
+     "org.opencontainers.image.ref.name": "4.1"
+    }
+   }
+  },
+  "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01": {
+   "Id": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+   "RepoTags": [
+    "influxdb:2.7-alpine"
+   ],
+   "RepoDigests": [
+    "influxdb@sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01"
+   ],
+   "Comment": "buildkit.dockerfile.v0",
+   "Created": "2026-05-04T19:24:08.761392679Z",
+   "Config": {
+    "ExposedPorts": {
+     "8086/tcp": {}
+    },
+    "Env": [
+     "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+     "INFLUXDB_VERSION=2.7.12",
+     "INFLUX_CLI_VERSION=2.7.5",
+     "INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs",
+     "INFLUXD_INIT_PORT=9999",
+     "INFLUXD_INIT_PING_ATTEMPTS=600",
+     "DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default"
+    ],
+    "Entrypoint": [
+     "/entrypoint.sh"
+    ],
+    "Cmd": [
+     "influxd"
+    ],
+    "Volumes": {
+     "/etc/influxdb2": {},
+     "/var/lib/influxdb2": {}
+    },
+    "WorkingDir": "/"
+   },
+   "Architecture": "arm64",
+   "Variant": "v8",
+   "Os": "linux",
+   "Size": 380989967,
+   "RootFS": {
+    "Type": "layers",
+    "Layers": [
+     "sha256:a8d26d037006414043b277ecb95287692d0960219289d9e27b0bcea0ce233b02",
+     "sha256:5036ce4fea9f35f6fde900698422aa4c2c3bc1ef69d9f902ae338593ef354c73",
+     "sha256:a29998ba45ae4d714781b527f7b93032c8aa5c4cbe0dbcb221a3548a7a941f01",
+     "sha256:ac56ae37972161a743829acb98bc8d2c2e33e644fc66456c7fbc1663fd005efc",
+     "sha256:0f2301ec52fdf8b64b81d77bd955c75e190e46a2b38202f78e4a6196b2712484",
+     "sha256:31422261f0d6952db220d09f165b33dd7906568a7d7b47ded0b47c4b815854c0",
+     "sha256:a9b871e001675c27ee34a5ff7ebf23b81bbd65c2eddf6fb20e9841d0af64d797",
+     "sha256:741b592457872bfa064cccbefd647f6ac6827faa3f323bd5c43f13884b61216b",
+     "sha256:630aff582d748915ae5fe5c9c8d8df06abd8e70b5d764ccdd64180dbc1e40787",
+     "sha256:c0b9a22f7daebfa8250976446bddc7d704c9d0f2518c34fbdd17bfaab1be7040"
+    ]
+   },
+   "Metadata": {
+    "LastTagTime": "2026-09-27T22:04:16.789706866Z"
+   },
+   "Descriptor": {
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "digest": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+    "size": 1846,
+    "annotations": {
+     "io.containerd.image.name": "docker.io/library/influxdb:2.7-alpine",
+     "org.opencontainers.image.ref.name": "2.7-alpine"
+    }
+   }
+  }
+ },
+ "image_history": {
+  "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "CMD [\"/usr/sbin/mosquitto\" \"-c\" \"/mosquitto/config/mosquitto.conf\"]",
+    "Id": "sha256:c07230340ee9c4a319f32f65bfdd6cca86f8aa8fe4f2db95fdd69d8b63bac06d",
+    "Size": 0,
+    "Tags": [
+     "eclipse-mosquitto:2"
+    ]
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "EXPOSE map[1883/tcp:{}]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "COPY docker-entrypoint.sh / # buildkit",
+    "Id": "<missing>",
+    "Size": 8192,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "VOLUME [/mosquitto/data /mosquitto/log]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "RUN /bin/sh -c set -x &&     apk --no-cache add --virtual build-deps         argon2-dev         build-base         cjson-dev         cmake         gnupg         libedit-dev         libmicrohttpd-dev         linux-headers         openssl-dev         sqlite-dev         util-linux-dev &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz -O /tmp/mosq.tar.gz &&     echo \"$DOWNLOAD_SHA256  /tmp/mosq.tar.gz\" | sha256sum -c - &&     wget https://mosquitto.org/files/source/mosquitto-${VERSION}.tar.gz.asc -O /tmp/mosq.tar.gz.asc &&     export GNUPGHOME=\"$(mktemp -d)\" &&     found='';     for server in         hkps://keys.openpgp.org         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo \"Fetching GPG key $GPG_KEYS from $server\";         gpg --keyserver \"$server\" --keyserver-options timeout=10 --recv-keys \"$GPG_KEYS\" && found=yes && break;     done;     test -z \"$found\" && echo >&2 \"error: failed to fetch GPG key $GPG_KEYS\" && exit 1;     gpg --batch --verify /tmp/mosq.tar.gz.asc /tmp/mosq.tar.gz &&     gpgconf --kill all &&     rm -rf \"$GNUPGHOME\" /tmp/mosq.tar.gz.asc &&     mkdir -p /build/mosq &&     tar --strip=1 -xf /tmp/mosq.tar.gz -C /build/mosq &&     rm /tmp/mosq.tar.gz &&     make -C /build/mosq -j \"$(nproc)\"         CFLAGS=\"-Wall -O2 -I/build -DHTTP_API_DIR=\\\\\\\"/usr/share/mosquitto/dashboard\\\\\\\"\"         WITH_ADNS=no         WITH_DOCS=no         WITH_SHARED_LIBRARIES=yes         WITH_SRV=no         WITH_STRIP=yes         WITH_WEBSOCKETS=yes         prefix=/usr         binary &&     addgroup -S -g 1883 mosquitto 2>/dev/null &&     adduser -S -u 1883 -D -H -h /var/empty -s /sbin/nologin -G mosquitto -g mosquitto mosquitto 2>/dev/null &&     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log &&     install -d /usr/sbin/ &&     install -s -m755 /build/mosq/client/mosquitto_pub /usr/bin/mosquitto_pub &&     install -s -m755 /build/mosq/client/mosquitto_rr /usr/bin/mosquitto_rr &&     install -s -m755 /build/mosq/client/mosquitto_sub /usr/bin/mosquitto_sub &&     install -s -m644 /build/mosq/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so.1 &&     install -s -m755 /build/mosq/src/mosquitto /usr/sbin/mosquitto &&     install -s -m755 /build/mosq/apps/mosquitto_ctrl/mosquitto_ctrl /usr/bin/mosquitto_ctrl &&     install -s -m755 /build/mosq/apps/mosquitto_passwd/mosquitto_passwd /usr/bin/mosquitto_passwd &&     install -s -m755 /build/mosq/apps/mosquitto_signal/mosquitto_signal /usr/bin/mosquitto_signal &&     install -s -m755 /build/mosq/plugins/acl-file/mosquitto_acl_file.so /usr/lib/mosquitto_acl_file.so &&     install -s -m755 /build/mosq/plugins/dynamic-security/mosquitto_dynamic_security.so /usr/lib/mosquitto_dynamic_security.so &&     install -s -m755 /build/mosq/plugins/password-file/mosquitto_password_file.so /usr/lib/mosquitto_password_file.so &&     install -s -m755 /build/mosq/plugins/persist-sqlite/mosquitto_persist_sqlite.so /usr/lib/mosquitto_persist_sqlite.so &&     install -s -m755 /build/mosq/plugins/sparkplug-aware/mosquitto_sparkplug_aware.so /usr/lib/mosquitto_sparkplug_aware.so &&     install -m644 /build/mosq/docker/2.1-alpine/mosquitto.conf /mosquitto/config/mosquitto.conf &&     install -m644 /build/mosq/docker/2.1-ubuntu/mosquitto.conf /mosquitto-no-auth.conf &&     install -d /usr/share/mosquitto &&     cp -r /build/mosq/dashboard/src /usr/share/mosquitto/dashboard &&     install -Dm644 /build/mosq/epl-v20 /usr/share/licenses/mosquitto/epl-v20 &&     install -Dm644 /build/mosq/edl-v10 /usr/share/licenses/mosquitto/edl-v10 &&     chown -R mosquitto:mosquitto /mosquitto &&     apk --no-cache add         argon2-libs         ca-certificates         cjson         libedit         libmicrohttpd         sqlite-libs         tzdata &&     apk del build-deps &&     rm -rf /build # buildkit",
+    "Id": "<missing>",
+    "Size": 20115456,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "LABEL org.opencontainers.image.authors=Roger Light <roger@atchoo.org> org.opencontainers.image.title=eclipse-mosquitto org.opencontainers.image.description=Eclipse Mosquitto MQTT Broker org.opencontainers.image.url=https://mosquitto.org/ org.opencontainers.image.documentation=https://mosquitto.org/documentation/ org.opencontainers.image.source=https://github.com/eclipse-mosquitto/mosquitto org.opencontainers.image.licenses=EPL-2.0 OR BSD-3-Clause org.opencontainers.image.version=2.1.2",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789679701,
+    "CreatedBy": "ENV VERSION=2.1.2 DOWNLOAD_SHA256=fd905380691ac65ea5a93779e8214941829e3d6e038d5edff9eac5fd74cbed02 GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789677438,
+    "CreatedBy": "CMD [\"/bin/sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1789677438,
+    "CreatedBy": "ADD alpine-minirootfs-3.23.6-aarch64.tar.gz / # buildkit",
+    "Id": "<missing>",
+    "Size": 9314304,
+    "Tags": null
+   }
+  ],
+  "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "ENTRYPOINT [\"./entrypoint.sh\"]",
+    "Id": "sha256:7c6dcdd0210ba7bc5164650914daf941d9cd0b13ff11c4ae0e72cfb3f3d35070",
+    "Size": 0,
+    "Tags": [
+     "nodered/node-red:4.1"
+    ]
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "HEALTHCHECK {Test:[CMD-SHELL node /healthcheck.js] Interval:0s Timeout:0s StartPeriod:0s StartInterval:0s Retries:0}",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "EXPOSE [1880/tcp]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "ENV NODE_RED_VERSION=v4.1.12 NODE_PATH=/usr/src/node-red/node_modules:/data/node_modules PATH=/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin FLOWS=flows.json",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "USER node-red",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405906,
+    "CreatedBy": "RUN |7 QEMU_ARCH= BUILD_DATE=2026-07-30T10:02:50Z BUILD_VERSION=4.1.12 BUILD_REF= NODE_RED_VERSION=v4.1.12 ARCH= TAG_SUFFIX= /bin/sh -c npm config set cache /data/.npm --global # buildkit",
+    "Id": "<missing>",
+    "Size": 36864,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405901,
+    "CreatedBy": "RUN |7 QEMU_ARCH= BUILD_DATE=2026-07-30T10:02:50Z BUILD_VERSION=4.1.12 BUILD_REF= NODE_RED_VERSION=v4.1.12 ARCH= TAG_SUFFIX= /bin/sh -c chown -R node-red:root /usr/src/node-red &&     /tmp/install_devtools.sh &&     rm -r /tmp/* # buildkit",
+    "Id": "<missing>",
+    "Size": 427188224,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405885,
+    "CreatedBy": "COPY /usr/src/node-red/prod_node_modules ./node_modules # buildkit",
+    "Id": "<missing>",
+    "Size": 121786368,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "LABEL org.label-schema.build-date=2026-07-30T10:02:50Z org.label-schema.docker.dockerfile=.docker/Dockerfile.alpine org.label-schema.license=Apache-2.0 org.label-schema.name=Node-RED org.label-schema.version=4.1.12 org.label-schema.description=Low-code programming for event-driven applications. org.label-schema.url=https://nodered.org org.label-schema.vcs-ref= org.label-schema.vcs-type=Git org.label-schema.vcs-url=https://github.com/node-red/node-red-docker org.opencontainers.image.source=https://github.com/node-red/node-red-docker org.label-schema.arch= authors=Dave Conway-Jones, Nick O'Leary, James Thomas, Raymond Mouthaan",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG TAG_SUFFIX=",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG QEMU_ARCH",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG ARCH",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG NODE_RED_VERSION=v4.1.12",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG BUILD_REF=",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG BUILD_VERSION=4.1.12",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "ARG BUILD_DATE=2026-07-30T10:02:50Z",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "COPY .docker/scripts/entrypoint.sh . # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "COPY flows.json /data # buildkit",
+    "Id": "<missing>",
+    "Size": 12288,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "COPY package.json . # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "RUN |1 QEMU_ARCH= /bin/sh -c echo \"PubkeyAcceptedKeyTypes +ssh-rsa\" >> /etc/ssh/ssh_config # buildkit",
+    "Id": "<missing>",
+    "Size": 16384,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405795,
+    "CreatedBy": "RUN |1 QEMU_ARCH= /bin/sh -c ./known_hosts.sh /etc/ssh/ssh_known_hosts && rm /usr/src/node-red/known_hosts.sh # buildkit",
+    "Id": "<missing>",
+    "Size": 32768,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405788,
+    "CreatedBy": "COPY .docker/known_hosts.sh . # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405788,
+    "CreatedBy": "WORKDIR /usr/src/node-red",
+    "Id": "<missing>",
+    "Size": 4096,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405788,
+    "CreatedBy": "RUN |1 QEMU_ARCH= /bin/sh -c set -ex &&     apk add --no-cache         bash         tzdata         iputils         curl         nano         git         openssl         openssh-client         ca-certificates &&     mkdir -p /usr/src/node-red /data &&     deluser --remove-home node &&     adduser -h /usr/src/node-red -D -H node-red -u 1000 &&     chown -R node-red:root /data && chmod -R g+rwX /data &&     chown -R node-red:root /usr/src/node-red && chmod -R g+rwX /usr/src/node-red # buildkit",
+    "Id": "<missing>",
+    "Size": 33337344,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405784,
+    "CreatedBy": "COPY .docker/healthcheck.js / # buildkit",
+    "Id": "<missing>",
+    "Size": 8192,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405784,
+    "CreatedBy": "COPY .docker/scripts/*.sh /tmp/ # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1785405784,
+    "CreatedBy": "ARG QEMU_ARCH",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287253,
+    "CreatedBy": "CMD [\"node\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287253,
+    "CreatedBy": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287253,
+    "CreatedBy": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287253,
+    "CreatedBy": "RUN /bin/sh -c apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME=\"$(mktemp -d)\"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$key\" && gpg --batch --fingerprint \"$key\"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\" && gpg --batch --fingerprint \"$key\"; } ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf \"$GNUPGHOME\"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit",
+    "Id": "<missing>",
+    "Size": 5484544,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287249,
+    "CreatedBy": "ENV YARN_VERSION=1.22.22",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287249,
+    "CreatedBy": "RUN /bin/sh -c addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch=\"$(apk --print-arch)\"       && case \"${alpineArch##*-}\" in         x86_64) ARCH='x64' CHECKSUM=\"2b51a5388f6aaf8e2af65fe3bad6114db0ebd81a1ae1250b1de0cbf034b10c5d\" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n \"${CHECKSUM}\" ]; then     set -eu;     curl -fsSLO --compressed \"https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\";     echo \"$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\" | sha256sum -c -       && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo \"Building from source\"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME=\"$(mktemp -d)\"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$key\" && gpg --batch --fingerprint \"$key\"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\" && gpg --batch --fingerprint \"$key\"; } ;     done     && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz\"     && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf \"$GNUPGHOME\"     && grep \" node-v$NODE_VERSION.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -     && tar -xf \"node-v$NODE_VERSION.tar.xz\"     && cd \"node-v$NODE_VERSION\"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf \"node-v$NODE_VERSION\"     && rm \"node-v$NODE_VERSION.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f \"node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name \"$OPENSSL_ARCH\" -exec rm -rf {} \\;   && apk del .build-deps   && node --version   && npm --version   && rm -rf /tmp/* # buildkit",
+    "Id": "<missing>",
+    "Size": 129880064,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776287249,
+    "CreatedBy": "ENV NODE_VERSION=20.20.2",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776283285,
+    "CreatedBy": "CMD [\"/bin/sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776283285,
+    "CreatedBy": "ADD alpine-minirootfs-3.23.4-aarch64.tar.gz / # buildkit",
+    "Id": "<missing>",
+    "Size": 9351168,
+    "Tags": null
+   }
+  ],
+  "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01": [
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default",
+    "Id": "sha256:58fcaaf4577e5cd76ed780515cc0414fbe8a945327e1d53fda97c6a087932b01",
+    "Size": 0,
+    "Tags": [
+     "influxdb:2.7-alpine"
+    ]
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "ENV INFLUXD_INIT_PING_ATTEMPTS=600",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "ENV INFLUXD_INIT_PORT=9999",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "EXPOSE map[8086/tcp:{}]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "CMD [\"influxd\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "ENTRYPOINT [\"/entrypoint.sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "COPY entrypoint.sh /entrypoint.sh # buildkit",
+    "Id": "<missing>",
+    "Size": 24576,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "COPY default-config.yml /etc/defaults/influxdb2/config.yml # buildkit",
+    "Id": "<missing>",
+    "Size": 20480,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "VOLUME [/var/lib/influxdb2 /etc/influxdb2]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "RUN /bin/sh -c mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2 # buildkit",
+    "Id": "<missing>",
+    "Size": 28672,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922648,
+    "CreatedBy": "RUN /bin/sh -c case \"$(apk --print-arch)\" in       x86_64)  arch=amd64 ;;       aarch64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME=\"$(mktemp -d)\" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       24C975CBA61A024EE1B631787C3D57159FC2F927 &&     curl -fLO \"https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz\"          -fLO \"https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc\" &&     gpg --batch --verify \"influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc\"                          \"influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz\" &&     tar xzf \"influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz\" -C /usr/local/bin ./influx &&     rm -rf \"influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz\"            \"influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc\" &&     influx version # buildkit",
+    "Id": "<missing>",
+    "Size": 24772608,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922647,
+    "CreatedBy": "ENV INFLUX_CLI_VERSION=2.7.5",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922647,
+    "CreatedBy": "RUN /bin/sh -c case \"$(apk --print-arch)\" in       x86_64)  arch=amd64 ;;       aarch64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME=\"$(mktemp -d)\" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       24C975CBA61A024EE1B631787C3D57159FC2F927 &&    curl -fLO \"https://dl.influxdata.com/influxdb/releases/v${INFLUXDB_VERSION}/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz\"          -fLO \"https://dl.influxdata.com/influxdb/releases/v${INFLUXDB_VERSION}/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc\" &&     gpg --batch --verify \"influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc\"                          \"influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz\" &&     tar xzf \"influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz\" &&     cp \"influxdb2-${INFLUXDB_VERSION}/usr/bin/influxd\" /usr/local/bin/influxd &&     rm -rf \"influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz\"            \"influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc\"            \"influxdb2-${INFLUXDB_VERSION}\" &&     influxd version # buildkit",
+    "Id": "<missing>",
+    "Size": 116060160,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922647,
+    "CreatedBy": "ENV INFLUXDB_VERSION=2.7.12",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922644,
+    "CreatedBy": "RUN /bin/sh -c addgroup -S -g 1000 influxdb &&     adduser -S -G influxdb -u 1000 -h /home/influxdb -s /bin/sh influxdb &&     mkdir -p /home/influxdb &&     chown -R influxdb:influxdb /home/influxdb # buildkit",
+    "Id": "<missing>",
+    "Size": 40960,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922644,
+    "CreatedBy": "RUN /bin/sh -c case \"$(apk --print-arch)\" in       x86_64)  arch=amd64 ;;       aarch64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     curl -fL \"https://github.com/TomWright/dasel/releases/download/v2.8.1/dasel_linux_${arch}.gz\" | gzip -d > /usr/local/bin/dasel &&     case ${arch} in       amd64) echo '21fda0a4dc3c779c42737eca4b37e4f187d7ab91ba6301eed97b801af84a9ea2  /usr/local/bin/dasel' ;;       arm64) echo '2c75e63f9884c37578f48788819dda5a5a5c32ec6c4a663eefc19839f44d6291  /usr/local/bin/dasel' ;;     esac | sha256sum -c - &&     chmod +x /usr/local/bin/dasel &&     dasel --version # buildkit",
+    "Id": "<missing>",
+    "Size": 12435456,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922643,
+    "CreatedBy": "RUN /bin/sh -c apk add --no-cache       bash       ca-certificates       curl       gnupg       run-parts       su-exec       tzdata &&     update-ca-certificates # buildkit",
+    "Id": "<missing>",
+    "Size": 28835840,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1777922642,
+    "CreatedBy": "RUN /bin/sh -c echo 'hosts: files dns' >> /etc/nsswitch.conf # buildkit",
+    "Id": "<missing>",
+    "Size": 12288,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776283285,
+    "CreatedBy": "CMD [\"/bin/sh\"]",
+    "Id": "<missing>",
+    "Size": 0,
+    "Tags": null
+   },
+   {
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": 1776283285,
+    "CreatedBy": "ADD alpine-minirootfs-3.23.4-aarch64.tar.gz / # buildkit",
+    "Id": "<missing>",
+    "Size": 9351168,
+    "Tags": null
+   }
+  ]
+ },
+ "logs": {
+  "/iot-stack-nodered-1": {
+   "first": [
+    [
+     1790546668086761893,
+     1,
+     "27 Sep 18:04:28 - [info] \n"
+    ],
+    [
+     1790546668086802338,
+     1,
+     "\n"
+    ],
+    [
+     1790546668086806598,
+     1,
+     "Welcome to Node-RED\n"
+    ],
+    [
+     1790546668086808894,
+     1,
+     "===================\n"
+    ],
+    [
+     1790546668086811024,
+     1,
+     "\n"
+    ],
+    [
+     1790546668087394409,
+     1,
+     "27 Sep 18:04:28 - [info] Node-RED version: v4.1.12\n"
+    ],
+    [
+     1790546668087636545,
+     1,
+     "27 Sep 18:04:28 - [info] Node.js  version: v20.20.2\n"
+    ],
+    [
+     1790546668087772141,
+     1,
+     "27 Sep 18:04:28 - [info] Linux 6.12.75+rpt-rpi-2712 arm64 LE\n"
+    ],
+    [
+     1790546668230799695,
+     1,
+     "27 Sep 18:04:28 - [info] Loading palette nodes\n"
+    ],
+    [
+     1790546668791951284,
+     1,
+     "27 Sep 18:04:28 - [info] Settings file  : /data/settings.js\n"
+    ],
+    [
+     1790546668792559726,
+     1,
+     "27 Sep 18:04:28 - [info] Context store  : 'default' [module=memory]\n"
+    ],
+    [
+     1790546668793424748,
+     1,
+     "27 Sep 18:04:28 - [info] User directory : /data\n"
+    ],
+    [
+     1790546668793860259,
+     1,
+     "27 Sep 18:04:28 - [warn] Projects disabled : editorTheme.projects.enabled=false\n"
+    ],
+    [
+     1790546668794920786,
+     1,
+     "27 Sep 18:04:28 - [info] Flows file     : /data/flows.json\n"
+    ],
+    [
+     1790546668801138425,
+     1,
+     "27 Sep 18:04:28 - [warn] \n"
+    ],
+    [
+     1790546668801190426,
+     1,
+     "\n"
+    ],
+    [
+     1790546668801197148,
+     1,
+     "---------------------------------------------------------------------\n"
+    ],
+    [
+     1790546668801199797,
+     1,
+     "Your flow credentials file is encrypted using a system-generated key.\n"
+    ],
+    [
+     1790546668801201908,
+     1,
+     "\n"
+    ],
+    [
+     1790546668801203797,
+     1,
+     "If the system-generated key is lost for any reason, your credentials\n"
+    ],
+    [
+     1790546668801206186,
+     1,
+     "file will not be recoverable, you will have to delete it and re-enter\n"
+    ],
+    [
+     1790546668801208464,
+     1,
+     "your credentials.\n"
+    ],
+    [
+     1790546668801210445,
+     1,
+     "\n"
+    ],
+    [
+     1790546668801212260,
+     1,
+     "You should set your own key using the 'credentialSecret' option in\n"
+    ],
+    [
+     1790546668801214723,
+     1,
+     "your settings file. Node-RED will then re-encrypt your credentials\n"
+    ],
+    [
+     1790546668801216779,
+     1,
+     "file using your chosen key the next time you deploy a change.\n"
+    ],
+    [
+     1790546668801219186,
+     1,
+     "---------------------------------------------------------------------\n"
+    ],
+    [
+     1790546668801221279,
+     1,
+     "\n"
+    ],
+    [
+     1790546668811554559,
+     1,
+     "27 Sep 18:04:28 - [info] Server now running at http://127.0.0.1:1880/\n"
+    ],
+    [
+     1790546668826565366,
+     1,
+     "27 Sep 18:04:28 - [warn] Encrypted credentials not found\n"
+    ],
+    [
+     1790546668829199414,
+     1,
+     "27 Sep 18:04:28 - [info] Starting flows\n"
+    ],
+    [
+     1790546668831162668,
+     1,
+     "27 Sep 18:04:28 - [info] Started flows\n"
+    ]
+   ],
+   "stop": [
+    [
+     1790642027269019969,
+     1,
+     "28 Sep 20:33:47 - [info] Stopping flows\n"
+    ],
+    [
+     1790642027270985150,
+     1,
+     "28 Sep 20:33:47 - [info] Stopped flows\n"
+    ]
+   ],
+   "stop_anchor": 1790642027296934002,
+   "restart": [
+    [
+     1790642105099499777,
+     1,
+     "28 Sep 20:35:05 - [info] \n"
+    ],
+    [
+     1790642105099847073,
+     1,
+     "\n"
+    ],
+    [
+     1790642105099854518,
+     1,
+     "Welcome to Node-RED\n"
+    ],
+    [
+     1790642105099857425,
+     1,
+     "===================\n"
+    ],
+    [
+     1790642105099860203,
+     1,
+     "\n"
+    ],
+    [
+     1790642105100433407,
+     1,
+     "28 Sep 20:35:05 - [info] Node-RED version: v4.1.12\n"
+    ],
+    [
+     1790642105100675962,
+     1,
+     "28 Sep 20:35:05 - [info] Node.js  version: v20.20.2\n"
+    ],
+    [
+     1790642105100811129,
+     1,
+     "28 Sep 20:35:05 - [info] Linux 6.12.75+rpt-rpi-2712 arm64 LE\n"
+    ],
+    [
+     1790642105315070221,
+     1,
+     "28 Sep 20:35:05 - [info] Loading palette nodes\n"
+    ],
+    [
+     1790642106262344721,
+     1,
+     "28 Sep 20:35:06 - [info] Settings file  : /data/settings.js\n"
+    ],
+    [
+     1790642106263134184,
+     1,
+     "28 Sep 20:35:06 - [info] Context store  : 'default' [module=memory]\n"
+    ],
+    [
+     1790642106263852665,
+     1,
+     "28 Sep 20:35:06 - [info] User directory : /data\n"
+    ],
+    [
+     1790642106264296369,
+     1,
+     "28 Sep 20:35:06 - [warn] Projects disabled : editorTheme.projects.enabled=false\n"
+    ],
+    [
+     1790642106265345554,
+     1,
+     "28 Sep 20:35:06 - [info] Flows file     : /data/flows.json\n"
+    ],
+    [
+     1790642106277960795,
+     1,
+     "28 Sep 20:35:06 - [warn] \n"
+    ],
+    [
+     1790642106277991647,
+     1,
+     "\n"
+    ],
+    [
+     1790642106277994961,
+     1,
+     "---------------------------------------------------------------------\n"
+    ],
+    [
+     1790642106277997387,
+     1,
+     "Your flow credentials file is encrypted using a system-generated key.\n"
+    ],
+    [
+     1790642106277999536,
+     1,
+     "\n"
+    ],
+    [
+     1790642106278001350,
+     1,
+     "If the system-generated key is lost for any reason, your credentials\n"
+    ],
+    [
+     1790642106278003832,
+     1,
+     "file will not be recoverable, you will have to delete it and re-enter\n"
+    ],
+    [
+     1790642106278005943,
+     1,
+     "your credentials.\n"
+    ],
+    [
+     1790642106278007850,
+     1,
+     "\n"
+    ],
+    [
+     1790642106278009739,
+     1,
+     "You should set your own key using the 'credentialSecret' option in\n"
+    ],
+    [
+     1790642106278012165,
+     1,
+     "your settings file. Node-RED will then re-encrypt your credentials\n"
+    ],
+    [
+     1790642106278014165,
+     1,
+     "file using your chosen key the next time you deploy a change.\n"
+    ],
+    [
+     1790642106278016554,
+     1,
+     "---------------------------------------------------------------------\n"
+    ],
+    [
+     1790642106278018961,
+     1,
+     "\n"
+    ],
+    [
+     1790642106278587684,
+     1,
+     "28 Sep 20:35:06 - [warn] Encrypted credentials not found\n"
+    ],
+    [
+     1790642106286274739,
+     1,
+     "28 Sep 20:35:06 - [info] Server now running at http://127.0.0.1:1880/\n"
+    ],
+    [
+     1790642106286877350,
+     1,
+     "28 Sep 20:35:06 - [info] Starting flows\n"
+    ],
+    [
+     1790642106288647147,
+     1,
+     "28 Sep 20:35:06 - [info] Started flows\n"
+    ]
+   ],
+   "restart_anchor": 1790642101841588168
+  },
+  "/iot-stack-influxdb-1": {
+   "first": [
+    [
+     1790546667545181986,
+     1,
+     "{\n"
+    ],
+    [
+     1790546667545230690,
+     1,
+     "  \"bolt-path\": \"/var/lib/influxdb2/influxd.bolt\",\n"
+    ],
+    [
+     1790546667545237857,
+     1,
+     "  \"engine-path\": \"/var/lib/influxdb2/engine\",\n"
+    ],
+    [
+     1790546667545240506,
+     1,
+     "  \"nats-port\": 4222,\n"
+    ],
+    [
+     1790546667545242506,
+     1,
+     "  \"http-bind-address\": \":9999\"\n"
+    ],
+    [
+     1790546667545244654,
+     1,
+     "}\n"
+    ],
+    [
+     1790546667547587306,
+     2,
+     "2026-09-27T22:04:27.\tinfo\tbooting influxd server in the background\t{\"system\": \"docker\"}\n"
+    ],
+    [
+     1790546667669759554,
+     1,
+     "ts=2026-09-27T22:04:27.668196Z lvl=info msg=\"Welcome to InfluxDB\" log_id=15aEDCa0000 version=v2.7.12 commit=ec9dcde5d6 build_date=2025-05-20T22:48:49Z log_level=info\n"
+    ],
+    [
+     1790546667669789573,
+     1,
+     "ts=2026-09-27T22:04:27.668237Z lvl=warn msg=\"nats-port argument is deprecated and unused\" log_id=15aEDCa0000\n"
+    ],
+    [
+     1790546667686990954,
+     1,
+     "ts=2026-09-27T22:04:27.686814Z lvl=info msg=\"Resources opened\" log_id=15aEDCa0000 service=bolt path=/var/lib/influxdb2/influxd.bolt\n"
+    ],
+    [
+     1790546667687222534,
+     1,
+     "ts=2026-09-27T22:04:27.687153Z lvl=info msg=\"Resources opened\" log_id=15aEDCa0000 service=sqlite path=/var/lib/influxdb2/influxd.sqlite\n"
+    ],
+    [
+     1790546667693426228,
+     1,
+     "ts=2026-09-27T22:04:27.693286Z lvl=info msg=\"Bringing up metadata migrations\" log_id=15aEDCa0000 service=\"KV migrations\" migration_count=20\n"
+    ],
+    [
+     1790546668224871971,
+     1,
+     "ts=2026-09-27T22:04:28.224762Z lvl=info msg=\"Bringing up metadata migrations\" log_id=15aEDCa0000 service=\"SQL migrations\" migration_count=8\n"
+    ],
+    [
+     1790546668359056227,
+     1,
+     "ts=2026-09-27T22:04:28.358665Z lvl=info msg=\"Using data dir\" log_id=15aEDCa0000 service=storage-engine service=store path=/var/lib/influxdb2/engine/data\n"
+    ],
+    [
+     1790546668359487534,
+     1,
+     "ts=2026-09-27T22:04:28.358768Z lvl=info msg=\"Compaction settings\" log_id=15aEDCa0000 service=storage-engine service=store max_concurrent_compactions=2 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648\n"
+    ],
+    [
+     1790546668359501924,
+     1,
+     "ts=2026-09-27T22:04:28.358779Z lvl=info msg=\"Open store (start)\" log_id=15aEDCa0000 service=storage-engine service=store op_name=tsdb_open op_event=start\n"
+    ],
+    [
+     1790546668359505498,
+     1,
+     "ts=2026-09-27T22:04:28.358815Z lvl=info msg=\"Open store (end)\" log_id=15aEDCa0000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=0.036ms\n"
+    ],
+    [
+     1790546668359508516,
+     1,
+     "ts=2026-09-27T22:04:28.358841Z lvl=info msg=\"Starting retention policy enforcement service\" log_id=15aEDCa0000 service=retention check_interval=30m\n"
+    ],
+    [
+     1790546668359511109,
+     1,
+     "ts=2026-09-27T22:04:28.358851Z lvl=info msg=\"Starting precreation service\" log_id=15aEDCa0000 service=shard-precreation check_interval=10m advance_period=30m\n"
+    ],
+    [
+     1790546668359799376,
+     1,
+     "ts=2026-09-27T22:04:28.359742Z lvl=info msg=\"Starting query controller\" log_id=15aEDCa0000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024\n"
+    ],
+    [
+     1790546668362092545,
+     1,
+     "ts=2026-09-27T22:04:28.361985Z lvl=info msg=\"Configuring InfluxQL statement executor (zeros indicate unlimited).\" log_id=15aEDCa0000 max_select_point=0 max_select_series=0 max_select_buckets=0\n"
+    ],
+    [
+     1790546668376138531,
+     1,
+     "ts=2026-09-27T22:04:28.376003Z lvl=info msg=Starting log_id=15aEDCa0000 service=telemetry interval=8h\n"
+    ],
+    [
+     1790546668376324573,
+     1,
+     "ts=2026-09-27T22:04:28.376255Z lvl=info msg=Listening log_id=15aEDCa0000 service=tcp-listener transport=http addr=:9999 port=9999\n"
+    ],
+    [
+     1790546668549358870,
+     2,
+     "2026-09-27T22:04:28.\tinfo\tpinging influxd...\t{\"system\": \"docker\", \"ping_attempt\": \"0\"}\n"
+    ],
+    [
+     1790546668556277009,
+     2,
+     "2026-09-27T22:04:28.\tinfo\tgot response from influxd, proceeding\t{\"system\": \"docker\", \"total_pings\": \"1\"}\n"
+    ],
+    [
+     1790546668704275486,
+     1,
+     "User\tOrganization\tBucket\n"
+    ],
+    [
+     1790546668704300449,
+     1,
+     "@@influx_user@@\thome\t\tsensors\n"
+    ],
+    [
+     1790546668725218017,
+     2,
+     "2026-09-27T22:04:28.\tinfo\tExecuting user-provided scripts\t{\"system\": \"docker\", \"script_dir\": \"/docker-entrypoint-initdb.d\"}\n"
+    ],
+    [
+     1790546668726745963,
+     2,
+     "2026-09-27T22:04:28.\tinfo\tinitialization complete, shutting down background influxd\t{\"system\": \"docker\"}\n"
+    ],
+    [
+     1790546668803841308,
+     2,
+     "2026-09-27T22:04:28.\tinfo\tfound existing boltdb file, skipping setup wrapper\t{\"system\": \"docker\", \"bolt_path\": \"/var/lib/influxdb2/influxd.bolt\"}\n"
+    ],
+    [
+     1790546668900407869,
+     1,
+     "ts=2026-09-27T22:04:28.900243Z lvl=info msg=\"Welcome to InfluxDB\" log_id=15aEDHP0000 version=v2.7.12 commit=ec9dcde5d6 build_date=2025-05-20T22:48:49Z log_level=info\n"
+    ],
+    [
+     1790546668900447444,
+     1,
+     "ts=2026-09-27T22:04:28.900286Z lvl=warn msg=\"nats-port argument is deprecated and unused\" log_id=15aEDHP0000\n"
+    ],
+    [
+     1790546668904110019,
+     1,
+     "ts=2026-09-27T22:04:28.904045Z lvl=info msg=\"Resources opened\" log_id=15aEDHP0000 service=bolt path=/var/lib/influxdb2/influxd.bolt\n"
+    ],
+    [
+     1790546668904142853,
+     1,
+     "ts=2026-09-27T22:04:28.904107Z lvl=info msg=\"Resources opened\" log_id=15aEDHP0000 service=sqlite path=/var/lib/influxdb2/influxd.sqlite\n"
+    ],
+    [
+     1790546668913905508,
+     1,
+     "ts=2026-09-27T22:04:28.913848Z lvl=info msg=\"Checking InfluxDB metadata for prior version.\" log_id=15aEDHP0000 bolt_path=/var/lib/influxdb2/influxd.bolt\n"
+    ],
+    [
+     1790546668914016770,
+     1,
+     "ts=2026-09-27T22:04:28.913926Z lvl=info msg=\"Using data dir\" log_id=15aEDHP0000 service=storage-engine service=store path=/var/lib/influxdb2/engine/data\n"
+    ],
+    [
+     1790546668914026418,
+     1,
+     "ts=2026-09-27T22:04:28.913954Z lvl=info msg=\"Compaction settings\" log_id=15aEDHP0000 service=storage-engine service=store max_concurrent_compactions=2 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648\n"
+    ],
+    [
+     1790546668914030511,
+     1,
+     "ts=2026-09-27T22:04:28.913962Z lvl=info msg=\"Open store (start)\" log_id=15aEDHP0000 service=storage-engine service=store op_name=tsdb_open op_event=start\n"
+    ],
+    [
+     1790546668914060142,
+     1,
+     "ts=2026-09-27T22:04:28.914010Z lvl=info msg=\"Open store (end)\" log_id=15aEDHP0000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=0.049ms\n"
+    ],
+    [
+     1790546668914114939,
+     1,
+     "ts=2026-09-27T22:04:28.914035Z lvl=info msg=\"Starting retention policy enforcement service\" log_id=15aEDHP0000 service=retention check_interval=30m\n"
+    ],
+    [
+     1790546668914123032,
+     1,
+     "ts=2026-09-27T22:04:28.914079Z lvl=info msg=\"Starting precreation service\" log_id=15aEDHP0000 service=shard-precreation check_interval=10m advance_period=30m\n"
+    ],
+    [
+     1790546668914926089,
+     1,
+     "ts=2026-09-27T22:04:28.914883Z lvl=info msg=\"Starting query controller\" log_id=15aEDHP0000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024\n"
+    ],
+    [
+     1790546668916899528,
+     1,
+     "ts=2026-09-27T22:04:28.916760Z lvl=info msg=\"Configuring InfluxQL statement executor (zeros indicate unlimited).\" log_id=15aEDHP0000 max_select_point=0 max_select_series=0 max_select_buckets=0\n"
+    ],
+    [
+     1790546668930263330,
+     1,
+     "ts=2026-09-27T22:04:28.930103Z lvl=info msg=Starting log_id=15aEDHP0000 service=telemetry interval=8h\n"
+    ],
+    [
+     1790546668930523911,
+     1,
+     "ts=2026-09-27T22:04:28.930229Z lvl=info msg=Listening log_id=15aEDHP0000 service=tcp-listener transport=http addr=:8086 port=8086\n"
+    ]
+   ],
+   "stop": [],
+   "stop_anchor": 1790642027269193937,
+   "restart": [
+    [
+     1790642102825840426,
+     2,
+     "2026-09-29T00:35:02.\tinfo\tfound existing boltdb file, skipping setup wrapper\t{\"system\": \"docker\", \"bolt_path\": \"/var/lib/influxdb2/influxd.bolt\"}\n"
+    ],
+    [
+     1790642102891196852,
+     2,
+     "2026-09-29T00:35:02.\tinfo\tfound existing boltdb file, skipping setup wrapper\t{\"system\": \"docker\", \"bolt_path\": \"/var/lib/influxdb2/influxd.bolt\"}\n"
+    ],
+    [
+     1790642104549348314,
+     1,
+     "ts=2026-09-29T00:35:04.549190Z lvl=info msg=\"Welcome to InfluxDB\" log_id=15beECsl000 version=v2.7.12 commit=ec9dcde5d6 build_date=2025-05-20T22:48:49Z log_level=info\n"
+    ],
+    [
+     1790642104549381222,
+     1,
+     "ts=2026-09-29T00:35:04.549224Z lvl=warn msg=\"nats-port argument is deprecated and unused\" log_id=15beECsl000\n"
+    ],
+    [
+     1790642104566637240,
+     1,
+     "ts=2026-09-29T00:35:04.566540Z lvl=info msg=\"Resources opened\" log_id=15beECsl000 service=bolt path=/var/lib/influxdb2/influxd.bolt\n"
+    ],
+    [
+     1790642104566704537,
+     1,
+     "ts=2026-09-29T00:35:04.566663Z lvl=info msg=\"Resources opened\" log_id=15beECsl000 service=sqlite path=/var/lib/influxdb2/influxd.sqlite\n"
+    ],
+    [
+     1790642104606461962,
+     1,
+     "ts=2026-09-29T00:35:04.606344Z lvl=info msg=\"Checking InfluxDB metadata for prior version.\" log_id=15beECsl000 bolt_path=/var/lib/influxdb2/influxd.bolt\n"
+    ],
+    [
+     1790642104608375037,
+     1,
+     "ts=2026-09-29T00:35:04.608296Z lvl=info msg=\"Using data dir\" log_id=15beECsl000 service=storage-engine service=store path=/var/lib/influxdb2/engine/data\n"
+    ],
+    [
+     1790642104608391259,
+     1,
+     "ts=2026-09-29T00:35:04.608317Z lvl=info msg=\"Compaction settings\" log_id=15beECsl000 service=storage-engine service=store max_concurrent_compactions=2 throughput_bytes_per_second=50331648 throughput_bytes_per_second_burst=50331648\n"
+    ],
+    [
+     1790642104608426240,
+     1,
+     "ts=2026-09-29T00:35:04.608329Z lvl=info msg=\"Open store (start)\" log_id=15beECsl000 service=storage-engine service=store op_name=tsdb_open op_event=start\n"
+    ],
+    [
+     1790642104608462296,
+     1,
+     "ts=2026-09-29T00:35:04.608379Z lvl=info msg=\"Open store (end)\" log_id=15beECsl000 service=storage-engine service=store op_name=tsdb_open op_event=end op_elapsed=0.051ms\n"
+    ],
+    [
+     1790642104608467592,
+     1,
+     "ts=2026-09-29T00:35:04.608403Z lvl=info msg=\"Starting retention policy enforcement service\" log_id=15beECsl000 service=retention check_interval=30m\n"
+    ],
+    [
+     1790642104608470296,
+     1,
+     "ts=2026-09-29T00:35:04.608426Z lvl=info msg=\"Starting precreation service\" log_id=15beECsl000 service=shard-precreation check_interval=10m advance_period=30m\n"
+    ],
+    [
+     1790642104617826314,
+     1,
+     "ts=2026-09-29T00:35:04.617722Z lvl=info msg=\"Starting query controller\" log_id=15beECsl000 service=storage-reads concurrency_quota=1024 initial_memory_bytes_quota_per_query=9223372036854775807 memory_bytes_quota_per_query=9223372036854775807 max_memory_bytes=0 queue_size=1024\n"
+    ],
+    [
+     1790642104625062166,
+     1,
+     "ts=2026-09-29T00:35:04.624910Z lvl=info msg=\"Configuring InfluxQL statement executor (zeros indicate unlimited).\" log_id=15beECsl000 max_select_point=0 max_select_series=0 max_select_buckets=0\n"
+    ],
+    [
+     1790642104656174518,
+     1,
+     "ts=2026-09-29T00:35:04.656075Z lvl=info msg=Starting log_id=15beECsl000 service=telemetry interval=8h\n"
+    ],
+    [
+     1790642104657968981,
+     1,
+     "ts=2026-09-29T00:35:04.657888Z lvl=info msg=Listening log_id=15beECsl000 service=tcp-listener transport=http addr=:8086 port=8086\n"
+    ]
+   ],
+   "restart_anchor": 1790642101759202872
+  },
+  "/iot-stack-mosquitto-1": {
+   "first": [
+    [
+     1790546667139340392,
+     2,
+     "1790546667: Info: running mosquitto as user: mosquitto.\n"
+    ],
+    [
+     1790546667139645770,
+     1,
+     "1790546667: mosquitto version 2.1.2 starting\n"
+    ],
+    [
+     1790546667140945044,
+     1,
+     "1790546667: Config loaded from /mosquitto/config/mosquitto.conf.\n"
+    ],
+    [
+     1790546667140949970,
+     1,
+     "1790546667: Bridge support available.\n"
+    ],
+    [
+     1790546667140953100,
+     1,
+     "1790546667: Persistence support available.\n"
+    ],
+    [
+     1790546667140955859,
+     1,
+     "1790546667: TLS support available.\n"
+    ],
+    [
+     1790546667140958563,
+     1,
+     "1790546667: TLS-PSK support available.\n"
+    ],
+    [
+     1790546667140961082,
+     1,
+     "1790546667: Websockets support available.\n"
+    ],
+    [
+     1790546667140963785,
+     1,
+     "1790546667: Opening ipv4 listen socket on port 1883.\n"
+    ],
+    [
+     1790546667140966508,
+     1,
+     "1790546667: Opening ipv6 listen socket on port 1883.\n"
+    ],
+    [
+     1790546667140969082,
+     1,
+     "1790546667: mosquitto version 2.1.2 running\n"
+    ]
+   ],
+   "stop": [
+    [
+     1790642027263890430,
+     1,
+     "1790642027: mosquitto version 2.1.2 terminating\n"
+    ],
+    [
+     1790642027263958043,
+     1,
+     "1790642027: Saving in-memory database to /mosquitto/data//mosquitto.db.\n"
+    ]
+   ],
+   "stop_anchor": 1790642027279301067,
+   "restart": [
+    [
+     1790642102724745186,
+     2,
+     "1790642102: Info: running mosquitto as user: mosquitto.\n"
+    ],
+    [
+     1790642102726420408,
+     2,
+     "1790642102: Restored 0 base messages\n"
+    ],
+    [
+     1790642102726428760,
+     2,
+     "1790642102: Restored 0 retained messages\n"
+    ],
+    [
+     1790642102726432149,
+     2,
+     "1790642102: Restored 0 clients\n"
+    ],
+    [
+     1790642102726435130,
+     2,
+     "1790642102: Restored 0 subscriptions\n"
+    ],
+    [
+     1790642102726437871,
+     2,
+     "1790642102: Restored 0 client messages\n"
+    ],
+    [
+     1790642102726152149,
+     1,
+     "1790642102: mosquitto version 2.1.2 starting\n"
+    ],
+    [
+     1790642102726444871,
+     1,
+     "1790642102: Config loaded from /mosquitto/config/mosquitto.conf.\n"
+    ],
+    [
+     1790642102726447815,
+     1,
+     "1790642102: Bridge support available.\n"
+    ],
+    [
+     1790642102726450593,
+     1,
+     "1790642102: Persistence support available.\n"
+    ],
+    [
+     1790642102726453297,
+     1,
+     "1790642102: TLS support available.\n"
+    ],
+    [
+     1790642102726456001,
+     1,
+     "1790642102: TLS-PSK support available.\n"
+    ],
+    [
+     1790642102726458575,
+     1,
+     "1790642102: Websockets support available.\n"
+    ],
+    [
+     1790642102726466260,
+     1,
+     "1790642102: Opening ipv4 listen socket on port 1883.\n"
+    ],
+    [
+     1790642102726468612,
+     1,
+     "1790642102: Opening ipv6 listen socket on port 1883.\n"
+    ],
+    [
+     1790642102726470704,
+     1,
+     "1790642102: mosquitto version 2.1.2 running\n"
+    ]
+   ],
+   "restart_anchor": 1790642101718669242
+  }
+ }
+}

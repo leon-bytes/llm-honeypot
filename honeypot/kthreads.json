@@ -1,0 +1,1110 @@
+{
+ "_comment": "Ground Truth's kernel threads: captured machine state (see tools/build_kthreads.py). Not imitation; the paper says so.",
+ "captured": "2026-10-02T20:49-04:00",
+ "threads": [
+  {
+   "pid": 2,
+   "comm": "kthreadd",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 3,
+   "comm": "pool_workqueue_release",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 4,
+   "comm": "kworker/R-kvfree_rcu_reclaim",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 5,
+   "comm": "kworker/R-rcu_gp",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 6,
+   "comm": "kworker/R-sync_wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 7,
+   "comm": "kworker/R-slub_flushwq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 8,
+   "comm": "kworker/R-netns",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 12,
+   "comm": "kworker/u16:0-ipv6_addrconf",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 13,
+   "comm": "kworker/R-mm_percpu_wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 14,
+   "comm": "rcu_tasks_kthread",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 15,
+   "comm": "rcu_tasks_rude_kthread",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 16,
+   "comm": "rcu_tasks_trace_kthread",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 17,
+   "comm": "ksoftirqd/0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 18,
+   "comm": "rcu_preempt",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 19,
+   "comm": "rcu_exp_par_gp_kthread_worker/0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 20,
+   "comm": "rcu_exp_gp_kthread_worker",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 21,
+   "comm": "migration/0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "rt",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 22,
+   "comm": "cpuhp/0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 23,
+   "comm": "cpuhp/1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 24,
+   "comm": "migration/1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "rt",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 25,
+   "comm": "ksoftirqd/1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 28,
+   "comm": "cpuhp/2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 29,
+   "comm": "migration/2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "rt",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 30,
+   "comm": "ksoftirqd/2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 33,
+   "comm": "cpuhp/3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 34,
+   "comm": "migration/3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "rt",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 35,
+   "comm": "ksoftirqd/3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 42,
+   "comm": "kdevtmpfs",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 43,
+   "comm": "kworker/R-inet_frag_wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 44,
+   "comm": "kauditd",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 45,
+   "comm": "khungtaskd",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 46,
+   "comm": "oom_reaper",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 48,
+   "comm": "kworker/R-writeback",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 49,
+   "comm": "kcompactd0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 50,
+   "comm": "kcompactd1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 51,
+   "comm": "kcompactd2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 52,
+   "comm": "kcompactd3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 53,
+   "comm": "kcompactd4",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 54,
+   "comm": "kcompactd5",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 55,
+   "comm": "kcompactd6",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 56,
+   "comm": "kcompactd7",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 57,
+   "comm": "kworker/R-kintegrityd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 58,
+   "comm": "kworker/R-kblockd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 59,
+   "comm": "kworker/R-blkcg_punt_bio",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 62,
+   "comm": "watchdogd",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 64,
+   "comm": "kworker/R-quota_events_unbound",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 66,
+   "comm": "kworker/1:1H-kblockd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 67,
+   "comm": "kworker/R-rpciod",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 68,
+   "comm": "kworker/R-xprtiod",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 69,
+   "comm": "kswapd0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 70,
+   "comm": "kswapd1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 71,
+   "comm": "kswapd2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 72,
+   "comm": "kswapd3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 73,
+   "comm": "kswapd4",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 74,
+   "comm": "kswapd5",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 75,
+   "comm": "kswapd6",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 76,
+   "comm": "kswapd7",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 77,
+   "comm": "kworker/R-nfsiod",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 78,
+   "comm": "kworker/R-kthrotld",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 86,
+   "comm": "hwrng",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 87,
+   "comm": "kworker/R-iscsi_conn_cleanup",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 88,
+   "comm": "kworker/R-nvme-wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 89,
+   "comm": "kworker/R-nvme-reset-wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 90,
+   "comm": "kworker/R-nvme-delete-wq",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 91,
+   "comm": "kworker/R-DWC Notification WorkQ",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 92,
+   "comm": "kworker/R-uas",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 93,
+   "comm": "kworker/u21:0-brcmf_wq/mmc1:0001:1",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 94,
+   "comm": "kworker/u22:0",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 95,
+   "comm": "kworker/u23:0",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 96,
+   "comm": "kworker/u24:0",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 97,
+   "comm": "kworker/u25:0",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 98,
+   "comm": "irq/38-aerdrv",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 103,
+   "comm": "kworker/R-sdhci",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 104,
+   "comm": "irq/162-mmc1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 106,
+   "comm": "kworker/R-sdhci",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 107,
+   "comm": "irq/161-mmc0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 111,
+   "comm": "kworker/R-mmc_complete",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 112,
+   "comm": "kworker/0:1H-mmc_complete",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 156,
+   "comm": "kworker/2:1H-kblockd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 157,
+   "comm": "kworker/3:1H-kblockd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 169,
+   "comm": "spi10",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 189,
+   "comm": "jbd2/mmcblk0p2-8",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 190,
+   "comm": "kworker/R-ext4-rsv-conversion",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 209,
+   "comm": "kworker/R-mld",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 210,
+   "comm": "kworker/R-ipv6_addrconf",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 211,
+   "comm": "kworker/u16:1-ipv6_addrconf",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 224,
+   "comm": "kworker/3:2H",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 242,
+   "comm": "kworker/1:2H",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 322,
+   "comm": "kworker/2:2H",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 523,
+   "comm": "kworker/R-v3d_bin",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 524,
+   "comm": "kworker/R-v3d_render",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 525,
+   "comm": "kworker/R-v3d_tfu",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 526,
+   "comm": "kworker/R-v3d_csd",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 527,
+   "comm": "kworker/R-v3d_cache_clean",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 528,
+   "comm": "kworker/R-v3d_cpu",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 535,
+   "comm": "irq/170-1000800000.codec",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 540,
+   "comm": "kworker/R-cfg80211",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 558,
+   "comm": "kworker/R-brcmf_wq/mmc1:0001:1",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 559,
+   "comm": "brcmf_wdog/mmc1:0001:1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 562,
+   "comm": "kworker/u21:1-hci0",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 566,
+   "comm": "irq/174-vc4 hdmi hpd connected",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 567,
+   "comm": "irq/175-vc4 hdmi hpd disconnected",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 568,
+   "comm": "cec-vc4-hdmi-0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 569,
+   "comm": "irq/176-vc4 hdmi cec rx",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 570,
+   "comm": "irq/177-vc4 hdmi cec tx",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 574,
+   "comm": "irq/178-vc4 hdmi hpd connected",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 575,
+   "comm": "irq/179-vc4 hdmi hpd disconnected",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 576,
+   "comm": "cec-vc4-hdmi-1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 577,
+   "comm": "irq/180-vc4 hdmi cec rx",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 578,
+   "comm": "irq/181-vc4 hdmi cec tx",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 581,
+   "comm": "card1-crtc0",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 582,
+   "comm": "card1-crtc1",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 583,
+   "comm": "card1-crtc2",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 584,
+   "comm": "card1-crtc3",
+   "stat": "S",
+   "ni": 0,
+   "pr": "-51",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 712,
+   "comm": "krfcommd",
+   "stat": "S<",
+   "ni": -10,
+   "pr": "10",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 227024,
+   "comm": "kworker/u18:3-events_unbound",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 234125,
+   "comm": "kworker/u17:2-events_unbound",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 235046,
+   "comm": "kworker/u20:2-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 247509,
+   "comm": "kworker/u18:0-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 258889,
+   "comm": "kworker/u17:1-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 262622,
+   "comm": "kworker/u19:1-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 263000,
+   "comm": "kworker/u20:1-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 264906,
+   "comm": "kworker/u19:2-events_unbound",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 269167,
+   "comm": "kworker/u17:3-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 270790,
+   "comm": "kworker/0:0H",
+   "stat": "I<",
+   "ni": -20,
+   "pr": "0",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277003,
+   "comm": "kworker/1:1-events_power_efficient",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277032,
+   "comm": "kworker/u20:0-kvfree_rcu_reclaim",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277158,
+   "comm": "kworker/2:2-mm_percpu_wq",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277454,
+   "comm": "kworker/1:0-events",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277504,
+   "comm": "kworker/0:0-events",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277629,
+   "comm": "kworker/1:3-mm_percpu_wq",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277679,
+   "comm": "kworker/2:1-mm_percpu_wq",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 277878,
+   "comm": "kworker/3:2-events",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 278002,
+   "comm": "kworker/2:0-events",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 278126,
+   "comm": "kworker/3:0-mm_percpu_wq",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 278371,
+   "comm": "kworker/0:2-events",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 278396,
+   "comm": "kworker/u19:0",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  },
+  {
+   "pid": 278422,
+   "comm": "kworker/3:1-events_power_efficient",
+   "stat": "I",
+   "ni": 0,
+   "pr": "20",
+   "source": "gt-captured-2026-10-02"
+  }
+ ]
+}

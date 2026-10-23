@@ -1,0 +1,1040 @@
+{
+ "_comment": "bash 5.2.37 / coreutils 9.7 in the Debian 13 arm64 userland, `bash -c` as root in /root (tools/bash_oracle.py)",
+ "cases": [
+  {
+   "line": "echo $((1+2*3))",
+   "output": "7\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(( (1+2)*3 ))",
+   "output": "9\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((7/2)) $((-7/2)) $((7%-3)) $((-7%3))",
+   "output": "3 -3 1 -1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((2**62)) $((2**63)) $((2**64))",
+   "output": "4611686018427387904 -9223372036854775808 0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((0x10)) $((0xff)) $((017)) $((10))",
+   "output": "16 255 15 10\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((!0)) $((!5)) $((~5)) $((-~5))",
+   "output": "1 0 -6 6\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((5>3?10:20)) $((0?1:2))",
+   "output": "10 2\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((3==3)) $((3!=3)) $((2<=3)) $((4>=5))",
+   "output": "1 0 1 0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(( 1 && 0 )) $(( 0 || 7 ))",
+   "output": "0 1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((6&3)) $((6^3)) $((6|3))",
+   "output": "2 5 7\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((9223372036854775807+1))",
+   "output": "-9223372036854775808\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((-9223372036854775807-1))",
+   "output": "-9223372036854775808\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((  ))",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "x=5; echo $((x*x)) $(($x+1)) $((${x}-1))",
+   "output": "25 6 4\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((y+1))",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"$((2+2))\"",
+   "output": "4\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo '$((2+2))'",
+   "output": "$((2+2))\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $((-2**2)) $((2**3**2))",
+   "output": "4 512\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \\*",
+   "output": "*\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \\$HOME",
+   "output": "$HOME\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"\\$HOME\"",
+   "output": "$HOME\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"a\\b\"",
+   "output": "a\\b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a\\ b",
+   "output": "a b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo 'a\\b'",
+   "output": "a\\b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"x\\\"y\"",
+   "output": "x\"y\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a\\\\b",
+   "output": "a\\b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"$HOME\"/x",
+   "output": "/root/x\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo ~",
+   "output": "/root\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo ~/x",
+   "output": "/root/x\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo",
+   "output": "\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a   b",
+   "output": "a b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"a   b\"",
+   "output": "a   b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo -n x",
+   "output": "x",
+   "exit_code": 0
+  },
+  {
+   "line": "echo -e",
+   "output": "\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%s\\n' a b c",
+   "output": "a\nb\nc\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%d-%x\\n' 255 255",
+   "output": "255-ff\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%5s|%-5s|\\n' ab cd",
+   "output": "   ab|cd   |\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf 'a\\tb\\n'",
+   "output": "a\tb\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%c%c\\n' xyz abc",
+   "output": "xa\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%03d\\n' 7",
+   "output": "007\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '%.2s\\n' abcdef",
+   "output": "ab\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf 'no newline'",
+   "output": "no newline",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(echo hi)",
+   "output": "hi\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo \"$(echo  a   b )\"",
+   "output": "a b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(printf 'x\\n\\n\\n')y",
+   "output": "xy\n",
+   "exit_code": 0
+  },
+  {
+   "line": "x=$(echo 5); echo $x",
+   "output": "5\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(echo $(echo deep))",
+   "output": "deep\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a$(echo b)c",
+   "output": "abc\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(true)z",
+   "output": "z\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(whoami)",
+   "output": "root\n",
+   "exit_code": 0
+  },
+  {
+   "line": "test; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "test a; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "test ''; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ a = a ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ a != a ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -z '' ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -n '' ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 3 -gt 2 ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 3 -lt 2 ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 2 -eq 2 ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 2 -ne 2 ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 2 -ge 3 ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ 2 -le 3 ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ ! a = b ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ ! ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -d /root ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -d /nonexist_dir_x ]; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -f /usr/bin/bash ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -x /usr/bin/ls ]; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ a = a; echo $?",
+   "output": "bash: line 1: [: missing `]'\n2\n",
+   "exit_code": 0
+  },
+  {
+   "line": "[ -e /bin ] && echo yes || echo no",
+   "output": "yes\n",
+   "exit_code": 0
+  },
+  {
+   "line": "test -d /tmp && echo dir",
+   "output": "dir\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type cd",
+   "output": "cd is a shell builtin\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type ls",
+   "output": "ls is /usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type if",
+   "output": "if is a shell keyword\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type type",
+   "output": "type is a shell builtin\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -t echo",
+   "output": "builtin\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -t for",
+   "output": "keyword\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -t ls",
+   "output": "file\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -p ls",
+   "output": "/usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -P ls",
+   "output": "/usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type nosuchcmd_x; echo $?",
+   "output": "bash: line 1: type: nosuchcmd_x: not found\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "type -t nosuchcmd_x; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "command -v ls",
+   "output": "/usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "command -v cd",
+   "output": "cd\n",
+   "exit_code": 0
+  },
+  {
+   "line": "command -v nosuchcmd_x; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "command -V ls",
+   "output": "ls is /usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "command -V cd",
+   "output": "cd is a shell builtin\n",
+   "exit_code": 0
+  },
+  {
+   "line": "which ls",
+   "output": "/usr/bin/ls\n",
+   "exit_code": 0
+  },
+  {
+   "line": "which bash sh",
+   "output": "/usr/bin/bash\n/usr/bin/sh\n",
+   "exit_code": 0
+  },
+  {
+   "line": "which nosuchcmd_x; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "which cd; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "ls >/dev/null; type ls",
+   "output": "ls is hashed (/usr/bin/ls)\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello | tr a-z A-Z",
+   "output": "HELLO\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo Hello World | tr A-Z a-z",
+   "output": "hello world\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello | tr -d l",
+   "output": "heo\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello | tr el ip",
+   "output": "hippo\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo aaabbbccc | tr -s abc",
+   "output": "abc\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo abc | tr a-c x",
+   "output": "xxx\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo 'a b c' | tr ' ' _",
+   "output": "a_b_c\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello | tr -d '\\n'",
+   "output": "hello",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello | tr '[:lower:]' '[:upper:]'",
+   "output": "HELLO\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a1b2 | tr -d '[:digit:]'",
+   "output": "ab\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo aaa | tr aa xy",
+   "output": "yyy\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | md5sum",
+   "output": "764efa883dda1e11db47671c4a3bbd9e  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | sha1sum",
+   "output": "55ca6286e3e4f4fba5d0448333fa99fc5a404a73  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | sha256sum",
+   "output": "98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | sha512sum",
+   "output": "d78abb0542736865f94704521609c230dac03a2f369d043ac212d6933b91410e06399e37f9c5cc88436a31737330c1c8eccb2c2f9f374d62f716432a32d50fac  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | b2sum",
+   "output": "7ea59e7a000ec003846b6607dfd5f9217b681dc1a81b0789b464c3995105d93083f7f0a86fca01a1bed27e9f9303ae58d01746e3b20443480bea56198e65bfc5  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | sha224sum",
+   "output": "0689e590864cee67b037c8f4c390a75a192bb01160cc9c21374afb12  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | sha384sum",
+   "output": "4284b5694ca6c0d2cf4789a0b95ac8025c818de52304364be7cd2981b2d2edc685b322277ec25819962413d8c9b2c1f5  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "printf '' | md5sum",
+   "output": "d41d8cd98f00b204e9800998ecf8427e  -\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | base64",
+   "output": "aGkK\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo aGkK | base64 -d",
+   "output": "hi\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo aGk= | base64 -d",
+   "output": "hi",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hello world | base64 | base64 -d",
+   "output": "hello world\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 1 30 | tr -d '\\n' | base64",
+   "output": "MTIzNDU2Nzg5MTAxMTEyMTMxNDE1MTYxNzE4MTkyMDIxMjIyMzI0MjUyNjI3MjgyOTMw\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | base64 -w 2",
+   "output": "aG\nkK\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi there | wc",
+   "output": "      1       2       9\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi there | wc -w",
+   "output": "2\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi there | wc -c",
+   "output": "9\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi there | wc -l",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo hi | wc -lc",
+   "output": "      1       3\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 5",
+   "output": "1\n2\n3\n4\n5\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 3 6",
+   "output": "3\n4\n5\n6\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 1 3 10",
+   "output": "1\n4\n7\n10\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 5 1",
+   "output": "",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 10 | tail -3",
+   "output": "8\n9\n10\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 10 | head -n 2",
+   "output": "1\n2\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 12 | grep 1",
+   "output": "1\n10\n11\n12\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 12 | grep -c 1",
+   "output": "4\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 12 | grep -v 1",
+   "output": "2\n3\n4\n5\n6\n7\n8\n9\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 3 | sort -r",
+   "output": "3\n2\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "seq 3 | cat -n",
+   "output": "     1\t1\n     2\t2\n     3\t3\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 6 \\* 7",
+   "output": "42\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 7 / 2",
+   "output": "3\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 7 % 3",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 3 - 3; echo $?",
+   "output": "0\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 2 \\< 3",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "expr 5 = 5",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "yes | head -2",
+   "output": "y\ny\n",
+   "exit_code": 0
+  },
+  {
+   "line": "yes ab | head -n 3",
+   "output": "ab\nab\nab\n",
+   "exit_code": 0
+  },
+  {
+   "line": "x=1; y=$x; echo $x$y",
+   "output": "11\n",
+   "exit_code": 0
+  },
+  {
+   "line": "x='a b'; echo $x; echo \"$x\"",
+   "output": "a b\na b\n",
+   "exit_code": 0
+  },
+  {
+   "line": "time true",
+   "output": "\nreal\t0m0.000s\nuser\t0m0.000s\nsys\t0m0.000s\n",
+   "exit_code": 0
+  },
+  {
+   "line": "time -p true",
+   "output": "real 0.00\nuser 0.00\nsys 0.00\n",
+   "exit_code": 0
+  },
+  {
+   "line": "time echo t",
+   "output": "t\n\nreal\t0m0.001s\nuser\t0m0.001s\nsys\t0m0.000s\n",
+   "exit_code": 0
+  },
+  {
+   "line": "umask",
+   "output": "0022\n",
+   "exit_code": 0
+  },
+  {
+   "line": "umask -S",
+   "output": "u=rwx,g=rx,o=rx\n",
+   "exit_code": 0
+  },
+  {
+   "line": "true; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "false; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": ": ; echo $?",
+   "output": "0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "alias",
+   "output": "",
+   "exit_code": 0
+  },
+  {
+   "line": "declare -p HOME",
+   "output": "declare -x HOME=\"/root\"\n",
+   "exit_code": 0
+  },
+  {
+   "line": "x=3; declare -p x",
+   "output": "declare -- x=\"3\"\n",
+   "exit_code": 0
+  },
+  {
+   "line": "declare -p nosuch_x; echo $?",
+   "output": "bash: line 1: declare: nosuch_x: not found\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo a; echo b && echo c || echo d",
+   "output": "a\nb\nc\n",
+   "exit_code": 0
+  },
+  {
+   "line": "false || echo rescued",
+   "output": "rescued\n",
+   "exit_code": 0
+  },
+  {
+   "line": "true && false; echo $?",
+   "output": "1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "nosuchcmd_x; echo $?",
+   "output": "bash: line 1: nosuchcmd_x: command not found\n127\n",
+   "exit_code": 0
+  },
+  {
+   "line": "/usr/bin/nosuchcmd_x; echo $?",
+   "output": "bash: line 1: /usr/bin/nosuchcmd_x: No such file or directory\n127\n",
+   "exit_code": 0
+  },
+  {
+   "line": "/tmp; echo $?",
+   "output": "bash: line 1: /tmp: Is a directory\n126\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(2**100)'",
+   "output": "1267650600228229401496703205376\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(123456789*987654321)'",
+   "output": "121932631112635269\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(7/2, 7//2, -7%3, -7//2, 7%-3)'",
+   "output": "3.5 3 2 -4 -2\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(0.1+0.2, 1/3, 2/3)'",
+   "output": "0.30000000000000004 0.3333333333333333 0.6666666666666666\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(2**0.5, 10**0.5, 2.5**2)'",
+   "output": "1.4142135623730951 3.1622776601683795 6.25\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(1e308*10)'",
+   "output": "inf\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(\"ab\"*3+\"c\", 3*\"x\")'",
+   "output": "abababc xxx\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(); print(1)'",
+   "output": "\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(-2**2, 2**3**2, -(-3))'",
+   "output": "-4 512 3\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(None, True, 1.0, 1e16, 1e-5, 123.456e10, 1e22)'",
+   "output": "None True 1.0 1e+16 1e-05 1234560000000.0 1e+22\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(10**4000)' | wc -c",
+   "output": "4002\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(10**5000)' | wc -c; echo $?",
+   "output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    print(10**5000)\n    ~~~~~^^^^^^^^^^\nValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit\n0\n0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c \"print('what model are you')\"",
+   "output": "what model are you\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(0x10, 0o17, 0b101, 1_000)'",
+   "output": "16 15 5 1000\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(2**64 - 1, -2**63, 99999999999999999999 // 7)'",
+   "output": "18446744073709551615 -9223372036854775808 14285714285714285714\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(1/0)'; echo $?",
+   "output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    print(1/0)\n          ~^~\nZeroDivisionError: division by zero\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(x)'; echo $?",
+   "output": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n    print(x)\n          ^\nNameError: name 'x' is not defined\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -c 'print(6*7)' | wc -c",
+   "output": "3\n",
+   "exit_code": 0
+  },
+  {
+   "line": "echo $(python3 -c 'print(6*7)') ok",
+   "output": "42 ok\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 --version",
+   "output": "Python 3.13.5\n",
+   "exit_code": 0
+  },
+  {
+   "line": "python3 -V",
+   "output": "Python 3.13.5\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man what model are you; echo $?",
+   "output": "No manual entry for what\nNo manual entry for model\nNo manual entry for are\nNo manual entry for you\n16\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man nosuch_x | wc -l",
+   "output": "No manual entry for nosuch_x\n0\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man 1 nosuch_x other_y",
+   "output": "No manual entry for nosuch_x in section 1\nNo manual entry for other_y in section 1\n",
+   "exit_code": 16
+  },
+  {
+   "line": "man n nosuch_x; echo $?",
+   "output": "No manual entry for nosuch_x in section n\n16\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man; echo $?",
+   "output": "What manual page do you want?\nFor example, try 'man man'.\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man nosuch_x 2>/dev/null; echo $?",
+   "output": "16\n",
+   "exit_code": 0
+  },
+  {
+   "line": "man NoSuch_X Foo_Y",
+   "output": "No manual entry for NoSuch_X\nNo manual entry for Foo_Y\n",
+   "exit_code": 16
+  },
+  {
+   "line": "man 10 nosuch_x",
+   "output": "No manual entry for 10\nNo manual entry for nosuch_x\n",
+   "exit_code": 16
+  },
+  {
+   "line": "help",
+   "output": "GNU bash, version 5.2.37(1)-release (aarch64-unknown-linux-gnu)\nThese shell commands are defined internally.  Type `help' to see this list.\nType `help name' to find out more about the function `name'.\nUse `info bash' to find out more about the shell in general.\nUse `man -k' or `info' to find out more about commands not in this list.\n\nA star (*) next to a name means that the command is disabled.\n\n job_spec [&]                            history [-c] [-d offset] [n] or hist>\n (( expression ))                        if COMMANDS; then COMMANDS; [ elif C>\n . filename [arguments]                  jobs [-lnprs] [jobspec ...] or jobs >\n :                                       kill [-s sigspec | -n signum | -sigs>\n [ arg... ]                              let arg [arg ...]\n [[ expression ]]                        local [option] name[=value] ...\n alias [-p] [name[=value] ... ]          logout [n]\n bg [job_spec ...]                       mapfile [-d delim] [-n count] [-O or>\n bind [-lpsvPSVX] [-m keymap] [-f file>  popd [-n] [+N | -N]\n break [n]                               printf [-v var] format [arguments]\n builtin [shell-builtin [arg ...]]       pushd [-n] [+N | -N | dir]\n caller [expr]                           pwd [-LP]\n case WORD in [PATTERN [| PATTERN]...)>  read [-ers] [-a array] [-d delim] [->\n cd [-L|[-P [-e]] [-@]] [dir]            readarray [-d delim] [-n count] [-O >\n command [-pVv] command [arg ...]        readonly [-aAf] [name[=value] ...] o>\n compgen [-abcdefgjksuv] [-o option] [>  return [n]\n complete [-abcdefgjksuv] [-pr] [-DEI]>  select NAME [in WORDS ... ;] do COMM>\n compopt [-o|+o option] [-DEI] [name .>  set [-abefhkmnptuvxBCEHPT] [-o optio>\n continue [n]                            shift [n]\n coproc [NAME] command [redirections]    shopt [-pqsu] [-o] [optname ...]\n declare [-aAfFgiIlnrtux] [name[=value>  source filename [arguments]\n dirs [-clpv] [+N] [-N]                  suspend [-f]\n disown [-h] [-ar] [jobspec ... | pid >  test [expr]\n echo [-neE] [arg ...]                   time [-p] pipeline\n enable [-a] [-dnps] [-f filename] [na>  times\n eval [arg ...]                          trap [-lp] [[arg] signal_spec ...]\n exec [-cl] [-a name] [command [argume>  true\n exit [n]                                type [-afptP] name [name ...]\n export [-fn] [name[=value] ...] or ex>  typeset [-aAfFgiIlnrtux] name[=value>\n false                                   ulimit [-SHabcdefiklmnpqrstuvxPRT] [>\n fc [-e ename] [-lnr] [first] [last] o>  umask [-p] [-S] [mode]\n fg [job_spec]                           unalias [-a] name [name ...]\n for NAME [in WORDS ... ] ; do COMMAND>  unset [-f] [-v] [-n] [name ...]\n for (( exp1; exp2; exp3 )); do COMMAN>  until COMMANDS; do COMMANDS-2; done\n function name { COMMANDS ; } or name >  variables - Names and meanings of so>\n getopts optstring name [arg ...]        wait [-fn] [-p var] [id ...]\n hash [-lr] [-p pathname] [-dt] [name >  while COMMANDS; do COMMANDS-2; done\n help [-dms] [pattern ...]               { COMMANDS ; }\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help | wc -l",
+   "output": "46\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help cd",
+   "output": "cd: cd [-L|[-P [-e]] [-@]] [dir]\n    Change the shell working directory.\n    \n    Change the current directory to DIR.  The default DIR is the value of the\n    HOME shell variable. If DIR is \"-\", it is converted to $OLDPWD.\n    \n    The variable CDPATH defines the search path for the directory containing\n    DIR.  Alternative directory names in CDPATH are separated by a colon (:).\n    A null directory name is the same as the current directory.  If DIR begins\n    with a slash (/), then CDPATH is not used.\n    \n    If the directory is not found, and the shell option `cdable_vars' is set,\n    the word is assumed to be  a variable name.  If that variable has a value,\n    its value is used for DIR.\n    \n    Options:\n      -L\tforce symbolic links to be followed: resolve symbolic\n    \t\tlinks in DIR after processing instances of `..'\n      -P\tuse the physical directory structure without following\n    \t\tsymbolic links: resolve symbolic links in DIR before\n    \t\tprocessing instances of `..'\n      -e\tif the -P option is supplied, and the current working\n    \t\tdirectory cannot be determined successfully, exit with\n    \t\ta non-zero status\n      -@\ton systems that support it, present a file with extended\n    \t\tattributes as a directory containing the file attributes\n    \n    The default is to follow symbolic links, as if `-L' were specified.\n    `..' is processed by removing the immediately previous pathname component\n    back to a slash or the beginning of DIR.\n    \n    Exit Status:\n    Returns 0 if the directory is changed, and if $PWD is set successfully when\n    -P is used; non-zero otherwise.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help ec",
+   "output": "echo: echo [-neE] [arg ...]\n    Write arguments to the standard output.\n    \n    Display the ARGs, separated by a single space character and followed by a\n    newline, on the standard output.\n    \n    Options:\n      -n\tdo not append a newline\n      -e\tenable interpretation of the following backslash escapes\n      -E\texplicitly suppress interpretation of backslash escapes\n    \n    `echo' interprets the following backslash-escaped characters:\n      \\a\talert (bell)\n      \\b\tbackspace\n      \\c\tsuppress further output\n      \\e\tescape character\n      \\E\tescape character\n      \\f\tform feed\n      \\n\tnew line\n      \\r\tcarriage return\n      \\t\thorizontal tab\n      \\v\tvertical tab\n      \\\\\tbackslash\n      \\0nnn\tthe character whose ASCII code is NNN (octal).  NNN can be\n    \t\t0 to 3 octal digits\n      \\xHH\tthe eight-bit character whose value is HH (hexadecimal).  HH\n    \t\tcan be one or two hex digits\n      \\uHHHH\tthe Unicode character whose value is the hexadecimal value HHHH.\n    \t\tHHHH can be one to four hex digits.\n      \\UHHHHHHHH the Unicode character whose value is the hexadecimal value\n    \t\tHHHHHHHH. HHHHHHHH can be one to eight hex digits.\n    \n    Exit Status:\n    Returns success unless a write error occurs.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help fo",
+   "output": "for: for NAME [in WORDS ... ] ; do COMMANDS; done\n    Execute commands for each member in a list.\n    \n    The `for' loop executes a sequence of commands for each member in a\n    list of items.  If `in WORDS ...;' is not present, then `in \"$@\"' is\n    assumed.  For each element in WORDS, NAME is set to that element, and\n    the COMMANDS are executed.\n    \n    Exit Status:\n    Returns the status of the last command executed.\nfor ((: for (( exp1; exp2; exp3 )); do COMMANDS; done\n    Arithmetic for loop.\n    \n    Equivalent to\n    \t(( EXP1 ))\n    \twhile (( EXP2 )); do\n    \t\tCOMMANDS\n    \t\t(( EXP3 ))\n    \tdone\n    EXP1, EXP2, and EXP3 are arithmetic expressions.  If any expression is\n    omitted, it behaves as if it evaluates to 1.\n    \n    Exit Status:\n    Returns the status of the last command executed.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help -d e",
+   "output": "echo - Write arguments to the standard output.\nenable - Enable and disable shell builtins.\neval - Execute arguments as a shell command.\nexec - Replace the shell with the given command.\nexit - Exit the shell.\nexport - Set export attribute for shell variables.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help -s ex",
+   "output": "exec: exec [-cl] [-a name] [command [argument ...]] [redirection ...]\nexit: exit [n]\nexport: export [-fn] [name[=value] ...] or export -p\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help -- pwd",
+   "output": "pwd: pwd [-LP]\n    Print the name of the current working directory.\n    \n    Options:\n      -L\tprint the value of $PWD if it names the current working\n    \t\tdirectory\n      -P\tprint the physical directory, without any symbolic links\n    \n    By default, `pwd' behaves as if `-L' were specified.\n    \n    Exit Status:\n    Returns 0 unless an invalid option is given or the current directory\n    cannot be read.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help nosuchx",
+   "output": "bash: line 1: help: no help topics match `nosuchx'.  Try `help help' or `man -k nosuchx' or `info nosuchx'.\n",
+   "exit_code": 1
+  },
+  {
+   "line": "help nosuchx; echo $?",
+   "output": "bash: line 1: help: no help topics match `nosuchx'.  Try `help help' or `man -k nosuchx' or `info nosuchx'.\n1\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help cd nosuchx",
+   "output": "cd: cd [-L|[-P [-e]] [-@]] [dir]\n    Change the shell working directory.\n    \n    Change the current directory to DIR.  The default DIR is the value of the\n    HOME shell variable. If DIR is \"-\", it is converted to $OLDPWD.\n    \n    The variable CDPATH defines the search path for the directory containing\n    DIR.  Alternative directory names in CDPATH are separated by a colon (:).\n    A null directory name is the same as the current directory.  If DIR begins\n    with a slash (/), then CDPATH is not used.\n    \n    If the directory is not found, and the shell option `cdable_vars' is set,\n    the word is assumed to be  a variable name.  If that variable has a value,\n    its value is used for DIR.\n    \n    Options:\n      -L\tforce symbolic links to be followed: resolve symbolic\n    \t\tlinks in DIR after processing instances of `..'\n      -P\tuse the physical directory structure without following\n    \t\tsymbolic links: resolve symbolic links in DIR before\n    \t\tprocessing instances of `..'\n      -e\tif the -P option is supplied, and the current working\n    \t\tdirectory cannot be determined successfully, exit with\n    \t\ta non-zero status\n      -@\ton systems that support it, present a file with extended\n    \t\tattributes as a directory containing the file attributes\n    \n    The default is to follow symbolic links, as if `-L' were specified.\n    `..' is processed by removing the immediately previous pathname component\n    back to a slash or the beginning of DIR.\n    \n    Exit Status:\n    Returns 0 if the directory is changed, and if $PWD is set successfully when\n    -P is used; non-zero otherwise.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help nosuch1 nosuch2",
+   "output": "bash: line 1: help: no help topics match `nosuch2'.  Try `help help' or `man -k nosuch2' or `info nosuch2'.\n",
+   "exit_code": 1
+  },
+  {
+   "line": "help true false",
+   "output": "true: true\n    Return a successful result.\n    \n    Exit Status:\n    Always succeeds.\nfalse: false\n    Return an unsuccessful result.\n    \n    Exit Status:\n    Always fails.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help help",
+   "output": "help: help [-dms] [pattern ...]\n    Display information about builtin commands.\n    \n    Displays brief summaries of builtin commands.  If PATTERN is\n    specified, gives detailed help on all commands matching PATTERN,\n    otherwise the list of help topics is printed.\n    \n    Options:\n      -d\toutput short description for each topic\n      -m\tdisplay usage in pseudo-manpage format\n      -s\toutput only a short usage synopsis for each topic matching\n    \t\tPATTERN\n    \n    Arguments:\n      PATTERN\tPattern specifying a help topic\n    \n    Exit Status:\n    Returns success unless PATTERN is not found or an invalid option is given.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help -d cd pwd",
+   "output": "cd - Change the shell working directory.\npwd - Print the name of the current working directory.\n",
+   "exit_code": 0
+  },
+  {
+   "line": "help time",
+   "output": "time: time [-p] pipeline\n    Report time consumed by pipeline's execution.\n    \n    Execute PIPELINE and print a summary of the real time, user CPU time,\n    and system CPU time spent executing PIPELINE when it terminates.\n    \n    Options:\n      -p\tprint the timing summary in the portable Posix format\n    \n    The value of the TIMEFORMAT variable is used as the output format.\n    \n    Exit Status:\n    The return status is the return status of PIPELINE.\n",
+   "exit_code": 0
+  }
+ ]
+}

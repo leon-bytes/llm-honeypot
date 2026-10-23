@@ -1,0 +1,1939 @@
+# Commands whose answer is the same on any Debian 13 machine with the same package
+# versions: error texts, usage texts, version lines, short help texts. Run by
+# tools/capture_debian_texts.py in a Debian 13 arm64 userland; the answers become
+# fine-tuning data (source "debian") next to the corpus.
+#
+# Rules for this list:
+#   - Nothing whose answer depends on the machine: no listings, no users, no network,
+#     no processes. Paths either do not exist anywhere (names with "nonexistent",
+#     "missing", "nosuch", "nope") or exist on every Debian (/etc, /tmp, /usr,
+#     /etc/passwd as a NAME only, never its contents).
+#   - Nothing that waits for input, needs a terminal, or changes files.
+#   - No command of the 43 test commands; the builder drops any that slips in, and any
+#     answer sharing three lines in a row with a test answer.
+#   - No syntax errors and no job control: bash words those differently in a login
+#     shell and under `bash -c`, and only the simple `-bash: ` prefix is measured.
+#   - Do not delete or reorder lines carelessly: the held-back 10% is chosen by a hash of
+#     the command text, so it follows the command, not its line number.
+
+# --- a file that is not there
+cat /nonexistent
+cat /tmp/missing.txt
+cat /etc/nosuch.conf
+cat /var/log/nosuch.log
+cat nosuchfile
+cat notes.txt
+cat /root/missing.txt
+cat ./nope
+cat /etc/passwd.missing /etc/nosuch
+head /nonexistent
+head -n 5 /tmp/missing.txt
+head -20 /var/log/nosuch.log
+tail /nonexistent
+tail -n 20 /var/log/nosuch.log
+tail -5 nosuchfile
+tail -f /var/log/nosuch.log
+wc -l /nonexistent
+wc /tmp/missing.txt
+wc -c nosuchfile
+stat /nonexistent
+stat /tmp/missing.txt
+stat nosuchfile
+file /nonexistent
+file /tmp/missing.txt
+ls /nonexistent
+ls -l /nonexistent
+ls -la /tmp/missing
+ls -ld /etc/nosuch.d
+ls /nonexistent /nosuch
+ls nosuchdir
+ls -lh /var/nosuch
+du -sh /nonexistent
+du /tmp/missing
+md5sum /nonexistent
+sha256sum /tmp/missing.txt
+sha1sum nosuchfile
+cksum /nonexistent
+grep root /nonexistent
+grep -r password /nosuchdir
+grep -i error /var/log/nosuch.log
+grep -c x /tmp/missing.txt
+sort /nonexistent
+uniq /nonexistent
+cut -d: -f1 /nonexistent
+nl /nonexistent
+tac /nonexistent
+od -c /nonexistent
+base64 /nonexistent
+sed -n 1p /nonexistent
+sed s/a/b/ /tmp/missing.txt
+awk '{print $1}' /nonexistent
+diff /nonexistent /etc/passwd
+diff /etc/passwd /nonexistent
+cmp /nonexistent /etc/passwd
+less /nonexistent
+readlink -f /nonexistent/x
+realpath /nonexistent/x
+find /nonexistent
+find /nonexistent -name '*.txt'
+find /tmp/missing -type f
+tar -tf /nonexistent.tar
+tar -xzf /tmp/missing.tar.gz
+gunzip /nonexistent.gz
+gzip /nonexistent
+zcat /nonexistent.gz
+unzip /nonexistent.zip
+xz -d /nonexistent.xz
+bzip2 -d /nonexistent.bz2
+bunzip2 /tmp/missing.bz2
+source /nonexistent
+. /nonexistent
+source nosuch.sh
+bash /nonexistent.sh
+bash nosuch.sh
+sh /nonexistent.sh
+sh nosuch.sh
+./nosuch.sh
+./run.sh
+/nonexistent
+/usr/bin/nosuch
+/usr/local/bin/missing
+/tmp/missing.sh
+/opt/nosuch/bin/app
+dpkg -s nosuchpackage
+dpkg -L nosuchpackage
+dpkg -l nosuchpackage
+dpkg -S /nonexistent
+apt-cache show nosuchpackage
+apt-cache policy nosuchpackage
+
+# --- changing something that is not there
+cd /nonexistent
+cd /tmp/missing
+cd nosuchdir
+cd /root/missing
+cd /var/nosuch
+cd /etc/passwd
+cd /bin/ls
+cd /etc/fstab
+cd /tmp /etc
+cd -
+rm /nonexistent
+rm /tmp/missing.txt
+rm nosuchfile
+rm -r /nonexistent
+rm /nonexistent /nosuch
+rm /etc
+rm /tmp
+rmdir /nonexistent
+rmdir /tmp/missing
+rmdir nosuchdir
+rmdir /etc/passwd
+rmdir /usr
+mkdir /etc
+mkdir /tmp
+mkdir /nonexistent/sub
+mkdir /tmp/missing/a/b
+mkdir /etc/passwd/x
+touch /nonexistent/file
+touch /tmp/missing/file.txt
+touch /etc/passwd/x
+cp /nonexistent /tmp/x
+cp /tmp/missing.txt /root/
+cp nosuchfile other
+cp /etc /tmp/nosuch-copy
+cp /etc/fstab /nonexistent/dir/
+mv /nonexistent /tmp/x
+mv /tmp/missing.txt /root/
+mv nosuchfile other
+ln /nonexistent /tmp/nosuch-link
+ln -s /etc/fstab /nonexistent/link
+chmod 644 /nonexistent
+chmod +x /tmp/missing.sh
+chmod 777 nosuchfile
+chmod u+z /etc/fstab
+chmod 999 /etc/fstab
+chown root /nonexistent
+chown root:root /tmp/missing
+chown nosuchuser /etc/fstab
+chown root:nosuchgroup /etc/fstab
+chgrp nosuchgroup /etc/fstab
+chgrp root /nonexistent
+echo hi > /nonexistent/file
+echo hi >> /tmp/missing/file.txt
+cat < /nonexistent
+ls > /nonexistent/out.txt
+date > /etc/passwd/x
+tee /nonexistent/file < /dev/null
+truncate -s 0 /nonexistent/file
+dd if=/nonexistent of=/dev/null
+dd if=/dev/null of=/nonexistent/x
+
+# --- a directory where a file is wanted, and the other way round
+cat /etc
+cat /tmp
+cat /usr /var
+head /etc
+tail /tmp
+wc -l /etc
+grep root /etc
+sort /etc
+md5sum /etc
+sed -n 1p /etc
+less /etc
+source /etc
+bash /etc
+/etc
+/tmp
+/etc/passwd
+/etc/fstab
+ls /etc/passwd/x
+cat /etc/passwd/x
+cat /etc/fstab/
+
+# --- options that do not exist
+ls --nosuchoption
+ls -y
+ls --colour=maybe
+cat --nosuchoption
+cat -x /etc/fstab
+head --nosuchoption
+head -n abc /etc/fstab
+head -c -x /etc/fstab
+tail --nosuchoption
+tail -n abc /etc/fstab
+wc --nosuchoption
+wc -x /etc/fstab
+sort --nosuchoption
+sort -k 0 /etc/fstab
+uniq --nosuchoption
+cut --nosuchoption
+cut -f /etc/fstab
+cut -d: /etc/fstab
+tr --nosuchoption
+grep --nosuchoption root /etc/fstab
+grep -E '(' /etc/fstab
+grep -m abc root /etc/fstab
+sed --nosuchoption
+sed 's/a/b' /etc/fstab
+find /etc -nosuchtest
+find /etc -type q
+find /etc -maxdepth abc
+find /etc -name
+find /etc -mtime
+cp --nosuchoption a b
+mv --nosuchoption a b
+rm --nosuchoption a
+rm -x a
+mkdir --nosuchoption a
+mkdir -m 999 /tmp/nosuch-mode
+rmdir --nosuchoption a
+touch --nosuchoption a
+touch -d notadate /tmp/nosuch-touch
+chmod --nosuchoption 644 a
+chown --nosuchoption root a
+ln --nosuchoption a b
+du --nosuchoption
+du -x -y
+stat --nosuchoption /etc
+stat -c
+date --nosuchoption
+date -d notadate
+date -x
+date +%Y extra
+sleep abc
+sleep
+seq
+seq a
+seq 1 2 3 4
+expr
+expr 1 +
+expr 1 / 0
+expr a + 1
+basename
+dirname
+basename a b c
+nproc --nosuchoption
+nproc extra
+uname --nosuchoption
+uname -x
+uname extra
+id --nosuchoption
+id -x
+id nosuchuser
+id -u nosuchuser
+groups nosuchuser
+whoami --nosuchoption
+whoami extra
+hostname --nosuchoption
+hostname -x
+logname extra
+tty --nosuchoption
+tty extra
+printenv --nosuchoption
+env --nosuchoption
+env -u
+env nosuchcommand
+uptime --nosuchoption
+uptime -x
+free --nosuchoption
+free -x
+free -s abc
+df --nosuchoption
+df -x
+df /nonexistent
+df -t
+ps --nosuchoption
+ps -p abc
+ps -u nosuchuser
+ps --sort nosuchkey
+pgrep
+pgrep --nosuchoption
+pgrep -u nosuchuser x
+pidof
+pkill
+kill
+kill -l 999
+kill -nosuchsignal 1
+kill abc
+kill -9
+killall
+killall --nosuchoption
+w --nosuchoption
+who --nosuchoption
+who a b c
+ip nosuchobject
+ip --nosuchoption
+ip addr nosuchcommand
+ip link show nosuchdev0
+ip -x addr
+ip route nosuchcommand
+ip addr show dev
+ss --nosuchoption
+netstat --nosuchoption
+ifconfig --nosuchoption
+route --nosuchoption
+arp --nosuchoption
+tar
+tar --nosuchoption
+tar -x
+tar -cf
+tar -tf
+tar -zxf
+gzip --nosuchoption
+gunzip --nosuchoption
+unzip --nosuchoption
+xz --nosuchoption
+curl
+curl --nosuchoption
+curl -x
+wget
+wget --nosuchoption
+ping
+ping --nosuchoption
+ping -c
+ping -c abc 127.0.0.1
+dpkg
+dpkg --nosuchoption
+dpkg -i
+dpkg -i /nonexistent.deb
+dpkg -L
+apt nosuchcommand
+apt-get nosuchcommand
+apt-cache
+apt-cache nosuchcommand
+mount --nosuchoption
+umount
+umount /nonexistent
+umount --nosuchoption
+lsblk --nosuchoption
+lsblk /dev/nosuchdev
+findmnt --nosuchoption
+dmesg --nosuchoption
+fdisk --nosuchoption
+blkid --nosuchoption
+lsusb --nosuchoption
+lspci --nosuchoption
+lsmod extra
+modprobe
+file
+file --nosuchoption
+nano --nosuchoption
+sudo --nosuchoption
+su --nosuchoption
+su nosuchuser
+passwd --nosuchoption
+passwd nosuchuser
+useradd
+userdel
+userdel nosuchuser
+usermod
+groupadd
+groupdel nosuchgroup
+getent
+crontab --nosuchoption
+xargs --nosuchoption
+yes --nosuchoption
+true --nosuchoption extra
+mktemp --nosuchoption
+mktemp -p /nonexistent
+timeout
+timeout abc ls
+nice
+nice -n abc ls
+nohup
+watch
+chroot
+
+# --- operands missing
+rm
+rmdir
+mkdir
+touch
+cp
+cp a
+mv
+mv a
+ln
+chmod
+chmod 644
+chown
+chown root
+chgrp
+chgrp root
+grep
+sed
+cut
+tr
+tr a
+head -n
+tail -n
+head -c
+du -d
+find -name
+ln -s
+truncate
+truncate -s
+install
+split --nosuchoption
+join
+comm
+paste --nosuchoption
+tee --nosuchoption
+test 1 -eq
+readlink
+realpath
+md5sum --nosuchoption
+sha256sum -c /nonexistent
+dd nosuchoperand=1
+dd if=
+
+# --- bash's own words
+pwd --nosuchoption
+pwd -x
+cd --nosuchoption
+cd -x
+echo $((1/0))
+echo $((1 +))
+echo ${nosuchvar:?}
+echo ${1a}
+export -x
+export =x
+export 1a=2
+unset 1a
+unset -x
+readonly 1a=2
+declare -Q
+declare -x 1a=2
+local x=1
+return
+return 5
+break
+continue
+shift 5
+let
+let 1/0
+alias nosuchalias
+alias -x
+unalias nosuchalias
+unalias
+type nosuchcommand
+type -x ls
+hash nosuchcommand
+hash -x
+command -x ls
+builtin nosuchbuiltin
+builtin ls
+enable nosuchbuiltin
+help nosuchtopic
+ulimit -z
+ulimit -n abc
+umask 999
+umask -x
+read -z
+printf
+printf %d abc
+printf %z
+printf '%d\n' 1.5
+[ 1 -eq ]
+[ a -eq b ]
+[ 1 -eq 2
+test a -nosuchop b
+test 1 -eq x
+set -Q
+set -o nosuchoption
+shopt nosuchoption
+shopt -x
+trap -x
+trap x nosuchsignal
+exec /nonexistent
+exec nosuchcommand
+wait 99999999
+dirs -x
+pushd
+pushd /nonexistent
+popd
+popd -x
+history -x
+history abc
+getopts
+getopts ab
+eval nosuchcommand
+caller
+compgen -x
+complete -x
+kill -l nosuchsignal
+kill 99999999
+kill -0 99999999
+
+# --- what version is this (only where the package is the same as on the real machine)
+ls --version
+cat --version
+cp --version
+mv --version
+rm --version
+mkdir --version
+chmod --version
+chown --version
+head --version
+tail --version
+wc --version
+sort --version
+uniq --version
+cut --version
+tr --version
+date --version
+df --version
+du --version
+id --version
+whoami --version
+uname --version
+nproc --version
+sleep --version
+env --version
+stat --version
+touch --version
+ln --version
+dd --version
+md5sum --version
+sha256sum --version
+seq --version
+tee --version
+grep --version
+sed --version
+find --version
+xargs --version
+diff --version
+cmp --version
+tar --version
+gzip --version
+xz --version
+less --version
+file --version
+ps --version
+free --version
+uptime --version
+pgrep --version
+pkill --version
+w --version
+kill --version
+killall --version
+pstree --version
+ip -V
+ss -V
+ifconfig --version
+netstat --version
+route --version
+arp --version
+hostname --version
+ping -V
+dpkg --version
+apt --version
+apt-get --version
+apt-cache --version
+mount --version
+umount --version
+lsblk --version
+findmnt --version
+dmesg --version
+fdisk --version
+blkid --version
+lsusb --version
+lspci --version
+kmod --version
+modinfo --version
+mawk -W version
+awk -W version
+su --version
+nano --version | head -1
+unzip -v | head -1
+ls --version | head -1
+grep --version | head -1
+tar --version | head -1
+sed --version | head -1
+find --version | head -1
+gzip --version | head -1
+ps --version | head -1
+echo $BASH_VERSION
+echo ${BASH_VERSINFO[0]}.${BASH_VERSINFO[1]}
+
+# --- short help texts
+whoami --help
+nproc --help
+uname --help
+id --help
+hostname --help
+logname --help
+tty --help
+users --help
+groups --help
+printenv --help
+basename --help
+dirname --help
+sleep --help
+true --help
+yes --help
+arch --help
+sync --help
+pwd --help
+uptime --help
+free --help
+pidof --help
+w --help
+tac --help
+nl --help | head -5
+ls --help | head -5
+ls --help | tail -5
+cat --help | head -5
+grep --help | head -5
+ps --help
+ps --help simple | head -10
+df --help | head -5
+du --help | head -5
+find --help | head -5
+tar --help | head -5
+kill --help
+killall --help
+free --help | head -5
+ip help
+ip addr help
+ip link help | head -5
+ip route help | head -5
+ss --help | head -8
+netstat --help | head -8
+ifconfig --help | head -5
+dpkg --help | head -8
+apt --help | head -8
+apt-get --help | head -8
+mount --help | head -8
+lsblk --help | head -8
+dmesg --help | head -8
+help cd | head -5
+help pwd
+help exit
+help logout
+help true
+help false
+help :
+help break
+help continue
+help unalias
+help times
+help shift
+help return
+help wait | head -5
+help export
+help unset
+help alias
+help history | head -5
+help kill
+help type | head -5
+help umask
+help source
+help exec
+help eval
+help help
+type cd
+type pwd
+type echo
+type cat
+command -v cat
+command -V cat
+type -t cat
+type type
+type -t cd
+type -t if
+type -a echo
+type if
+type [
+type -P ls
+command -v cd
+command -v nosuchcommand
+command -V cd
+which ls
+which cat
+which bash
+which sh
+which nosuchcommand
+which
+kill -l
+kill -l 9
+kill -l 15
+kill -l KILL
+kill -l TERM
+trap -l
+
+# --- added 2026-10-14 for the larger training set: --version/--help/an unknown option of
+#     every program the userland shares with Ground Truth, errors on missing files and
+#     users with varied names, wrong arguments, and bash's help texts. Same rules as above.
+b2sum --version
+b2sum --help
+b2sum --nosuchoption
+base32 --version
+base32 --help
+base32 --nosuchoption
+base64 --version
+base64 --help
+base64 --nosuchoption
+basename --version
+basename --nosuchoption
+basenc --version
+basenc --help
+basenc --nosuchoption
+cat --help
+chgrp --version
+chgrp --help
+chgrp --nosuchoption
+chmod --help
+chmod --nosuchoption
+chown --help
+chown --nosuchoption
+cksum --version
+cksum --help
+cksum --nosuchoption
+comm --version
+comm --help
+comm --nosuchoption
+cp --help
+cp --nosuchoption
+csplit --version
+csplit --help
+csplit --nosuchoption
+cut --help
+date --help
+dd --help
+dd --nosuchoption
+df --help
+dir --version
+dir --help
+dir --nosuchoption
+dircolors --version
+dircolors --help
+dircolors --nosuchoption
+dirname --version
+dirname --nosuchoption
+du --help
+env --help
+expand --version
+expand --help
+expand --nosuchoption
+expr --version
+expr --help
+expr --nosuchoption
+factor --version
+factor --help
+factor --nosuchoption
+fmt --version
+fmt --help
+fmt --nosuchoption
+fold --version
+fold --help
+fold --nosuchoption
+groups --version
+groups --nosuchoption
+head --help
+hostid --version
+hostid --help
+hostid --nosuchoption
+install --version
+install --help
+install --nosuchoption
+join --version
+join --help
+join --nosuchoption
+link --version
+link --help
+link --nosuchoption
+ln --help
+ln --nosuchoption
+logname --version
+logname --nosuchoption
+ls --help
+md5sum --help
+mkdir --help
+mkdir --nosuchoption
+mkfifo --version
+mkfifo --help
+mkfifo --nosuchoption
+mknod --version
+mknod --help
+mknod --nosuchoption
+mktemp --version
+mktemp --help
+mv --help
+mv --nosuchoption
+nice --version
+nice --help
+nice --nosuchoption
+nl --version
+nl --help
+nl --nosuchoption
+nohup --version
+nohup --help
+nohup --nosuchoption
+numfmt --version
+numfmt --help
+numfmt --nosuchoption
+od --version
+od --help
+od --nosuchoption
+paste --version
+paste --help
+pathchk --version
+pathchk --help
+pathchk --nosuchoption
+pinky --version
+pinky --help
+pinky --nosuchoption
+pr --version
+pr --help
+pr --nosuchoption
+printenv --version
+ptx --version
+ptx --help
+ptx --nosuchoption
+readlink --version
+readlink --help
+readlink --nosuchoption
+realpath --version
+realpath --help
+realpath --nosuchoption
+rm --help
+rm --nosuchoption
+rmdir --version
+rmdir --help
+rmdir --nosuchoption
+seq --help
+seq --nosuchoption
+sha1sum --version
+sha1sum --help
+sha1sum --nosuchoption
+sha224sum --version
+sha224sum --help
+sha224sum --nosuchoption
+sha256sum --help
+sha256sum --nosuchoption
+sha384sum --version
+sha384sum --help
+sha384sum --nosuchoption
+sha512sum --version
+sha512sum --help
+sha512sum --nosuchoption
+shred --version
+shred --help
+shred --nosuchoption
+shuf --version
+shuf --help
+shuf --nosuchoption
+sleep --nosuchoption
+sort --help
+split --version
+split --help
+stat --help
+stat --nosuchoption
+stdbuf --version
+stdbuf --help
+stdbuf --nosuchoption
+stty --version
+stty --help
+stty --nosuchoption
+sum --version
+sum --help
+sum --nosuchoption
+sync --version
+sync --nosuchoption
+tac --version
+tac --nosuchoption
+tail --help
+tee --help
+timeout --version
+timeout --help
+timeout --nosuchoption
+touch --help
+touch --nosuchoption
+tr --help
+truncate --version
+truncate --help
+truncate --nosuchoption
+tsort --version
+tsort --help
+tsort --nosuchoption
+tty --version
+unexpand --version
+unexpand --help
+unexpand --nosuchoption
+uniq --help
+unlink --version
+unlink --help
+unlink --nosuchoption
+users --version
+users --nosuchoption
+vdir --version
+vdir --help
+vdir --nosuchoption
+wc --help
+who --version
+who --help
+lsblk --help
+findmnt --help
+mount --help
+umount --help
+dmesg --help
+column --version
+column --help
+column --nosuchoption
+rev --version
+rev --help
+rev --nosuchoption
+wdctl --version
+wdctl --help
+wdctl --nosuchoption
+lsipc --version
+lsipc --help
+lsipc --nosuchoption
+lslocks --version
+lslocks --help
+lslocks --nosuchoption
+lslogins --version
+lslogins --help
+lslogins --nosuchoption
+lsmem --version
+lsmem --help
+lsmem --nosuchoption
+lsns --version
+lsns --help
+lsns --nosuchoption
+namei --version
+namei --help
+namei --nosuchoption
+nsenter --version
+nsenter --help
+nsenter --nosuchoption
+prlimit --version
+prlimit --help
+prlimit --nosuchoption
+renice --version
+renice --help
+renice --nosuchoption
+script --version
+script --help
+script --nosuchoption
+setsid --version
+setsid --help
+setsid --nosuchoption
+taskset --version
+taskset --help
+taskset --nosuchoption
+unshare --version
+unshare --help
+unshare --nosuchoption
+chrt --version
+chrt --help
+chrt --nosuchoption
+ionice --version
+ionice --help
+ionice --nosuchoption
+flock --version
+flock --help
+flock --nosuchoption
+fallocate --version
+fallocate --help
+fallocate --nosuchoption
+getopt --version
+getopt --help
+getopt --nosuchoption
+hardlink --version
+hardlink --help
+hardlink --nosuchoption
+mountpoint --version
+mountpoint --help
+mountpoint --nosuchoption
+setterm --version
+setterm --help
+setterm --nosuchoption
+blkid --help
+losetup --version
+losetup --help
+losetup --nosuchoption
+zramctl --version
+zramctl --help
+zramctl --nosuchoption
+partx --version
+partx --help
+partx --nosuchoption
+blockdev --version
+blockdev --help
+blockdev --nosuchoption
+lscpu --version
+lscpu --help
+lscpu --nosuchoption
+pgrep --help
+pkill --help
+pkill --nosuchoption
+pidof --version
+pidof --nosuchoption
+pmap --version
+pmap --help
+pmap --nosuchoption
+pwdx --version
+pwdx --help
+pwdx --nosuchoption
+slabtop --version
+slabtop --help
+slabtop --nosuchoption
+tload --version
+tload --help
+tload --nosuchoption
+vmstat --version
+vmstat --help
+vmstat --nosuchoption
+watch --version
+watch --help
+watch --nosuchoption
+sysctl --version
+sysctl --help
+sysctl --nosuchoption
+fuser --version
+fuser --help
+fuser --nosuchoption
+prtstat --version
+prtstat --help
+prtstat --nosuchoption
+pstree --help
+pstree --nosuchoption
+find --help
+find --nosuchoption
+xargs --help
+grep --help
+grep --nosuchoption
+sed --help
+diff --help
+diff --nosuchoption
+cmp --help
+cmp --nosuchoption
+diff3 --version
+diff3 --help
+diff3 --nosuchoption
+sdiff --version
+sdiff --help
+sdiff --nosuchoption
+tar --help
+gzip --help
+gunzip --version
+gunzip --help
+zcat --version
+zcat --help
+zcat --nosuchoption
+bzip2 --version
+bzip2 --help
+bzip2 --nosuchoption
+xz --help
+unxz --version
+unxz --help
+unxz --nosuchoption
+unzip --version
+unzip --help
+file --help
+ip --version
+ip --help
+ss --version
+ss --help
+bridge --version
+bridge --help
+bridge --nosuchoption
+tc --version
+tc --help
+tc --nosuchoption
+ifconfig --help
+netstat --help
+route --help
+arp --help
+ping --version
+ping --help
+ssh --version
+ssh --help
+ssh --nosuchoption
+scp --version
+scp --help
+scp --nosuchoption
+sftp --version
+sftp --help
+sftp --nosuchoption
+ssh-keygen --version
+ssh-keygen --help
+ssh-keygen --nosuchoption
+ssh-keyscan --version
+ssh-keyscan --help
+ssh-keyscan --nosuchoption
+curl --version
+curl --help
+wget --version
+wget --help
+dpkg --help
+dpkg-query --version
+dpkg-query --help
+dpkg-query --nosuchoption
+dpkg-deb --version
+dpkg-deb --help
+dpkg-deb --nosuchoption
+apt-get --help
+apt-get --nosuchoption
+apt-cache --help
+apt-cache --nosuchoption
+apt-mark --version
+apt-mark --help
+apt-mark --nosuchoption
+apt-config --version
+apt-config --help
+apt-config --nosuchoption
+chage --version
+chage --help
+chage --nosuchoption
+passwd --version
+passwd --help
+useradd --version
+useradd --help
+useradd --nosuchoption
+userdel --version
+userdel --help
+userdel --nosuchoption
+usermod --version
+usermod --help
+usermod --nosuchoption
+groupadd --version
+groupadd --help
+groupadd --nosuchoption
+groupdel --version
+groupdel --help
+groupdel --nosuchoption
+gpasswd --version
+gpasswd --help
+gpasswd --nosuchoption
+sudo --version
+sudo --help
+su --help
+lsmod --version
+lsmod --help
+lsmod --nosuchoption
+modinfo --help
+modinfo --nosuchoption
+modprobe --version
+modprobe --help
+tput --version
+tput --help
+tput --nosuchoption
+infocmp --version
+infocmp --help
+infocmp --nosuchoption
+locale --version
+locale --help
+locale --nosuchoption
+getent --version
+getent --help
+getent --nosuchoption
+iconv --version
+iconv --help
+iconv --nosuchoption
+ldd --version
+ldd --help
+ldd --nosuchoption
+logger --version
+logger --help
+logger --nosuchoption
+lsattr --version
+lsattr --help
+lsattr --nosuchoption
+chattr --version
+chattr --help
+chattr --nosuchoption
+hexdump --version
+hexdump --help
+hexdump --nosuchoption
+hd --version
+hd --help
+hd --nosuchoption
+run-parts --version
+run-parts --help
+run-parts --nosuchoption
+update-alternatives --version
+update-alternatives --help
+update-alternatives --nosuchoption
+cat /tmp/nosuch.txt
+cat missing.log
+cat /root/nope/data.csv
+head /tmp/nosuch.txt
+head /etc/nosuch.conf
+head missing.log
+head /root/nope/data.csv
+head /var/log/nosuch.log
+tail /tmp/nosuch.txt
+tail /etc/nosuch.conf
+tail missing.log
+tail /root/nope/data.csv
+tail /var/log/nosuch.log
+wc /nonexistent
+wc /tmp/nosuch.txt
+wc /etc/nosuch.conf
+wc missing.log
+wc /root/nope/data.csv
+wc /var/log/nosuch.log
+sort /tmp/nosuch.txt
+sort /etc/nosuch.conf
+sort missing.log
+sort /root/nope/data.csv
+sort /var/log/nosuch.log
+uniq /tmp/nosuch.txt
+uniq /etc/nosuch.conf
+uniq missing.log
+uniq /root/nope/data.csv
+uniq /var/log/nosuch.log
+cut -c1-5 /nonexistent
+cut -c1-5 /tmp/nosuch.txt
+cut -c1-5 /etc/nosuch.conf
+cut -c1-5 missing.log
+cut -c1-5 /root/nope/data.csv
+cut -c1-5 /var/log/nosuch.log
+nl /tmp/nosuch.txt
+nl /etc/nosuch.conf
+nl missing.log
+nl /root/nope/data.csv
+nl /var/log/nosuch.log
+od -c /tmp/nosuch.txt
+od -c /etc/nosuch.conf
+od -c missing.log
+od -c /root/nope/data.csv
+od -c /var/log/nosuch.log
+tac /tmp/nosuch.txt
+tac /etc/nosuch.conf
+tac missing.log
+tac /root/nope/data.csv
+tac /var/log/nosuch.log
+md5sum /tmp/nosuch.txt
+md5sum /etc/nosuch.conf
+md5sum missing.log
+md5sum /root/nope/data.csv
+md5sum /var/log/nosuch.log
+sha256sum /nonexistent
+sha256sum /tmp/nosuch.txt
+sha256sum /etc/nosuch.conf
+sha256sum missing.log
+sha256sum /root/nope/data.csv
+sha256sum /var/log/nosuch.log
+sha1sum /nonexistent
+sha1sum /tmp/nosuch.txt
+sha1sum /etc/nosuch.conf
+sha1sum missing.log
+sha1sum /root/nope/data.csv
+sha1sum /var/log/nosuch.log
+cksum /tmp/nosuch.txt
+cksum /etc/nosuch.conf
+cksum missing.log
+cksum /root/nope/data.csv
+cksum /var/log/nosuch.log
+stat /tmp/nosuch.txt
+stat /etc/nosuch.conf
+stat missing.log
+stat /root/nope/data.csv
+stat /var/log/nosuch.log
+file /tmp/nosuch.txt
+file /etc/nosuch.conf
+file missing.log
+file /root/nope/data.csv
+file /var/log/nosuch.log
+grep root /tmp/nosuch.txt
+grep root /etc/nosuch.conf
+grep root missing.log
+grep root /root/nope/data.csv
+grep root /var/log/nosuch.log
+grep -i error /nonexistent
+grep -i error /tmp/nosuch.txt
+grep -i error /etc/nosuch.conf
+grep -i error missing.log
+grep -i error /root/nope/data.csv
+sed -n 1p /tmp/nosuch.txt
+sed -n 1p /etc/nosuch.conf
+sed -n 1p missing.log
+sed -n 1p /root/nope/data.csv
+sed -n 1p /var/log/nosuch.log
+awk '{print $1}' /tmp/nosuch.txt
+awk '{print $1}' /etc/nosuch.conf
+awk '{print $1}' missing.log
+awk '{print $1}' /root/nope/data.csv
+awk '{print $1}' /var/log/nosuch.log
+du -sh /tmp/nosuch.txt
+du -sh /etc/nosuch.conf
+du -sh missing.log
+du -sh /root/nope/data.csv
+du -sh /var/log/nosuch.log
+ls -l /tmp/nosuch.txt
+ls -l /etc/nosuch.conf
+ls -l missing.log
+ls -l /root/nope/data.csv
+ls -l /var/log/nosuch.log
+ls -la /nonexistent
+ls -la /tmp/nosuch.txt
+ls -la /etc/nosuch.conf
+ls -la missing.log
+ls -la /root/nope/data.csv
+ls -la /var/log/nosuch.log
+tar -tf /nonexistent
+tar -tf /tmp/nosuch.txt
+tar -tf /etc/nosuch.conf
+tar -tf missing.log
+tar -tf /root/nope/data.csv
+tar -tf /var/log/nosuch.log
+tar -xzf /nonexistent
+tar -xzf /tmp/nosuch.txt
+tar -xzf /etc/nosuch.conf
+tar -xzf missing.log
+tar -xzf /root/nope/data.csv
+tar -xzf /var/log/nosuch.log
+gzip -d /nonexistent
+gzip -d /tmp/nosuch.txt
+gzip -d /etc/nosuch.conf
+gzip -d missing.log
+gzip -d /root/nope/data.csv
+gzip -d /var/log/nosuch.log
+xz -d /nonexistent
+xz -d /tmp/nosuch.txt
+xz -d /etc/nosuch.conf
+xz -d missing.log
+xz -d /root/nope/data.csv
+xz -d /var/log/nosuch.log
+bzip2 -d /nonexistent
+bzip2 -d /tmp/nosuch.txt
+bzip2 -d /etc/nosuch.conf
+bzip2 -d missing.log
+bzip2 -d /root/nope/data.csv
+bzip2 -d /var/log/nosuch.log
+unzip -l /nonexistent
+unzip -l /tmp/nosuch.txt
+unzip -l /etc/nosuch.conf
+unzip -l missing.log
+unzip -l /root/nope/data.csv
+unzip -l /var/log/nosuch.log
+diff /etc/hostname /nonexistent
+diff /etc/hostname /tmp/nosuch.txt
+diff /etc/hostname /etc/nosuch.conf
+diff /etc/hostname missing.log
+diff /etc/hostname /root/nope/data.csv
+diff /etc/hostname /var/log/nosuch.log
+cmp /etc/hostname /nonexistent
+cmp /etc/hostname /tmp/nosuch.txt
+cmp /etc/hostname /etc/nosuch.conf
+cmp /etc/hostname missing.log
+cmp /etc/hostname /root/nope/data.csv
+cmp /etc/hostname /var/log/nosuch.log
+readlink -e /nonexistent
+readlink -e /tmp/nosuch.txt
+readlink -e /etc/nosuch.conf
+readlink -e missing.log
+readlink -e /root/nope/data.csv
+readlink -e /var/log/nosuch.log
+realpath -e /nonexistent
+realpath -e /tmp/nosuch.txt
+realpath -e /etc/nosuch.conf
+realpath -e missing.log
+realpath -e /root/nope/data.csv
+realpath -e /var/log/nosuch.log
+chmod 644 /tmp/nosuch.txt
+chmod 644 /etc/nosuch.conf
+chmod 644 missing.log
+chmod 644 /root/nope/data.csv
+chmod 644 /var/log/nosuch.log
+chmod +x /nonexistent
+chmod +x /tmp/nosuch.txt
+chmod +x /etc/nosuch.conf
+chmod +x missing.log
+chmod +x /root/nope/data.csv
+chmod +x /var/log/nosuch.log
+chown root:root /nonexistent
+chown root:root /tmp/nosuch.txt
+chown root:root /etc/nosuch.conf
+chown root:root missing.log
+chown root:root /root/nope/data.csv
+chown root:root /var/log/nosuch.log
+chgrp root /tmp/nosuch.txt
+chgrp root /etc/nosuch.conf
+chgrp root missing.log
+chgrp root /root/nope/data.csv
+chgrp root /var/log/nosuch.log
+touch -r /root/nope/data.csv
+rm /root/nope/data.csv
+rmdir /tmp/nosuch.txt
+rmdir /etc/nosuch.conf
+rmdir missing.log
+rmdir /root/nope/data.csv
+rmdir /var/log/nosuch.log
+base64 /tmp/nosuch.txt
+base64 /etc/nosuch.conf
+base64 missing.log
+base64 /root/nope/data.csv
+base64 /var/log/nosuch.log
+hexdump -C /nonexistent
+hexdump -C /tmp/nosuch.txt
+hexdump -C /etc/nosuch.conf
+hexdump -C missing.log
+hexdump -C /root/nope/data.csv
+hexdump -C /var/log/nosuch.log
+strings /nonexistent
+strings /tmp/nosuch.txt
+strings /etc/nosuch.conf
+strings missing.log
+strings /root/nope/data.csv
+strings /var/log/nosuch.log
+less /tmp/nosuch.txt
+less /etc/nosuch.conf
+less missing.log
+less /root/nope/data.csv
+less /var/log/nosuch.log
+more /nonexistent
+more /tmp/nosuch.txt
+more /etc/nosuch.conf
+more missing.log
+more /root/nope/data.csv
+more /var/log/nosuch.log
+source /tmp/nosuch.txt
+source /etc/nosuch.conf
+source missing.log
+source /root/nope/data.csv
+source /var/log/nosuch.log
+. /tmp/nosuch.txt
+. /etc/nosuch.conf
+. missing.log
+. /root/nope/data.csv
+. /var/log/nosuch.log
+bash /nonexistent
+bash /tmp/nosuch.txt
+bash /etc/nosuch.conf
+bash missing.log
+bash /root/nope/data.csv
+bash /var/log/nosuch.log
+sh /nonexistent
+sh /tmp/nosuch.txt
+sh /etc/nosuch.conf
+sh missing.log
+sh /root/nope/data.csv
+sh /var/log/nosuch.log
+python3 /nonexistent
+python3 /tmp/nosuch.txt
+python3 /etc/nosuch.conf
+python3 missing.log
+python3 /root/nope/data.csv
+python3 /var/log/nosuch.log
+perl /nonexistent
+perl /tmp/nosuch.txt
+perl /etc/nosuch.conf
+perl missing.log
+perl /root/nope/data.csv
+perl /var/log/nosuch.log
+truncate -s 0 /root/nope/data.csv
+shred -u /root/nope/data.csv
+cp /nonexistent /tmp/nosuchdir/
+cp /tmp/nosuch.txt /tmp/nosuchdir/
+cp /etc/nosuch.conf /tmp/nosuchdir/
+cp missing.log /tmp/nosuchdir/
+cp /root/nope/data.csv /tmp/nosuchdir/
+cp /var/log/nosuch.log /tmp/nosuchdir/
+mv /nonexistent /tmp/nosuchdir/
+mv /tmp/nosuch.txt /tmp/nosuchdir/
+mv /etc/nosuch.conf /tmp/nosuchdir/
+mv missing.log /tmp/nosuchdir/
+mv /root/nope/data.csv /tmp/nosuchdir/
+mv /var/log/nosuch.log /tmp/nosuchdir/
+ln -s /tmp /root/nope/data.csv
+stat
+unlink
+link
+chage
+diff
+cmp
+awk
+ssh
+scp
+ip
+dd if=/nonexistent
+chmod 755
+cp /etc/hostname
+mv /tmp/nosuch.txt
+diff /etc/hostname
+sed s/a/b/
+grep -E
+awk -F:
+tar -czf /tmp/nosuchdir/x.tgz
+kill -s
+usermod -L
+passwd -l
+chage -l
+id -u
+groups
+usermod -L nosuchuser
+chage -l nosuchuser
+crontab -u nosuchuser -l
+getent passwd nosuchuser
+sudo -u nosuchuser id
+chown nosuchuser /tmp/nosuch.txt
+ls ~nosuchuser
+id admin
+groups admin
+su admin
+passwd admin
+userdel admin
+usermod -L admin
+chage -l admin
+crontab -u admin -l
+getent passwd admin
+sudo -u admin id
+chown admin /tmp/nosuch.txt
+ls ~admin
+id test
+groups test
+su test
+passwd test
+userdel test
+usermod -L test
+chage -l test
+crontab -u test -l
+getent passwd test
+sudo -u test id
+chown test /tmp/nosuch.txt
+ls ~test
+id ubuntu
+groups ubuntu
+su ubuntu
+passwd ubuntu
+userdel ubuntu
+usermod -L ubuntu
+chage -l ubuntu
+crontab -u ubuntu -l
+getent passwd ubuntu
+sudo -u ubuntu id
+chown ubuntu /tmp/nosuch.txt
+ls ~ubuntu
+id oracle
+groups oracle
+su oracle
+passwd oracle
+userdel oracle
+usermod -L oracle
+chage -l oracle
+crontab -u oracle -l
+getent passwd oracle
+sudo -u oracle id
+chown oracle /tmp/nosuch.txt
+ls ~oracle
+id postgres
+groups postgres
+su postgres
+passwd postgres
+userdel postgres
+usermod -L postgres
+chage -l postgres
+crontab -u postgres -l
+getent passwd postgres
+sudo -u postgres id
+chown postgres /tmp/nosuch.txt
+ls ~postgres
+id git
+groups git
+su git
+passwd git
+userdel git
+usermod -L git
+chage -l git
+crontab -u git -l
+getent passwd git
+sudo -u git id
+chown git /tmp/nosuch.txt
+ls ~git
+id deploy
+groups deploy
+su deploy
+passwd deploy
+userdel deploy
+usermod -L deploy
+chage -l deploy
+crontab -u deploy -l
+getent passwd deploy
+sudo -u deploy id
+chown deploy /tmp/nosuch.txt
+ls ~deploy
+id guest
+groups guest
+su guest
+passwd guest
+userdel guest
+usermod -L guest
+chage -l guest
+crontab -u guest -l
+getent passwd guest
+sudo -u guest id
+chown guest /tmp/nosuch.txt
+ls ~guest
+id support
+groups support
+su support
+passwd support
+userdel support
+usermod -L support
+chage -l support
+crontab -u support -l
+getent passwd support
+sudo -u support id
+chown support /tmp/nosuch.txt
+ls ~support
+date -d garbage
+date -d 2026-13-45
+date +%Q
+date -d '@notanumber'
+sleep -5
+seq 1 0
+seq abc
+expr abc + 1
+head -n abc /etc/hostname
+tail -n x /etc/hostname
+head -c -x /etc/hostname
+sort -k /etc/hostname
+kill 999999
+kill -9 999999
+kill -HUP 999999
+kill %1
+kill -SIGNOPE 1
+kill -l 99
+chmod 999 /tmp/nosuch.txt
+chmod u+q /tmp/nosuch.txt
+ls --color=sometimes
+ls --sort=nosuch
+ls -w abc
+cut -f
+cut -d
+wc --nosuch
+du --max-depth=x
+df -h /nonexistent
+df -t nosuchfs
+free --nosuch
+free -s 0
+ps -o nosuchfield
+ps --sort=nosuch
+pgrep -u nosuchuser sshd
+pkill -u nosuchuser x
+ip nosuch
+ip link show nosuch0
+ip addr show dev nosuch0
+ip route get abc
+ip -6 nosuch
+ss --nosuch
+netstat --nosuch
+route add
+ping -c 1 -W abc 127.0.0.1
+ssh -p abc host
+ssh -o NosuchOption=yes host
+scp /nonexistent /tmp/
+tar -xf
+gunzip /tmp/nosuch.gz
+unzip
+unzip /tmp/nosuch.zip
+curl --nosuch
+wget --nosuch
+find /tmp -nosuchtest
+find /tmp -name
+find /tmp -maxdepth x
+find -type q
+xargs --nosuch
+grep -P '(' /etc/hostname
+grep -E '(' /etc/hostname
+grep '[' /etc/hostname
+grep -r
+sed -e 's/a/' /etc/hostname
+sed -n 'p;q;x;y' /etc/hostname
+awk '{print' /etc/hostname
+awk 'BEGIN{print 1/0}'
+dd bs=abc
+dpkg -s nosuchpkg
+dpkg -L nosuchpkg
+dpkg -l nosuchpkg
+dpkg-query -W nosuchpkg
+apt-cache show nosuchpkg
+apt-cache depends nosuchpkg
+apt-cache search
+apt-config dump --nosuch
+lsmod --nosuch
+systemctl --version
+journalctl --version
+sudo -u nosuchuser true
+sudo nosuchcommand
+su -c
+su nosuchuser -c id
+gpasswd
+getent nosuchdb
+getent group nosuchgroup
+tput nosuch
+tput cols --nosuch
+locale -a --nosuch
+iconv -f NOSUCH -t UTF-8 /etc/hostname
+ldd /nonexistent
+ldd /etc/hostname
+file -z /nonexistent
+stat -c %Q /etc/hostname
+mktemp /nonexistent/XXXX
+install -d /nonexistent/x/y --nosuch
+nice -n abc true
+renice
+renice -n 5 -p 999999
+taskset
+taskset -p 999999
+ionice -p 999999
+chrt -p 999999
+prlimit --pid 999999
+timeout abc true
+timeout 1
+env --nosuch
+printenv --nosuch
+uname --nosuch
+uname -q
+hostname --nosuch
+whoami --nosuch
+whoami nosuchuser
+who --nosuch
+w --nosuch
+uptime --nosuch
+users --nosuch
+tty --nosuch
+id --nosuch
+groups --nosuch
+nproc --nosuch
+factor abc
+factor -5
+numfmt --to=si abc
+numfmt --nosuch
+shuf -i 1-0
+shuf -n abc
+split -b abc /etc/hostname
+sort -t
+uniq -f x
+tee --nosuch
+yes --nosuch
+sync --nosuch
+test --nosuch
+[ 1 -eq
+[ -f
+[ a = ]
+test 1 -gt
+cd --nosuch
+cd /root /tmp
+dirs +5
+export -q
+export 1abc=2
+unset -q
+declare -q
+read -t abc
+ulimit -q
+umask abc
+trap -q
+source
+hash nosuchcmd
+type -q ls
+command -q ls
+builtin nosuch
+enable nosuch
+shopt -s nosuch
+set -o nosuch
+printf '%d' abc
+printf '%q'
+echo $((1+))
+help -s alias
+help -d alias
+help bg
+help -s bg
+help -d bg
+help bind
+help -s bind
+help -d bind
+help -s break
+help -d break
+help builtin
+help -s builtin
+help -d builtin
+help caller
+help -s caller
+help -d caller
+help cd
+help -s cd
+help -d cd
+help command
+help -s command
+help -d command
+help compgen
+help -s compgen
+help -d compgen
+help complete
+help -s complete
+help -d complete
+help compopt
+help -s compopt
+help -d compopt
+help -s continue
+help -d continue
+help declare
+help -s declare
+help -d declare
+help dirs
+help -s dirs
+help -d dirs
+help disown
+help -s disown
+help -d disown
+help echo
+help -s echo
+help -d echo
+help enable
+help -s enable
+help -d enable
+help -s eval
+help -d eval
+help -s exec
+help -d exec
+help -s exit
+help -d exit
+help -s export
+help -d export
+help -s false
+help -d false
+help fc
+help -s fc
+help -d fc
+help fg
+help -s fg
+help -d fg
+help getopts
+help -s getopts
+help -d getopts
+help hash
+help -s hash
+help -d hash
+help -s help
+help -d help
+help history
+help -s history
+help -d history
+help jobs
+help -s jobs
+help -d jobs
+help -s kill
+help -d kill
+help let
+help -s let
+help -d let
+help local
+help -s local
+help -d local
+help -s logout
+help -d logout
+help mapfile
+help -s mapfile
+help -d mapfile
+help popd
+help -s popd
+help -d popd
+help printf
+help -s printf
+help -d printf
+help pushd
+help -s pushd
+help -d pushd
+help -s pwd
+help -d pwd
+help read
+help -s read
+help -d read
+help readarray
+help -s readarray
+help -d readarray
+help readonly
+help -s readonly
+help -d readonly
+help -s return
+help -d return
+help set
+help -s set
+help -d set
+help -s shift
+help -d shift
+help shopt
+help -s shopt
+help -d shopt
+help -s source
+help -d source
+help suspend
+help -s suspend
+help -d suspend
+help test
+help -s test
+help -d test
+help -s times
+help -d times
+help trap
+help -s trap
+help -d trap
+help -s true
+help -d true
+help type
+help -s type
+help -d type
+help typeset
+help -s typeset
+help -d typeset
+help ulimit
+help -s ulimit
+help -d ulimit
+help -s umask
+help -d umask
+help -s unalias
+help -d unalias
+help -s unset
+help -d unset
+help wait
+help -s wait
+help -d wait
+help nosuchbuiltin
+help -s nosuch

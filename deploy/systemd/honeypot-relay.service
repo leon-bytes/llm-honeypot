@@ -1,0 +1,26 @@
+# The relay (answer engine and emulated Docker API) as a service of the user `pi`.
+# Goes to /home/pi/.config/systemd/user/honeypot-relay.service on the Orchestrator;
+# installed by scripts/orch_relay_service.sh. Explained in docs/orchestrator-services.md.
+#
+# A USER service on purpose: `pi` can restart it without sudo
+# (systemctl --user restart honeypot-relay), so a deploy stays an rsync and a restart.
+# It starts at boot only once lingering is on for pi (sudo loginctl enable-linger pi).
+[Unit]
+Description=Honeypot relay (answer engine and emulated Docker API)
+
+[Service]
+Type=simple
+WorkingDirectory=%h/honeypot
+# The @ form sets the name the process shows: it stays `python3 -m honeypot.relay`, as
+# when started by hand, so `pgrep -f "^python3 -m honeypot.relay"` still finds it.
+ExecStart=@/usr/bin/python3 python3 -m honeypot.relay --config honeypot/config.json
+# The same file the hand-started relay writes its start-up lines to.
+StandardOutput=append:%h/honeypot/relay.out
+StandardError=inherit
+# At boot the lab address may not be up yet when this starts; it then exits and is
+# started again until the listeners bind.
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
