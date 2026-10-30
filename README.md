@@ -84,6 +84,16 @@ flowchart LR
 
 ---
 
+## Testbed
+
+![The testbed: the reference machine and the gateway (two Raspberry Pi 5), four NVIDIA Jetson Orin Nano model nodes, the network switch and router, a monitor with the gateway's live status and the admin laptop with the model nodes' status](docs/testbed.png)
+
+The reference machine and the gateway are two identical Raspberry Pi 5 boards; the model
+nodes are NVIDIA Jetson Orin Nano boards. Everything sits on an isolated lab network
+without Internet access.
+
+---
+
 ## Repository layout
 
 | Path | What it is |
